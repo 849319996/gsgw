@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<style type="text/css">.bx-composite-btn {background: url("sprite-1x.png")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-1x.png*/ no-repeat right 0 #e94524;border-radius: 15px;color: #ffffff !important;display: inline-block;line-height: 30px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-size: 12px !important;font-weight: bold !important;height: 31px !important;padding: 0 42px 0 17px !important;vertical-align: middle !important;text-decoration: none !important;}@media screen   and (min-device-width: 1200px)   and (max-device-width: 1600px)   and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi) {.bx-composite-btn {background-image: url("sprite-2x.png")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-2x.png*/;background-size: 42px 124px;}}  .bx-composite-btn-fixed {position: absolute;top: -45px;right: 15px;z-index: 10;}  .bx-btn-white {background-position: right 0;color: #fff !important;}  .bx-btn-black {background-position: right -31px;color: #000 !important;}  .bx-btn-red {background-position: right -62px;color: #555 !important;}  .bx-btn-grey {background-position: right -93px;color: #657b89 !important;}  .bx-btn-border {border: 1px solid #d4d4d4;height: 29px !important;line-height: 29px !important;}  .bx-composite-loading {display: block;width: 40px;height: 40px;background: url("loading.gif")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/loading.gif*/;}</style>
+<script type="text/javascript" data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','banner':{'url':'http://www.1c-bitrix.ru/composite/','text':'','bgcolor':'#ff045f','style':'white'},'storageBlocks':[],'dynamicBlocks':[],'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}else{w.frameRequestFail = f;}return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();})(window, document);</script>
+
+
+<link href="core.min.css-14451916572854.css" tppabs="http://gcmatrix.com/bitrix/js/main/core/css/core.min.css?14451916572854" type="text/css" rel="stylesheet" />
+<link href="jquery.fancybox.css-14175171805160.css" tppabs="http://gcmatrix.com/css/jquery.fancybox.css?14175171805160" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="jquery.bxslider.css-14175171804040.css" tppabs="http://gcmatrix.com/css/jquery.bxslider.css?14175171804040" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="style.css-156947828531018.css" tppabs="http://gcmatrix.com/css/style.css?156947828531018" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="style.css-1417517180236.css" tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/style.css?1417517180236" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="styles.css-1554948055583.css" tppabs="http://gcmatrix.com/local/templates/main/styles.css?1554948055583" type="text/css" data-template-style="true" rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'http://gcmatrix.com/blog/spec_xp/control-of-the-correct-soldering-capacitors/DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'mx','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/'});</script>
+
+
+<script type="text/javascript" src="core.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core.min.js?147851119173480"></script>
+<script type="text/javascript" src="core_db.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_db.min.js?14646669905048"></script>
+<script type="text/javascript" src="core_ajax.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ajax.min.js?147851119221031"></script>
+<script type="text/javascript" src="json2.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/json/json2.min.js?14175171793467"></script>
+<script type="text/javascript" src="core_ls.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ls.min.js?14451916607365"></script>
+<script type="text/javascript" src="core_fx.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_fx.min.js?14451916579592"></script>
+<script type="text/javascript" src="core_frame_cache.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_frame_cache.min.js?147851118811191"></script>
+<script type="text/javascript">var bxDate = new Date(); document.cookie="mx_TIME_ZONE="+bxDate.getTimezoneOffset()+"; path=/; expires=Fri, 01-Jan-2038 00:00:00 GMT"</script>
+
+
+
+<script type="text/javascript" src="jquery-3.4.1.min.js" tppabs="http://gcmatrix.com/js/jquery-3.4.1.min.js?142112976595790"></script>
+<script type="text/javascript" src="jquery.carouFredSel.js" tppabs="http://gcmatrix.com/js/jquery.carouFredSel.js?141751718036181"></script>
+<script type="text/javascript" src="jquery.bxslider.min.js" tppabs="http://gcmatrix.com/js/jquery.bxslider.min.js?141751718019368"></script>
+<script type="text/javascript" src="jquery-ui.js" tppabs="http://gcmatrix.com/js/jquery-ui.js?1417517180485937"></script>
+<script type="text/javascript" src="jquery.mask.min.js" tppabs="http://gcmatrix.com/js/jquery.mask.min.js?14175171804741"></script>
+<script type="text/javascript" src="jquery.formstyler.min.js" tppabs="http://gcmatrix.com/js/jquery.formstyler.min.js?141751718015758"></script>
+<script type="text/javascript" src="jquery.fancybox.js" tppabs="http://gcmatrix.com/js/jquery.fancybox.js?141751718050725"></script>
+<script type="text/javascript" src="script2.js" tppabs="http://gcmatrix.com/js/script.js?14175171807558"></script>
+<script type="text/javascript" src="script6.js" tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/script.js?1417517180990"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "72e5454bdb8b62a08488572b66bc822a"]); _ba.push(["host", "http://gcmatrix.com/blog/spec_xp/control-of-the-correct-soldering-capacitors/gcmatrix.com"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+<title>Halogen-free паяльные пасты и их влияние на отмывку печатных узлов - Матрикс</title><!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(52706338, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="1.gif" tppabs="https://mc.yandex.ru/watch/52706338" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+<div id="panel">
+    </div>
+<div class="wrapper">
+    <div class="header">
+        <div class="layout">
+            <div class="logo">
+	<a href="index.htm" tppabs="http://gcmatrix.com/">
+		<img src="/images/logo.jpg" tppabs="http://gcmatrix.com/img//images/logo.jpg" alt="Матрикс">
+	</a>
+</div>            <div class="text">
+                Ведущий российский OEM производитель печатных плат            </div>
+            <div class="phone">
+				<b class="h2">+7 (383) 383-08-05</b><div class="d-flex">
+					<div class="mr-2">
+						<a href="skype:live:a2ad12d4eb62443e?chat" target="_blank"><span class="i-mess i-mess-skype"></span></a>
+						<a href="tg://resolve?domain=matrix_elektronika" target="_blank"><span class="i-mess i-mess-telegram"></span></a>
+						<a href="javascript:if(confirm('https://wa.me/79994638549  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://wa.me/79994638549'" tppabs="https://wa.me/79994638549" target="_blank"><span class="i-mess i-mess-whatsapp"></span></a>
+						<a href="viber://pa?chatURI=matrixelektronika" target="_blank"><span class="i-mess i-mess-viber"></span></a>
+					</div>
+					<div class="comment">周一至周五，9点-18点					</div>
+				</div>
+            </div>
+            <div class="cl"></div>
+            <div class="menu">
+    <a href="index.htm" tppabs="http://gcmatrix.com/" class="home"></a>
+    <ul><li>
+                <a href="index-1.htm" tppabs="http://gcmatrix.com/about-company/"  >О компании</a>
+            </li><li class="act">
+                <a href="index-2.htm" tppabs="http://gcmatrix.com/blog/"  >Наш блог</a>
+            </li><li>
+                <a href="index-3.htm" tppabs="http://gcmatrix.com/contract-assembly/"  >Контрактная сборка</a>
+            </li><li>
+                <a href="javascript:if(confirm('https://pcb.gcmatrix.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://pcb.gcmatrix.com/'" tppabs="https://pcb.gcmatrix.com/"   target="_blank">Печатные платы</a>
+            </li><li>
+                <a href="index-4.htm" tppabs="http://gcmatrix.com/components/"  >Компоненты</a>
+            </li></ul>
+    <div class="cl"></div>
+</div>        </div>
+    </div>
+    <div class="content"><div class="news blog_page">
+    <div class="layout"><div class="left text_page">
+    <h1>Halogen-free паяльные пасты и их влияние на отмывку печатных узлов</h1>
+    <span class="date">8 декабря</span>
+    <div class="cl"></div><div class="quote">В связи с активным внедрением технологии ROHS во всём мире, предлагаем взглянуть на исследования наших европейских коллег в области применения паяльных паст не содержащих галогены.</div><p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">С тех пор как галогены, содержащиеся в паяльных пастах, особенно бромиды и хлориды, стали рассматриваться как опасные для здоровья и окружающей среды, многие компании, в частности крупные производители электроники, видоизменили свои продукты, чтобы вывести на рынок более экологически чистую продукцию.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center; background: white;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Что же означает термин halogen-free?<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Галогены играют важную роль как активаторы в паяльных пастах и флюсах, так как они имеют большое влияние на смачивающие свойства припоя и паяльной пасты. В связи с этим возникают вопросы: что же означает полный отказ от галогенов для паяльных паст и флюсов и как это повлияет на процесс пайки и последующий процесс отмывки? С точки зрения химика halogen-free означает, что никаких соединений фтора, хлора, брома и йода в продуктах быть не может. В электронной промышленности хлор и бром главным образом используются в виде активаторов для флюсов и органических антипиренов. Различные стандарты устанавливают пределы содержания галогенов или галогенидов. В стандартах JPCA-ES-01-2003, IEC 614249-2-21 и IPC 4101B определен предел содержания галогенов в сборках в 900 миллионных долей для каждого из галогенов &mdash; хлора и брома (табл. 1). Последние два стандарта (IEC и IPC) предусматривают предел общего содержания галогенов (хлора и брома вместе) &lt;1500 миллионных долей.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 6pt 15pt; text-align: center; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Таблица 1. Промышленные стандарты для оценки уровня содержания галогенов и галогенидов<o:p></o:p></span></p>
+ 
+<div align="center"> 
+  <table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0"> 
+    <tbody> 
+      <tr> <td style="padding: 1.5pt; background: rgb(0, 0, 139);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"> <o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt; background: rgb(0, 0, 139);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: white;">JPCA-ES-01-2003</span></b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt; background: rgb(0, 0, 139);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: white;">IEC 614249-2-21</span></b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt; background: rgb(0, 0, 139);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: white;">IPC 4101B</span></b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt; background: rgb(0, 0, 139);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: white;">J-STD 004</span></b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Область применения<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Сборки<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Сборки<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Сборки<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Флюс<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Обозначение<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">halogen-free<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">halogen-free<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">halogen-free<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">halide-free<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Предельное содержание<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">&lt;900 ppm хлора, 
+              <br />
+             &lt;900 ppm брома<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">&lt;900 ppm хлора, 
+              <br />
+             &lt;900 ppm брома, 
+              <br />
+             &lt;1500 ppm суммарно  
+              <br />
+             хлора и брома<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">&lt;900 ppm хлора, 
+              <br />
+             &lt;900 ppm брома, 
+              <br />
+             &lt;1500 ppm суммарно  
+              <br />
+             хлора и брома<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">&lt;500 ppm галогенидов в сумме 
+              <br />
+             (F-, Cl-, Br-, I-)<o:p></o:p></span></p>
+         </td> </tr>
+     </tbody>
+   </table>
+ </div>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">С другой стороны, J-STD 004 (табл. 2) классифицирует содержание галогенидов в паяльной пасте и флюсах по степени потенциальной коррозии флюсовых остатков после пайки. В этом стандарте использованы следующие категории: L (низкий уровень), M (средний) и H (высокий). Кроме того, присваивается индекс 0 или 1 для содержания галогенидов (0 — галогениды отсутствуют вообще или их меньше 0,05 массовой доли %; 1 — галогениды присутствуют).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 6pt 15pt; text-align: center; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Таблица 2. Классификация флюсов в соответствии с J-STD 004<o:p></o:p></span></p>
+ 
+<div align="center"> 
+  <table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0"> 
+    <tbody> 
+      <tr> <td style="padding: 1.5pt; background: rgb(0, 0, 139);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: white;">Входящие в состав флюса вещества</span></b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt; background: rgb(0, 0, 139);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: white;">Уровень активности флюса (% галогенидов) / тип флюса</span></b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt; background: rgb(0, 0, 139);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: white;">Обозначение флюса</span></b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td rowspan="6" style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Канифоль (RO)<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Низкий (0%) / L0<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">ROL0<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Низкий (&lt;0,5%) / L1<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">ROL1<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Средний (0%) / М0<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">ROM0<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Средний (0,5&ndash;2%) / М1<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">ROM1<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Высокий (0%) / H0<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">ROH0<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Высокий (&gt;2%) / H1<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">ROH1<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td rowspan="6" style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Синтетическая смола (RE)<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Низкий (0%) / L0<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">REL0<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Низкий (&lt;0,5%) / L1<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">REL1<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Средний (0%) / М0<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">REM0<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Средний (0,5–2%) / М1<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">REM1<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Высокий (0%) / H0<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">REH0<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Высокий (&gt;2%) / H1<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">REH1<o:p></o:p></span></p>
+         </td> </tr>
+     </tbody>
+   </table>
+ </div>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center; background: white;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Halogen-free (не содержащий галогенов) = halide-free (не содержащий галогенидов)?<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">В этом контексте важно отметить, что понятие halogen-free (не содержащий галогенов) не является синонимом термину halide-free (не содержащий галогенидов). Флюс, который классифицируется как L0 по J-STD 004, содержит меньше чем 0,05% ионных галогенсодержащих соединений (= галогенидов).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Тем не менее этот флюс может содержать соединения галогенов, например, органические кислоты, являющиеся активаторами, могут содержать хлор или бром. Следовательно, они не обязательно являются не содержащими галоген в соответствии с IEC 614249-2-21.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Согласно J-STD 004 метод, используемый для определения типа флюса, — ионная хроматография. Однако этот тестовый метод позволяет определять только галогениды, а не органические соединения галогенов. Галогениды — это ионы, которые имеют заряд, в растворах существуют отдельно от остальной молекулы и проявляют собственную химическую активность, а галогены как заместители в органических соединениях прочно связаны с молекулой-основой и в химические реакции самостоятельно, как правило, не вступают. То есть с точки зрения коррозионной активности они значения не имеют. Их регламентируют только из экологических соображений<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Таким образом, для проверки наличия галогенов в соответствии с IEC 614249-2-21 с помощью ионной хроматографии необходимо провести предварительную пробоподготовку, руководствуясь EN 14582. При этом органические соединения галогенов восстанавливаются в галогениды, которые после этого могут быть определены хроматографически.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Итак, перечисленные выше стандарты могут приводить к путанице в терминах: halogen-free (не содержащий галогенов) и halide-free (не содержащий галогенидов).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center; background: white;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Halogen-free — влияние на процесс сборки<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Использование halogen-free флюсов и паяльных паст сильно влияет на производство сборок. Галогены в паяльных пастах способствуют раскислению контактных площадок и припоя, улучшают смачивающие свойства и характеристики процесса оплавления. Как правило, галогены положительно влияют на время жизни пасты на трафарете, термическую стабильность, технологическое окно процесса и срок годности изделия.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Halogen-free, безотмывочные паяльные пасты потенциально могут вызвать проблемы в процессе смачивания и оплавления припоя, особенно в случаях, требующих длительного профиля пайки, и преимущественно на небольших компонентах, таких как 0201. Чем меньше размер контактной площадки, тем больше она подвержена окислению. Это соотношение основано на общем содержании флюса. На маленькие площадки попадают совсем ничтожные количества флюса, и если в каком-то месте он не очень эффективно отработает, то на маленькой площадке это будет значительная часть общей площади контакта. Следовательно, для раскисления маленьких контактных площадок необходимы сравнительно большие количества флюсов или активаторов. Таким образом, существует опасность недостаточного смачивания паяных соединений при использовании halogen-free паяльных паст. Более того, исключение галогенов как активаторов из состава флюса может способствовать появлению дефекта &laquo;голова на подушке&raquo; из-за недостаточного оплавления припоя.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Производители паяльных паст обычно используют смесь различных органических кислот в качестве активаторов для компенсации недостатка галогенов. Проблемой в этом случае является то, что пока еще неизвестно, как эти активаторы влияют на последующие процессы, например отмывку сборок. Следовательно, в первую очередь необходимо изучить возможность удаления флюса, остающегося после оплавления популярных halogen-free паяльных паст.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center; background: white;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Цель исследования и его структура<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Цель исследования: изучить возможное влияние замененных активаторов на процесс отмывки и установить, что при использовании подходящих очистителей это не вызывает проблем, ожидаемых при переходе к halogen-free, безотмывочным паяльным пастам. В первую очередь была сделана выборка безотмывочных паяльных паст, доступных на рынке и имеющих специальную halogen-free маркировку. Причем основное преимущество при этом выборе имели производители паяльных паст, с которыми существует долгосрочное сотрудничество и которые предоставляют образцы вновь разработанных паст и флюсов для регулярного тестирования в различных отмывочных процессах. Результаты всех испытаний добавлены в общую базу данных, которая сейчас включает свыше 600 протестированных паяльных паст. Имеются в виду все пасты, протестированные в техническом центре, включая и галогенсодержащие. На российском рынке количество доступных паст в десятки раз меньше, и выбор пасты для конечного потребителя существенно более сложен.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Для исследования было выбрано 16 распространенных, не содержащих галоген паяльных паст следующих производителей: AIM, Almit, Alpha, Heraeus, Indium, Koki, Multicore, Srannol. Затем на образцы печатных плат, изготовленных из стеклотекстолита FR4, методом трафаретной печати были нанесены выбранные halogen-free паяльные пасты и оплавлены в соответствии со спецификацией производителя. Важно отметить, что профиль оплавления не был изменен по сравнению с профилем, используемым для традиционных галогенсодержащих безотмывочных паяльных паст. Для получения повторяемых результатов было сделано по четыре образца с каждой паяльной пастой.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center; background: white;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Испытание отмывки в техническом центре<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">После процесса пайки тестовые платы были вымыты с помощью различных процессов в техническом центре в соответствии с предписанной процедурой испытаний. В процессе менялись несколько критериев.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Первый: для каждой пасты были испытаны различные отмывочные среды. А именно, это были жидкости на водной основе, использующие MPC-технологию, жидкости на основе ПАВ и жидкости на основе растворителей. Второй: были протестированы отмывка распылением (как в ванновом, так и в конвейерном оборудовании) и все популярные виды отмывки погружением с типичными параметрами для каждого процесса (параметры приведены в таблице 3).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 6pt 15pt; text-align: center; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Таблица 3. Параметры очистки остатков halogen-free паяльных паст в различных очистителях и оборудовании<o:p></o:p></span></p>
+ 
+<div align="center"> 
+  <table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0"> 
+    <tbody> 
+      <tr> <td style="padding: 1.5pt; background: rgb(0, 0, 139);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: white;">Отмывочная жидкость</span></b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt; background: rgb(0, 0, 139);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: white;">Технология очистки</span></b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt; background: rgb(0, 0, 139);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: white;">pH</span></b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt; background: rgb(0, 0, 139);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: white;">Концентрация, %</span></b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt; background: rgb(0, 0, 139);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: white;">Тип процесса</span></b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt; background: rgb(0, 0, 139);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: white;">Время отмывки</span></b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt; background: rgb(0, 0, 139);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: white;">Температура отмывки, &deg;С</span></b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt; background: rgb(0, 0, 139);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: white;">Время, мин./ температура ополаскивания, °С</span></b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">A (VIGON A 300)<sup>1</sup><o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">MPC<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">&gt;7<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">15<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Спрей в воздухе<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">10<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">50<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">10/40<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">A (VIGON A 300)<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">MPC<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">&gt;7<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">7<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Струи, конвейерное оборудование<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">5<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">55–60<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">2&times;5/20<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">B (VIGON N 600)<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">MPC<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">7<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">15<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Спрей в воздухе<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">10<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">50<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">10/40<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">B (VIGON N 600)<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">MPC<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">7<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">7<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Струи, конвейерное оборудование<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">5<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">55–60<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">2×5/20<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">C (VIGON A 250)<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">MPC<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">&gt;7<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">25<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Струи внутри жидкости<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">10<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">50<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">10/40<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">D (ATRON)<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">ПАВ<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">&gt;7<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">15<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Спрей в воздухе<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">10<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">50<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">10/40<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">D (ATRON)<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">ПАВ<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">&gt;7<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">7<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Струи, конвейерное оборудование<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">5<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">55–60<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">2×5/20<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">E (ZESTRON CO 150)<sup>2</sup><o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Сорастворители<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">–<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">50/50 смесь с фторированными эфирами<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Струи внутри жидкости, HFE-процесс<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">10<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">68<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">10/45<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">F (ZESTRON FA)<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Растворители<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">–<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">100<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Ультразвук<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">10<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">50<o:p></o:p></span></p>
+         </td> <td style="padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">2×10/20<o:p></o:p></span></p>
+         </td> </tr>
+     </tbody>
+   </table>
+ </div>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"> </span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">После завершения операций отмывки все тестовые платы были проверены на чистоту в аналитическом центре. Проверка качества отмывки была выполнена путем визуального контроля с помощью микроскопа с 20–200-кратным увеличением. Результаты оценены в соответствии с IPC-A-610E. Достигаемый уровень чистоты и количество обнаруженных остатков были классифицированы как полностью удаленные, частично удаленные и неудаленные.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center; background: white;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Результаты тестов для halogen-free паяльных паст<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Оценка серии испытаний с halogen-free паяльными пастами показывает, что хорошие результаты могут быть достигнуты со всеми протестированными отмывочными процессами. MPC-технология и растворы ПАВ наилучшим образом удаляют остатки halogen-free паяльных паст. Подробное изучение результатов отмывки показывает, что при стандартных параметрах процесса полностью или частично удаляются остатки 97% изученных не содержащих галогены паяльных паст. В частности, pH нейтральная отмывочная жидкость демонстрирует полное удаление остатков вплоть до 75% изученных образцов. Только в 3% из общего объема выборки невозможно удалить остатки в достаточной степени. Однако важно отметить, что в каждом из этих случаев были использованы разные halogen-free паяльные пасты.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Ультразвуковой процесс с использованием растворителей (ZESTRON FA) тоже показывает отличные результаты: полностью удаляется 81% остатков паяльных паст. В жидкостях на водной основе в процессах отмывки струями в жидкости оптимальный результат отмывки был получен для 38% halogen-free паяльных паст. Для всех случаев, кроме одного, было показано, что незначительная корректировка параметров процесса позволяет получить необходимую степень очистки.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center; background: white;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Сравнение результатов теста для безотмывочных паяльных паст<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Разумно систематизировать полученные результаты тестов с halogen-free безотмывочными паяльными пастами, проведя прямое сравнение с доступными на рынке безотмывочными пастами. В этом исследовании изучали все безотмывочные паяльные пасты, не содержащие специальной маркировки halogen-free, которые имели превышение предельного значения по галогенам. <o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Для получения данных сравнивали идентичные процессы с одинаковыми параметрами. Прямое сравнение показывает, что когда используются halogen-free паяльные пасты, требуется несколько большая оптимизация процесса. Несмотря на то, что полностью удаляется до 69% остатков традиционных безотмывочных паяльных паст, только 52% остатков halogen-free паяльных паст может быть полностью удалено. Количество процессов, которые требуют оптимизации, пропорционально больше: 45% для halogen-free паяльных паст по сравнению с 28% для обычных безотмывочных паст. В обоих случаях только 3% от общего количества результатов — неудовлетворительны. В таких редких случаях можно подобрать альтернативные отмывочные среды, которые обеспечат необходимую степень очистки.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Главное — нужно понимать, что каждый очиститель для сборок позволяет очищать разные типы паст. Может получиться, что очиститель B полностью удалит все остатки, а очиститель А фактически ничего не вымоет. Следовательно, можно утверждать, что независимо от природы чистящего процесса переход к halogen-free паяльным пастам не является большой проблемой (рис. 1). Из-за того что увеличивается количество процессов, которые требуют оптимизации при использовании не содержащих галоген паяльных паст, по сравнению с традиционными безотмывочными пастами в представленной серии испытаний, мы рекомендуем пользователям заниматься изменением процесса, тщательно обдумывая последствия. Желание применять halogen-free паяльные пасты (рис. 2), совместимые с используемыми в настоящее время отмывочными жидкостями и оборудованием, вполне осуществимо, но необходимо заниматься процессом в тесном сотрудничестве со специалистами в области очистки.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: -36.3pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><img width="667" height="447" src="048e831db9499263c671988ebda08920.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/048/048e831db9499263c671988ebda08920.jpg" title="30_pic1.jpg" alt="30_pic1.jpg"  /></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin-left: -2cm; text-align: center; line-height: 9pt; background: white;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">  
+      <br />
+     
+      <br />
+     Рис. 1. Результаты очистки флюсовых остатков halogen-free паяльных паст различными очистителями без изменения параметров процесса (классификация результатов по трем типам)<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" align="center" style="margin-left: -21.3pt; text-align: center; text-indent: -49.6pt; line-height: 9pt; background: white;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><img width="749" height="294" src="e7c1b3f96db4f3e2f67aff3a1221825b.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/e7c/e7c1b3f96db4f3e2f67aff3a1221825b.jpg" title="30_pic2.jpg" alt="30_pic2.jpg"  /></span></b><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">  
+      <br />
+     
+      <br />
+     Рис. 2. Сравнение результатов очистки флюсовых остатков традиционных и halogen-free паяльных паст<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center; background: white;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif; color: rgb(7, 118, 71);"> </span></b></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center; background: white;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;"> </span></b></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center; background: white;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Заключение<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Согласно европейским законам, таким как REACH, идея развития «зеленого» производства находит все больше последователей. В таком случае переход с паяльных паст к halogen-free продуктам играет важную роль.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"> </p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Проведенное исследование показало, что, когда используются подходящие отмывочные жидкости, переход к halogen-free паяльным пастам не представляет проблемы, даже если имеющийся отмывочный процесс и требуемая чистота поверхности остаются такими же. Изменение отмывочной жидкости, как правило, не является необходимым. Однако до начала применения новые паяльные пасты необходимо тестировать на совместимость флюсов, содержащихся в пастах, с отмывочной жидкостью и, если потребуется, провести незначительную корректировку параметров процесса.<o:p></o:p></span></p>
+ <div class="cl"></div>
+    <div class="hr"></div>
+</div><div class="right_block"><h4>Темы блога</h4><a href="index-12.htm" tppabs="http://gcmatrix.com/blog/industry_news/">Отраслевые новости</a><a href="index-13.htm" tppabs="http://gcmatrix.com/blog/spec_xp/" class="selected">Контрактная сборка</a><a href="index-5.htm" tppabs="http://gcmatrix.com/blog/quality/">Вопросы качества</a><a href="index-14.htm" tppabs="http://gcmatrix.com/blog/purchase_xp/">Компоненты</a><a href="index-15.htm" tppabs="http://gcmatrix.com/blog/%D1%81ircuitry_talks/">Печатные платы</a><a href="index-16.htm" tppabs="http://gcmatrix.com/blog/the-company-matrix/">Компания Матрикс</a><a href="index-2.htm" tppabs="http://gcmatrix.com/blog/">Все темы блога</a></div><div class="cl"></div>
+    </div>
+</div>
+            </div>
+            <div class="footer">
+                <div class="layout">
+                    <div class="logo">
+	<a href="index.htm" tppabs="http://gcmatrix.com/">
+		<img src="/images/logo.jpg" tppabs="http://gcmatrix.com/img//images/logo.jpg" alt="Матрикс">
+	</a>
+</div><div class="menu">
+    <ul><li>
+                <a href="index-1.htm" tppabs="http://gcmatrix.com/about-company/">О компании</a>
+            </li><li class="act">
+                <a href="index-2.htm" tppabs="http://gcmatrix.com/blog/">Наш блог</a>
+            </li></ul><ul><li>
+                <a href="index-3.htm" tppabs="http://gcmatrix.com/contract-assembly/">Контрактная сборка</a>
+            </li><li>
+                <a href="javascript:if(confirm('https://pcb.gcmatrix.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://pcb.gcmatrix.com/'" tppabs="https://pcb.gcmatrix.com/">Печатные платы</a>
+            </li></ul><ul><li>
+                <a href="index-4.htm" tppabs="http://gcmatrix.com/components/">Компоненты</a>
+            </li></ul>
+    <div class="cl"></div>
+</div>                    <div class="phone">
+                        <b>+7 (383) 383-08-05</b><span>周一至周五，9点-18点</span>
+                    </div>
+                    <div class="cl"></div>
+                    <div class="copyright_site">©2012-2020 BOMIC ELECTRON LLC
+<p align="center">
+ <br>
+</p>
+<p align="center">
+</p>
+<p>
+</p>
+ <br></div>
+                    <div class="cl"></div>
+                    <div class="bx-composite-bt">
+                        <div id="bx-composite-banner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'SVoXb2A8Sx';var d=document;var w=window;function l(){
+  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+  s.src = '//code.jivosite.com/script/widget/'+widget_id
+    ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+  if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
+  else{w.addEventListener('load',l,false);}}})();
+</script>
+<!-- {/literal} END JIVOSITE CODE -->
+    </body>
+</html><!--abe2de538bd6eba06bb1eab02983e229-->

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<style type="text/css">.bx-composite-btn {background: url("sprite-1x.png")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-1x.png*/ no-repeat right 0 #e94524;border-radius: 15px;color: #ffffff !important;display: inline-block;line-height: 30px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-size: 12px !important;font-weight: bold !important;height: 31px !important;padding: 0 42px 0 17px !important;vertical-align: middle !important;text-decoration: none !important;}@media screen   and (min-device-width: 1200px)   and (max-device-width: 1600px)   and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi) {.bx-composite-btn {background-image: url("sprite-2x.png")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-2x.png*/;background-size: 42px 124px;}}  .bx-composite-btn-fixed {position: absolute;top: -45px;right: 15px;z-index: 10;}  .bx-btn-white {background-position: right 0;color: #fff !important;}  .bx-btn-black {background-position: right -31px;color: #000 !important;}  .bx-btn-red {background-position: right -62px;color: #555 !important;}  .bx-btn-grey {background-position: right -93px;color: #657b89 !important;}  .bx-btn-border {border: 1px solid #d4d4d4;height: 29px !important;line-height: 29px !important;}  .bx-composite-loading {display: block;width: 40px;height: 40px;background: url("loading.gif")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/loading.gif*/;}</style>
+<script type="text/javascript" data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','banner':{'url':'http://www.1c-bitrix.ru/composite/','text':'','bgcolor':'#ff045f','style':'white'},'storageBlocks':[],'dynamicBlocks':[],'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}else{w.frameRequestFail = f;}return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();})(window, document);</script>
+
+
+<link href="core.min.css-14451916572854.css" tppabs="http://gcmatrix.com/bitrix/js/main/core/css/core.min.css?14451916572854" type="text/css" rel="stylesheet" />
+<link href="jquery.fancybox.css-14175171805160.css" tppabs="http://gcmatrix.com/css/jquery.fancybox.css?14175171805160" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="jquery.bxslider.css-14175171804040.css" tppabs="http://gcmatrix.com/css/jquery.bxslider.css?14175171804040" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="style.css-156947828531018.css" tppabs="http://gcmatrix.com/css/style.css?156947828531018" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="style.css-1417517180236.css" tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/style.css?1417517180236" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="styles.css-1554948055583.css" tppabs="http://gcmatrix.com/local/templates/main/styles.css?1554948055583" type="text/css" data-template-style="true" rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'http://gcmatrix.com/blog/purchase_xp/thermo-compensated-technological-sensors-for-humidity-and-temperature-with-digital-output-honeywell/DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'mx','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/'});</script>
+
+
+<script type="text/javascript" src="core.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core.min.js?147851119173480"></script>
+<script type="text/javascript" src="core_db.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_db.min.js?14646669905048"></script>
+<script type="text/javascript" src="core_ajax.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ajax.min.js?147851119221031"></script>
+<script type="text/javascript" src="json2.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/json/json2.min.js?14175171793467"></script>
+<script type="text/javascript" src="core_ls.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ls.min.js?14451916607365"></script>
+<script type="text/javascript" src="core_fx.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_fx.min.js?14451916579592"></script>
+<script type="text/javascript" src="core_frame_cache.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_frame_cache.min.js?147851118811191"></script>
+<script type="text/javascript">var bxDate = new Date(); document.cookie="mx_TIME_ZONE="+bxDate.getTimezoneOffset()+"; path=/; expires=Fri, 01-Jan-2038 00:00:00 GMT"</script>
+
+
+
+<script type="text/javascript" src="jquery-3.4.1.min.js" tppabs="http://gcmatrix.com/js/jquery-3.4.1.min.js?142112976595790"></script>
+<script type="text/javascript" src="jquery.carouFredSel.js" tppabs="http://gcmatrix.com/js/jquery.carouFredSel.js?141751718036181"></script>
+<script type="text/javascript" src="jquery.bxslider.min.js" tppabs="http://gcmatrix.com/js/jquery.bxslider.min.js?141751718019368"></script>
+<script type="text/javascript" src="jquery-ui.js" tppabs="http://gcmatrix.com/js/jquery-ui.js?1417517180485937"></script>
+<script type="text/javascript" src="jquery.mask.min.js" tppabs="http://gcmatrix.com/js/jquery.mask.min.js?14175171804741"></script>
+<script type="text/javascript" src="jquery.formstyler.min.js" tppabs="http://gcmatrix.com/js/jquery.formstyler.min.js?141751718015758"></script>
+<script type="text/javascript" src="jquery.fancybox.js" tppabs="http://gcmatrix.com/js/jquery.fancybox.js?141751718050725"></script>
+<script type="text/javascript" src="script2.js" tppabs="http://gcmatrix.com/js/script.js?14175171807558"></script>
+<script type="text/javascript" src="script6.js" tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/script.js?1417517180990"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "72e5454bdb8b62a08488572b66bc822a"]); _ba.push(["host", "http://gcmatrix.com/blog/purchase_xp/thermo-compensated-technological-sensors-for-humidity-and-temperature-with-digital-output-honeywell/gcmatrix.com"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+<title>Термокомпенсированные датчики влажности и температуры с цифровым выходом компании Honeywell - Матрикс</title><!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(52706338, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="1.gif" tppabs="https://mc.yandex.ru/watch/52706338" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+<div id="panel">
+    </div>
+<div class="wrapper">
+    <div class="header">
+        <div class="layout">
+            <div class="logo">
+                <a>
+                    <img src="/images/logo.jpg" tppabs="http://gcmatrix.com/img//images/logo.jpg" alt="Матрикс">
+                </a>
+            </div>            <div class="text">
+            中国领先的印刷电路板OEM制造商                       </div>
+            <div class="phone">
+                <b class="h2">+7 (383) 383-08-05</b><div class="d-flex">
+                <div class="mr-2">
+                    <a href="skype:live:a2ad12d4eb62443e?chat" target="_blank"><span class="i-mess i-mess-skype"></span></a>
+                    <a href="tg://resolve?domain=matrix_elektronika" target="_blank"><span class="i-mess i-mess-telegram"></span></a>
+                    <a href="javascript:if(confirm('https://wa.me/79994638549  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://wa.me/79994638549'" tppabs="https://wa.me/79994638549" target="_blank"><span class="i-mess i-mess-whatsapp"></span></a>
+                    <a href="viber://pa?chatURI=matrixelektronika" target="_blank"><span class="i-mess i-mess-viber"></span></a>
+                </div>
+                <div class="comment">周一至周五，9点-18点					</div>
+            </div>
+            </div>
+            <div class="cl"></div>
+            <div class="menu">
+                <a href="index.htm" tppabs="http://gcmatrix.com/" class="home"></a>
+                <ul><li>
+                    <a href="index.html" tppabs="http://gcmatrix.com/about-company/"  >首页</a>
+                </li><li>
+                    <a href="index-2.htm" tppabs="http://gcmatrix.com/blog/"  >关于我们</a>
+                </li><li>
+                    <a href="index-3.htm" tppabs="http://gcmatrix.com/contract-assembly/"  >PCB组装</a>
+                </li><li>
+                    <a href="javascript:if(confirm('https://pcb.gcmatrix.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://pcb.gcmatrix.com/'" tppabs="https://pcb.gcmatrix.com/"   target="_blank">PCB</a>
+                </li><li>
+                    <a href="index-4.htm" tppabs="http://gcmatrix.com/components/"  >电子元器件</a>
+                </li></ul>
+                <div class="cl"></div>
+            </div>        </div>
+    </div>
+    <div class="content"><div class="news blog_page">
+    <div class="layout"><div class="left text_page">
+    <h1>Термокомпенсированные датчики влажности и температуры с цифровым выходом компании Honeywell</h1>
+    <span class="date">19 декабря</span>
+    <div class="cl"></div><div class="quote">В статье рассматриваются датчики компании Honeywell серий HIH613x. Эти датчики обеспечивают цифровой выход данных о влажности и температуре, имеют встроенную схему термокомпенсации, компенсации сдвига шкалы, дрейфа нуля и термического гистерезиса с гарантированной погрешностью измерений не более 5&#37; с учетом возможных источников ошибок. Высокая точность, стабильность параметров и надежность датчиков позволяют применять их для решения задач автоматизации систем отопления и вентиляции офисных и промышленных зданий и помещений, в бытовых и медицинских приборах и системах, а также при метеонаблюдениях.</div><p class="MsoNormal" align="center" style="margin: 15pt 0cm 2.25pt; text-align: center; background: white;"><b><span style="font-size: 9pt; font-family: Verdana, sans-serif;">Введение<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Компания Honeywell &mdash; один из ведущих производителей датчиков и переключателей, предлагаемых для четырех секторов рынка: промышленное оборудование, медицинское оборудование, транспорт, аэрокосмические и военные приложения.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Среди многих типов датчиков, выпускаемых Honeywell, есть датчики влажности. Практически вся линейка этих датчиков, за исключением серии НСН-1000, обладает встроенными схемами выделения, усиления и предварительной обработки сигнала, что обеспечивает точность измерений в пределах &plusmn;3% при малом временном дрейфе параметров и высокой линейности характеристики (табл. 1). Аналоговые датчики влажности серии HIH-4602 содержат в одном корпусе еще и температурный датчик (входным сигналом, пропорциональным влажности, является напряжение, а температура отслеживается по изменению сопротивления). Интеграция двух датчиков в одном корпусе позволяет сэкономить на покупке дополнительного устройства, повысить точность измерений, так как появляется возможность учесть влияние температуры на показания датчика влажности.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Таблица 1. Линейка датчиков влажности Honeywell</span></b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);"><o:p></o:p></span></p>
+ 
+<div align="center"> 
+  <table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: none;"> 
+    <tbody>
+      <tr> <td style="border: 1pt solid rgb(136, 140, 135); padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Серия/параметр</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> <td style="border-style: solid solid solid none; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">HIH4000</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> <td style="border-style: solid solid solid none; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">HIH4010/4020/4021</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> <td style="border-style: solid solid solid none; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">HIH4030/4031</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> <td style="border-style: solid solid solid none; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">HIH5030/5031</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> <td style="border-style: solid solid solid none; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">HIH6130/6131</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> <td style="border-style: solid solid solid none; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">HIH4602</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> <td style="border-style: solid solid solid none; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">HCH1000</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Тип выхода<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Напряжение<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Напряжение<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Напряжение<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Напряжение<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">I<sup>2</sup>C<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Напряжение (влажность) Сопротивление (температура)<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Емкость<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Корпус<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">SIP<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">SIP<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Поверхностный монтаж<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Поверхностный монтаж<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">SOIC8<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">TO-5/TO-39<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">SIP<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Время установления значений, с<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">5<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">5<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">5<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">5<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">6<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">50<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">15<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Температурный диапазон, &deg;С<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">&ndash;40&hellip;+85<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">–40…+85<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">–40…+85<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">–40…+85<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">–20…+85<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">–40…+85<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">–40…+120<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Защитный фильтр<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> <o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">+<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">+<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">+<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">+<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">+<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> <o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Покрытие<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> <o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">+<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">+<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">+<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">+<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">+<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> <o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Калибровочные таблицы<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">+<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">+<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> <o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> <o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> <o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> <o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> <o:p></o:p></span></p>
+         </td> </tr>
+     </tbody>
+  </table>
+ </div>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">В сериях HIH6130/HIH6131 компания Honeywell пошла еще дальше: эти датчики обеспечивают не только цифровой выход данных о влажности и температуре, но и имеют встроенную схему термокомпенсации (компенсация сдвига шкалы, дрейфа нуля, термического гистерезиса). Выход I<sup>2</sup>C позволяет выносить датчик за пределы основной платы для размещения его в нужном месте без потери качества сигнала, тогда как при удлинении линии с аналоговым сигналом увеличивается вероятность воздействия шумов и наводок. Можно объединять датчики в небольшую сеть, комбинируя их с датчиками этого же или другого типов.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 0cm 2.25pt; text-align: center; background: white;"><b><span style="font-size: 9pt; font-family: Verdana, sans-serif;">Общая характеристика датчиков HIH613x<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Датчики серий HIH613x имеют в своей основе емкостной чувствительный элемент с многослойным термореактивным полимером. Многослойная конструкция элемента делает его устойчивым к множеству неблагоприятных факторов, таких как конденсат, пыль, грязь, масло, часто встречающиеся химические реагенты (например, бытовая химия).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Широкий диапазон рабочих температур от –25 до +85 °C позволяет применять их как внутри помещений, так и вне их, при этом можно решить разнообразные производственные или медицинские задачи. Конфигурируемые один или два порога служат для того, чтобы сигнализировать пользователю об уровне относительной влажности: отслеживается как превышение, так и падение ниже определенных уровней.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Для обработки сигналов и контроля работы датчика применена специализированная мультифункциональная ASIC-схема, что позволяет снизить или исключить риски, связанные с OEM-калибровкой. При оцифровке значений выходных параметров применяется 14-битный АЦП.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Датчики HIH613x поставляются в компактных стандартных корпусах поверхностного монтажа SOIC-8 с бессвинцовым припоем на выводах и без применения соединений галогенов. Отличия заключаются в том, что датчики серии HIH6130 не имеют защитного фильтра и должны применяться в условиях, исключающих образование конденсата. Датчики HIH6131 дополнены гидрофобным фильтром и устойчивы к появлению конденсата, что расширяет возможную область и места их применения (рис. 1).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; background: white;"><a href="javascript:if(confirm('http://www.kit-e.ru/assets/images/1201/34_pic1.jpg  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='images/1201/34_pic1.jpg'" tppabs="http://www.kit-e.ru/assets/images/1201/34_pic1.jpg" target="_blank"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(115, 35, 35); text-decoration: none;"><v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f"> <v:stroke joinstyle="miter"> <v:formulas> <v:f eqn="if lineDrawn pixelLineWidth 0"> <v:f eqn="sum @0 1 0"> <v:f eqn="sum 0 0 @1"> <v:f eqn="prod @2 1 2"> <v:f eqn="prod @3 21600 pixelWidth"> <v:f eqn="prod @3 21600 pixelHeight"> <v:f eqn="sum @0 0 1"> <v:f eqn="prod @6 1 2"> <v:f eqn="prod @7 21600 pixelWidth"> <v:f eqn="sum @8 21600 0"> <v:f eqn="prod @7 21600 pixelHeight"> <v:f eqn="sum @10 21600 0"> </v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:formulas> <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"> <o:lock v:ext="edit" aspectratio="t"> </o:lock></v:path></v:stroke></v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" alt="Внешний вид датчиков температуры и влажности HIH6130 и HIH6131" href="javascript:if(confirm('http://www.kit-e.ru/assets/images/1201/34_pic1.jpg  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.kit-e.ru/assets/images/1201/34_pic1.jpg'" tppabs="http://www.kit-e.ru/assets/images/1201/34_pic1.jpg" target="&quot;_blank&quot;" style="width: 174.75pt; height: 133.5pt;" o:button="t"> <v:imagedata src="file:///C:\Users\owen\AppData\Local\Temp\msohtmlclip1\01\clip_image001.jpg" o:href="javascript:if(confirm('http://www.kit-e.ru/assets/images/1201/34_pic1.jpg  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.kit-e.ru/assets/images/1201/34_pic1.jpg'" tppabs="http://www.kit-e.ru/assets/images/1201/34_pic1.jpg"> </v:imagedata></v:shape></span></b></a><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);"> 
+      <br />
+     </span></b><img src="6e3b5c153c682792151100c5eb97cd01.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/6e3/6e3b5c153c682792151100c5eb97cd01.jpg" title="34_pic1.jpg" border="0" alt="34_pic1.jpg" width="233" height="178"  /><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">
+      <br />
+     Рис. 1. Внешний вид датчиков температуры и влажности HIH6130 и HIH6131<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">На сегодня доступны серии датчиков температуры/влажности с цифровым выходом с интерфейсом I<sup>2</sup>C без защитного фильтра в упаковках по 1000 и по 5 штук (образцы) — HIH6130-021-001 и HIH6130-021-001S соответственно (рис. 2). Аналогично поставляются приборы в защищенном исполнении: HIH6131-021-001 и HIH6131-021-001S.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; background: white;"><a href="javascript:if(confirm('http://www.kit-e.ru/assets/images/1201/34_pic2.jpg  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='images/1201/34_pic2.jpg'" tppabs="http://www.kit-e.ru/assets/images/1201/34_pic2.jpg" target="_blank"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(115, 35, 35); text-decoration: none;"><v:shape id="_x0000_i1026" type="#_x0000_t75" alt="Номенклатура датчиков Honeywell HIH613x" href="javascript:if(confirm('http://www.kit-e.ru/assets/images/1201/34_pic2.jpg  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.kit-e.ru/assets/images/1201/34_pic2.jpg'" tppabs="http://www.kit-e.ru/assets/images/1201/34_pic2.jpg" target="&quot;_blank&quot;" style="width: 530.25pt; height: 198pt;" o:button="t"><v:imagedata src="file:///C:\Users\owen\AppData\Local\Temp\msohtmlclip1\01\clip_image002.jpg" o:href="javascript:if(confirm('http://www.kit-e.ru/assets/images/1201/34_pic2.jpg  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.kit-e.ru/assets/images/1201/34_pic2.jpg'" tppabs="http://www.kit-e.ru/assets/images/1201/34_pic2.jpg"></v:imagedata></v:shape></span></b></a><img src="4c274e3548cd3aa636e2d9436472d75f.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/4c2/4c274e3548cd3aa636e2d9436472d75f.jpg" title="34_pic2.jpg" border="0" alt="34_pic2.jpg" width="707" height="264"  /><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);"> 
+      <br />
+     
+      <br />
+     Рис. 2. Номенклатура датчиков Honeywell HIH613x<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Датчики серий HIH613x отличает высокая стабильность параметров, высокая надежность, компактность, высокая энергетическая эффективность и гарантированная точность.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Одним из важных конкурентных преимуществ датчиков HIH613x является гарантированная точность измерений в пределах ±5% во всем температурном диапазоне от 5 до 50 °C при уровне относительной влажности от 10 до 90%, что достигается за счет цифровой коррекции и обработки выходных данных специализированной схемой. Показатель ±5% учитывает:<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 0cm 0cm 0.0001pt 22.5pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol; color: rgb(28, 27, 28);">&middot;<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">нелинейность характеристики емкостного сенсора;<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 0cm 0cm 0.0001pt 22.5pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol; color: rgb(28, 27, 28);">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">гистерезис при изменении влажности;<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 0cm 0cm 0.0001pt 22.5pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol; color: rgb(28, 27, 28);">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">температурный дрейф нуля;<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 0cm 0cm 0.0001pt 22.5pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol; color: rgb(28, 27, 28);">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">температурный сдвиг шкалы;<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 0cm 0cm 0.0001pt 22.5pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol; color: rgb(28, 27, 28);">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">температурный гистерезис.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Влажность в диапазонах 0–10 RH и 90–100 RH и/или за пределами диапазона температур от 5 до 50 °С (в котором работает термокомпенсация), но в пределах рабочего диапазона температур, также можно измерять, однако при таких крайних условиях делать это можно уже только после индивидуальной калибровки рассматриваемых датчиков.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Основные технические параметры HIH613x представлены в таблице 2.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Таблица 2. Основные технические параметры HIH613x</span></b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);"><o:p></o:p></span></p>
+ 
+<div align="center"> 
+  <table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: none;"> 
+    <tbody>
+      <tr> <td style="border: 1pt solid rgb(136, 140, 135); padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Параметр</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> <td style="border-style: solid solid solid none; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">min</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> <td style="border-style: solid solid solid none; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">типовое</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> <td style="border-style: solid solid solid none; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">max</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Напряжение питания, В<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">2,3<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">3,3<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">5,5<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Ток в активном режиме (при напряжении питания 3,3 В), мА<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">–<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">0,65<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">1<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Ток в спящем режиме (при напряжении питания 3,3 В), мкА<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">–<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">0,6<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">1<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Время запуска (от включения до получения данных), мс<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">–<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">50<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">60<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Время отклика на изменение параметров внешней среды, с<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">5<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">–<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">30<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Диапазон рабочих температур, °С<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">–20<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">–<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">80<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Компенсированный диапазон, °С<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">5<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">–<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">50<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; rgb(136, 140, 135); rgb(136, 140, 135); rgb(136, 140, 135); border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Диапазон измеряемой относительной влажности (без конденсата), %<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">0<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">–<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; rgb(136, 140, 135); border-bottom-width: 1pt; rgb(136, 140, 135); border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">100<o:p></o:p></span></p>
+         </td> </tr>
+     </tbody>
+  </table>
+ </div>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">На рис. 3 показана относительная ошибка измерений в зависимости от относительной влажности и температуры воздуха.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; background: white;"><a href="javascript:if(confirm('http://www.kit-e.ru/assets/images/1201/34_pic3.jpg  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='images/1201/34_pic3.jpg'" tppabs="http://www.kit-e.ru/assets/images/1201/34_pic3.jpg" target="_blank"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(115, 35, 35); text-decoration: none;"><v:shape id="_x0000_i1027" type="#_x0000_t75" alt="Относительная ошибка измерений для серий HIH613x" href="javascript:if(confirm('http://www.kit-e.ru/assets/images/1201/34_pic3.jpg  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.kit-e.ru/assets/images/1201/34_pic3.jpg'" tppabs="http://www.kit-e.ru/assets/images/1201/34_pic3.jpg" target="&quot;_blank&quot;" style="width: 529.5pt; height: 342.75pt;" o:button="t"> <v:imagedata src="file:///C:\Users\owen\AppData\Local\Temp\msohtmlclip1\01\clip_image003.jpg" o:href="javascript:if(confirm('http://www.kit-e.ru/assets/images/1201/34_pic3.jpg  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.kit-e.ru/assets/images/1201/34_pic3.jpg'" tppabs="http://www.kit-e.ru/assets/images/1201/34_pic3.jpg"> </v:imagedata></v:shape></span></b></a><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);"> 
+      <br />
+     </span></b><img src="83f8f082fc13ff3ab4a5d26d9fe56a09.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/83f/83f8f082fc13ff3ab4a5d26d9fe56a09.jpg" title="34_pic3.jpg" border="0" alt="34_pic3.jpg" width="706" height="457"  /><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">
+      <br />
+     Рис. 3. Относительная ошибка измерений в зависимости от относительной влажности и температуры воздуха для серий HIH613x<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Цифровая коррекция сигнала позволяет исключить индивидуальное тестирование и калибровку датчика (в пределах компенсированного диапазона). Это снижает временные и аппаратные затраты на производство, тестирование и запуск конечного изделия и повышает надежность и точность системы, использующей этот датчик. Дополнительно к этому упрощается процесс замены вышедшего из строя датчика: один датчик просто заменяется другим — без дополнительных настроек или градуировки.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">14-битное АЦП помогает отслеживать даже незначительные вариации температуры или относительной влажности. За счет оригинальных схемотехнических решений и цифровой предобработки сигнала датчики серии HIH613x обладают высокой временной стабильностью параметров: нарастание погрешности — всего 1,5% за пять лет.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Обычно для выхода на рабочий режим после монтажа датчику влажности необходимо пройти процедуру регидрации в течение 12 ч при относительной влажности 75%, что требует специального оборудования. Датчики Honeywell также нуждаются в процедуре регидрации, но для них она протекает всего за 5 ч на открытом воздухе при влажности более 50%.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Следует отметить, что значительный перегрев и высушивание датчика приводят к тому, что в течение некоторого времени показания влажности не соответствуют реальным данным, но это явление обратимо, и после регидрации в течение нескольких часов, при обычных условиях, показания возвращаются в норму. Причем это время регидрации у описываемых в статье датчиков выше, чем у большинства существующих на рынке моделей. Аналогичная ситуация и при конденсировании влаги на датчике.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 0cm 2.25pt; text-align: center; background: white;"><b><span style="font-size: 9pt; font-family: Verdana, sans-serif;">Особенности работы с датчиками HIH613x<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Подключение датчиков требует минимального количества внешних элементов: это фильтрующие конденсаторы на выводы питания и подтягивающие резисторы шины I<sup>2</sup>C. Прямой и инверсный выходы индикации (предупреждения) служат для организации индикации состояния среды (в норме/за пределами заданных порогов) и работы силовых ключей для управления внешними устройствами или приборами. Доступность одновременно двух сигнальных выходов с разными выходными уровнями позволяет управлять как верхними, так и нижними ключами, в зависимости от требований приложения (рис. 4). Для задания уровней срабатывания (называемых также &laquo;тревожными уровнями&raquo;) используется командный режим работы датчика.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; background: white;"><a href="javascript:if(confirm('http://www.kit-e.ru/assets/images/1201/34_pic4.jpg  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='images/1201/34_pic4.jpg'" tppabs="http://www.kit-e.ru/assets/images/1201/34_pic4.jpg" target="_blank"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(115, 35, 35); text-decoration: none;"><v:shape id="_x0000_i1028" type="#_x0000_t75" alt="Типовая схема включения HIH613 x" href="javascript:if(confirm('http://www.kit-e.ru/assets/images/1201/34_pic4.jpg  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.kit-e.ru/assets/images/1201/34_pic4.jpg'" tppabs="http://www.kit-e.ru/assets/images/1201/34_pic4.jpg" target="&quot;_blank&quot;" style="width: 498pt; height: 195.75pt;" o:button="t"><v:imagedata src="file:///C:\Users\owen\AppData\Local\Temp\msohtmlclip1\01\clip_image004.jpg" o:href="javascript:if(confirm('http://www.kit-e.ru/assets/images/1201/34_pic4.jpg  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.kit-e.ru/assets/images/1201/34_pic4.jpg'" tppabs="http://www.kit-e.ru/assets/images/1201/34_pic4.jpg"></v:imagedata></v:shape></span></b></a><img src="acd8e4dbaa9e340b2c9a4333ef84bcab.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/acd/acd8e4dbaa9e340b2c9a4333ef84bcab.jpg" title="34_pic4.jpg" border="0" alt="34_pic4.jpg" width="664" height="261"  /><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);"> 
+      <br />
+     
+      <br />
+     Рис. 4. Типовая схема включения HIH613 x<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Управлять режимами энергопотребления также довольно просто. При включении датчик находится в состоянии низкого энергопотребления. Для вывода из него и начала измерений необходимо послать запрос. После этого датчик выходит в активный режим и начинает измерения, по завершении которых обновляет значения регистров данных. Типовое время цикла измерений составляет 36,65 мс. Наряду с данными выводится также одно из четырех состояний датчика: нормальное состояние — данные готовы и действительны; данные уже были считаны (или первый цикл измерений); командный режим датчика и диагностический режим.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 0cm 2.25pt; text-align: center; background: white;"><b><span style="font-size: 9pt; font-family: Verdana, sans-serif;">Области применения<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Наличие цифрового выходного сигнала позволяет легко выносить датчик за пределы устройства, размещая его в нужных местах, упрощается его монтаж и обслуживание, а также способ последующей обработки сигнала. Выход I<sup>2</sup>C легко интегрируется с любым типом управляющего микроконтроллера или микропроцессора, менее подвержен влиянию импульсных и перекрестных помех, чем аналоговый сигнал.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Нижний порог напряжения питания датчиков дает возможность применять их в приложениях, критичных к уровню энергопотребления, в том числе совместно с беспроводными приемопередатчиками сенсорных сетей. Для экономии энергии при отсутствии необходимости измерений датчик может быть переведен в режим пониженного энергопотребления с током всего 1 мкА (ток, потребляемый датчиком в активном режиме, тоже не велик — всего около 650 мкА). Режим низкого энергопотребления позволяет синхронизировать потребление датчика с потреблением, например, беспроводного узла сенсорной сети, при этом датчик выходит в рабочий режим только для проведения очередных измерений.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Область возможного применения датчиков, благодаря их параметрам и их высокой стабильности, охватывает широкий спектр. Они могут быть использованы в системах вентиляции и кондиционирования для измерения температуры и влажности воздуха, измерения теплосодержания, в системах поддержания заданных параметров микроклимата помещения совместно с термостатами, нагревателями, увлажнителями или осушителями воздуха. Наличие сигнальных выводов с управляемыми порогами срабатывания позволяет использовать серии HIH613x в системах обнаружения протечек и системах пожарной сигнализации.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Не менее важно обнаружение повышенной влажности и при работе компрессионных установок. Цифровой выходной сигнал и защищенное исполнение дают возможность оптимизировать размещение датчика и своевременно обнаруживать нештатную ситуацию в виде превышения допустимого уровня влажности или превышения температуры. Также актуально применение датчиков HIH613x в серверных помещениях для контроля климата и управления вентиляционным оборудованием, а также в коммутационных шкафах, стойках для своевременного обнаружения перегрева, образования конденсата или начала пожара, особенно в случае, если данные объекты находятся на территории других организаций, в местах общего доступа.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Гарантированная точность в определенной полосе температур и влажности и малый временной дрейф позволяют использовать данные датчики влажности в установках респираторной терапии, в частности для лечения и профилактики синдрома внезапной ночной остановки дыхания (аппараты СИПАП-терапии), обеспечивая комфортные и безопасные для пациента условия ухода.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Следующая область также включает в себя медицинские применения (но не ограничивается ими) — это инкубаторы и системы поддержания микроклимата.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Возможность датчиков HIH613 x работать и при отрицательных температурах позволяет применять их для автоматизации станций метеонаблюдений.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 0cm 2.25pt; text-align: center; background: white;"><b><span style="font-size: 9pt; font-family: Verdana, sans-serif;">Заключение<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Цифровые датчики относительной влажности и температуры Honeywell серий HIH6130/6131 являются оптимальным решением для многих приложений, особенно в коммерческом диапазоне температур. Их отличает высокая временная стабильность параметров, гарантированная точность в пределах компенсированного диапазона, компактность, удобство монтажа и размещения. Кроме того, датчики устойчивы к циклам высушивание/перегрев/переувлажнение и достаточно быстро (в течение нескольких часов) возвращаются к нормальному состоянию.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal"><o:p> </o:p></p>
+<div class="cl"></div>
+    <div class="hr"></div>
+</div><div class="right_block"><h4>Темы блога</h4><a href="index-12.htm" tppabs="http://gcmatrix.com/blog/industry_news/">Отраслевые новости</a><a href="index-13.htm" tppabs="http://gcmatrix.com/blog/spec_xp/">Контрактная сборка</a><a href="index-5.htm" tppabs="http://gcmatrix.com/blog/quality/">Вопросы качества</a><a href="index-14.htm" tppabs="http://gcmatrix.com/blog/purchase_xp/" class="selected">Компоненты</a><a href="index-15.htm" tppabs="http://gcmatrix.com/blog/%D1%81ircuitry_talks/">Печатные платы</a><a href="index-16.htm" tppabs="http://gcmatrix.com/blog/the-company-matrix/">Компания Матрикс</a><a href="index-2.htm" tppabs="http://gcmatrix.com/blog/">Все темы блога</a></div><div class="cl"></div>
+    </div>
+</div>
+            </div>
+            <div class="footer">
+                <div class="layout">
+                    <div class="logo">
+	<a href="index.htm" tppabs="http://gcmatrix.com/">
+		<img src="/images/logo.jpg" tppabs="http://gcmatrix.com/img//images/logo.jpg" alt="Матрикс">
+	</a>
+</div><div class="menu">
+    <ul><li>
+                <a href="index-1.htm" tppabs="http://gcmatrix.com/about-company/">О компании</a>
+            </li><li class="act">
+                <a href="index-2.htm" tppabs="http://gcmatrix.com/blog/">Наш блог</a>
+            </li></ul><ul><li>
+                <a href="index-3.htm" tppabs="http://gcmatrix.com/contract-assembly/">Контрактная сборка</a>
+            </li><li>
+                <a href="javascript:if(confirm('https://pcb.gcmatrix.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://pcb.gcmatrix.com/'" tppabs="https://pcb.gcmatrix.com/">Печатные платы</a>
+            </li></ul><ul><li>
+                <a href="index-4.htm" tppabs="http://gcmatrix.com/components/">Компоненты</a>
+            </li></ul>
+    <div class="cl"></div>
+</div>                    <div class="phone">
+                        <b>+7 (383) 383-08-05</b><span>周一至周五，9点-18点</span>
+                    </div>
+                    <div class="cl"></div>
+                    <div class="copyright_site">©2012-2020 BOMIC ELECTRON LLC
+<p align="center">
+ <br>
+</p>
+<p align="center">
+</p>
+<p>
+</p>
+ <br></div>
+                    <div class="cl"></div>
+                    <div class="bx-composite-bt">
+                        <div id="bx-composite-banner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'SVoXb2A8Sx';var d=document;var w=window;function l(){
+  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+  s.src = '//code.jivosite.com/script/widget/'+widget_id
+    ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+  if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
+  else{w.addEventListener('load',l,false);}}})();
+</script>
+<!-- {/literal} END JIVOSITE CODE -->
+    </body>
+</html><!--12696703be9a49da593edc89c7f549c3-->

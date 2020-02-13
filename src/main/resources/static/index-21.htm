@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<style type="text/css">.bx-composite-btn {background: url("sprite-1x.png")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-1x.png*/ no-repeat right 0 #e94524;border-radius: 15px;color: #ffffff !important;display: inline-block;line-height: 30px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-size: 12px !important;font-weight: bold !important;height: 31px !important;padding: 0 42px 0 17px !important;vertical-align: middle !important;text-decoration: none !important;}@media screen   and (min-device-width: 1200px)   and (max-device-width: 1600px)   and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi) {.bx-composite-btn {background-image: url("sprite-2x.png")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-2x.png*/;background-size: 42px 124px;}}  .bx-composite-btn-fixed {position: absolute;top: -45px;right: 15px;z-index: 10;}  .bx-btn-white {background-position: right 0;color: #fff !important;}  .bx-btn-black {background-position: right -31px;color: #000 !important;}  .bx-btn-red {background-position: right -62px;color: #555 !important;}  .bx-btn-grey {background-position: right -93px;color: #657b89 !important;}  .bx-btn-border {border: 1px solid #d4d4d4;height: 29px !important;line-height: 29px !important;}  .bx-composite-loading {display: block;width: 40px;height: 40px;background: url("loading.gif")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/loading.gif*/;}</style>
+<script type="text/javascript" data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','banner':{'url':'http://www.1c-bitrix.ru/composite/','text':'','bgcolor':'#ff045f','style':'white'},'storageBlocks':[],'dynamicBlocks':[],'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}else{w.frameRequestFail = f;}return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();})(window, document);</script>
+
+
+<link href="core.min.css-14451916572854.css" tppabs="http://gcmatrix.com/bitrix/js/main/core/css/core.min.css?14451916572854" type="text/css" rel="stylesheet" />
+<link href="jquery.fancybox.css-14175171805160.css" tppabs="http://gcmatrix.com/css/jquery.fancybox.css?14175171805160" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="jquery.bxslider.css-14175171804040.css" tppabs="http://gcmatrix.com/css/jquery.bxslider.css?14175171804040" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="style.css-156947828531018.css" tppabs="http://gcmatrix.com/css/style.css?156947828531018" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="style.css-1417517180236.css" tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/style.css?1417517180236" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="styles.css-1554948055583.css" tppabs="http://gcmatrix.com/local/templates/main/styles.css?1554948055583" type="text/css" data-template-style="true" rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'http://gcmatrix.com/blog/quality/quality-electronic-and-electronic-components-for-modern-industry/DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'mx','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/'});</script>
+
+
+<script type="text/javascript" src="core.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core.min.js?147851119173480"></script>
+<script type="text/javascript" src="core_db.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_db.min.js?14646669905048"></script>
+<script type="text/javascript" src="core_ajax.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ajax.min.js?147851119221031"></script>
+<script type="text/javascript" src="json2.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/json/json2.min.js?14175171793467"></script>
+<script type="text/javascript" src="core_ls.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ls.min.js?14451916607365"></script>
+<script type="text/javascript" src="core_fx.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_fx.min.js?14451916579592"></script>
+<script type="text/javascript" src="core_frame_cache.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_frame_cache.min.js?147851118811191"></script>
+<script type="text/javascript">var bxDate = new Date(); document.cookie="mx_TIME_ZONE="+bxDate.getTimezoneOffset()+"; path=/; expires=Fri, 01-Jan-2038 00:00:00 GMT"</script>
+
+
+
+<script type="text/javascript" src="jquery-3.4.1.min.js" tppabs="http://gcmatrix.com/js/jquery-3.4.1.min.js?142112976595790"></script>
+<script type="text/javascript" src="jquery.carouFredSel.js" tppabs="http://gcmatrix.com/js/jquery.carouFredSel.js?141751718036181"></script>
+<script type="text/javascript" src="jquery.bxslider.min.js" tppabs="http://gcmatrix.com/js/jquery.bxslider.min.js?141751718019368"></script>
+<script type="text/javascript" src="jquery-ui.js" tppabs="http://gcmatrix.com/js/jquery-ui.js?1417517180485937"></script>
+<script type="text/javascript" src="jquery.mask.min.js" tppabs="http://gcmatrix.com/js/jquery.mask.min.js?14175171804741"></script>
+<script type="text/javascript" src="jquery.formstyler.min.js" tppabs="http://gcmatrix.com/js/jquery.formstyler.min.js?141751718015758"></script>
+<script type="text/javascript" src="jquery.fancybox.js" tppabs="http://gcmatrix.com/js/jquery.fancybox.js?141751718050725"></script>
+<script type="text/javascript" src="script2.js" tppabs="http://gcmatrix.com/js/script.js?14175171807558"></script>
+<script type="text/javascript" src="script6.js" tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/script.js?1417517180990"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "72e5454bdb8b62a08488572b66bc822a"]); _ba.push(["host", "http://gcmatrix.com/blog/quality/quality-electronic-and-electronic-components-for-modern-industry/gcmatrix.com"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+<title>Качество электронных и радиоэлектронных компонентов для современной промышленности - Матрикс</title><!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(52706338, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="1.gif" tppabs="https://mc.yandex.ru/watch/52706338" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+<div id="panel">
+    </div>
+<div class="wrapper">
+    <div class="header">
+        <div class="layout">
+            <div class="logo">
+                <a>
+                    <img src="/images/logo.jpg" tppabs="http://gcmatrix.com/img//images/logo.jpg" alt="Матрикс">
+                </a>
+            </div>            <div class="text">
+            中国领先的印刷电路板OEM制造商                       </div>
+            <div class="phone">
+                <b class="h2">+7 (383) 383-08-05</b><div class="d-flex">
+                <div class="mr-2">
+                    <a href="skype:live:a2ad12d4eb62443e?chat" target="_blank"><span class="i-mess i-mess-skype"></span></a>
+                    <a href="tg://resolve?domain=matrix_elektronika" target="_blank"><span class="i-mess i-mess-telegram"></span></a>
+                    <a href="javascript:if(confirm('https://wa.me/79994638549  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://wa.me/79994638549'" tppabs="https://wa.me/79994638549" target="_blank"><span class="i-mess i-mess-whatsapp"></span></a>
+                    <a href="viber://pa?chatURI=matrixelektronika" target="_blank"><span class="i-mess i-mess-viber"></span></a>
+                </div>
+                <div class="comment">周一至周五，9点-18点					</div>
+            </div>
+            </div>
+            <div class="cl"></div>
+            <div class="menu">
+                <a href="index.htm" tppabs="http://gcmatrix.com/" class="home"></a>
+                <ul><li>
+                    <a href="index.html" tppabs="http://gcmatrix.com/about-company/"  >首页</a>
+                </li><li>
+                    <a href="index-2.htm" tppabs="http://gcmatrix.com/blog/"  >关于我们</a>
+                </li><li>
+                    <a href="index-3.htm" tppabs="http://gcmatrix.com/contract-assembly/"  >PCB组装</a>
+                </li><li>
+                    <a href="javascript:if(confirm('https://pcb.gcmatrix.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://pcb.gcmatrix.com/'" tppabs="https://pcb.gcmatrix.com/"   target="_blank">PCB</a>
+                </li><li>
+                    <a href="index-4.htm" tppabs="http://gcmatrix.com/components/"  >电子元器件</a>
+                </li></ul>
+                <div class="cl"></div>
+            </div>        </div>
+    </div>
+    <div class="content"><div class="news blog_page">
+    <div class="layout"><div class="left text_page">
+    <h1>Качество электронных и радиоэлектронных компонентов для современной промышленности</h1>
+    <span class="date">15 января</span>
+    <div class="cl"></div><div class="quote">Давайте проанализируем современные тенденции на глобальном рынке электронных и радиоэлектронных компонентов. Дело в том, что ужесточение требований к качеству компонентов для различных применений усиливает контроль компаний-поставщиков.<br />
+</div><p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Глобализация рынка и огромный технологический рывок последних десятилетий привели к тому, что современный рынок электроники трансформировался в рынок покупателя (потребителя). Компании осуществляют планирование продукции в соответствии с требованиями рынка, тогда как раньше достаточно было спроектировать и изготовить продукцию, испытать ее с целью отбраковки дефектных изделий и передать потребителю. То есть на данном этапе эволюции рынка все производители пришли к необходимости поиска и удовлетворения потребностей конкретного потребителя. В мировой практике существует две принципиально разные модели бизнеса в электронике: интегрированный изготовитель продукции, поддерживающий все стадии создания, производства и сбыта продукции; разделение функций проектирования, организации бизнеса, производства и сбыта продукции.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Вторая модель бизнеса более соответствует рынку покупателя и все больше развивается в мире, так как позволяет отдельным компаниям профессионально специализироваться на проблемах своего направления, обеспечивая более низкую себестоимость продукции. Для такой модели характерны фундаментальные изменения во взаимодействии между компаниями, поставщиками и потребителями на всех уровнях. Современный этап эволюции качества продукции характеризуется тем, что коренным образом изменяется структура организации компании: каждая компания делает только то, что она умеет делать с высокой эффективностью и качеством, а все необходимое для производства продукции обеспечивают поставщики. Качество продукции все более зависит от качества компонентов, и главным относительно качества конечной продукции становится выбор приемлемых партнеров<span lang="EN-US" style="font-family: 'MS Gothic';">‑</span>поставщиков.<o:p></o:p></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center;"><b>Преимущества технологий двойного назначения<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Последние 15 лет привнесли несколько фундаментальных изменений в динамику технологического сектора экономики. Расходы на оборонную продукцию были урезаны из<span lang="EN-US" style="font-family: 'MS Gothic';">‑</span>за устранения угрозы холодной войны и уменьшения размера армий, что привело к сокращению выпуска продукции исключительно для военных целей. Производители оборонной продукции на предыдущем этапе развития были разработчиками наиболее высокотехнологичной продукции. Однако произошло столь бурное развитие информационных технологий и телекоммуникаций в коммерческом секторе, что продвинутые технологии стали приходить в военный сектор из коммерческого. Многие компании &mdash; поставщики оборонной продукции теперь ориентированы на коммерческий сектор, что вызвало неустойчивость рынка оборонной промышленности. В таких условиях развитие технологий двойного назначения на военном и коммерческом рынках стало эффективным решением как для развития передовых технологий, так и для обеспечения оборонных программ. Технологии двойного назначения построены на основе коммерчески развитых технологий для продукции, к которой предъявляются требования для военных программ. Поставщик становится участником обоих рынков, расходы на исследования и разработку уменьшаются. Военную и коммерческую продукцию можно производить на одной и той же линии, что снижает цену военной продукции.<o:p></o:p></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center;"><b>Технологические тенденции рынка радиоэлектронных компонентов<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Основными технологическими тенденциями на рынке электронных и радиоэлектронных компонентов (ЭРК) можно считать микроминиатюризацию, увеличение производительности, плотности микросхем, расширение функциональных возможностей, интегрирование различных ЭРК в одном, переход к новым материалам и переход к верхней части диапазона СВЧ. Наряду с этими тенденциями можно отметить также возрастание требований к характеристикам ЭРК для авиационной и космической промышленности и для военных целей, в первую очередь по стойкости к дестабилизирующим факторам, надежности и отказоустойчивости, а также длительности жизненного цикла.<o:p></o:p></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center;"><b>Пути решения проблем качества ЭРК<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Поскольку разработку, производство и поставки компонентов осуществляют разные компании и их число постоянно растет, все более важную роль играют системы менеджмента качества (СМК) компаний. Опираясь на СМК, поставщики могут обеспечивать поставки компонентов с требуемым качеством, а основой СМК изготовителя конечной продукции становится выбор приемлемых поставщиков. Целевое использование продукции стало решающим фактором выбора компонентов при поставках, а его отслеживание является составной частью СМК. Взаимоотношения с поставщиками строятся на основе разработанных в СМК положений о правах и обязанностях, требований к передаче готовой продукции, компонентов, материалов, результатов процессов, к форме и содержанию документации, методам контроля качества и оценки его результатов.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Установление требований к ЭРК и методам их контроля на глобальном рынке должно опираться на единые стандарты, разработанные международными организациями. Так, для авиационной и космической техники имеется серия стандартов Европейского космического агентства (ESA) и серия стандартов <span lang="EN-US">NASA</span>.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Применение унифицированной маркировки ЭРК в международной практике позволяет применять соответствующую изделию элементную базу. Так, по условиям эксплуатации унифицированы исполнения микросхем:<o:p></o:p></p>
+ 
+<p class="MsoNormal">- ES (для работы при комнатной темпера<span style="font-family: 'MS Gothic';">‑</span> туре);<o:p></o:p></p>
+ 
+<p class="MsoNormal">- PROTO (радиационно<span style="font-family: 'MS Gothic';">‑</span>стойкие прототипы, до тестирования на устойчивость к радиации);<o:p></o:p></p>
+ 
+<p class="MsoNormal">- C (commercial, коммерческий): температурный диапазон от 0 до +70 &deg;C;<o:p></o:p></p>
+ 
+<p class="MsoNormal">- I (industrial, промышленный): температурный диапазон от &ndash;40 до +80 °C;<o:p></o:p></p>
+ 
+<p class="MsoNormal">- A (automotive, автомобильный): температурный диапазон от –40 до +125 °C;<o:p></o:p></p>
+ 
+<p class="MsoNormal">- M (military, военный): температурный диапазон от –55 до +125 °C;<o:p></o:p></p>
+ 
+<p class="MsoNormal">- B (стандарт MIL<span style="font-family: 'MS Gothic';">‑</span>STD<span style="font-family: 'MS Gothic';">‑</span>883 Class B): температурный диапазон от –55 до +125 °C;<o:p></o:p></p>
+ 
+<p class="MsoNormal">- E (для космической промышленности): температурный диапазон от –55 до +125 °C;<o:p></o:p></p>
+ 
+<p class="MsoNormal">- EV (для особо тяжелых условий эксплуатации): температурный диапазон от –55 до +125 °C, соответствуют требованиям стандарта MIL<span style="font-family: 'MS Gothic';">‑</span>PRF<span style="font-family: 'MS Gothic';">‑</span>38535 Class V. Радиационно<span style="font-family: 'MS Gothic';">‑</span>стойкие ЭРК маркируют в терминах радиационной стойкости (SEL, SEB, SEGR, SET, SEU, SHE SEFI, RH, RT, RHBD).<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Сертификация и аттестация ЭРК, технологий, компаний — изготовителей компонентов и поставщиков облегчает изготовителю конечной продукции принятие решения по выбору приемлемого поставщика. Так, поставщики, технологии и компоненты, отвечающие требованиям ESA, включаются в квалифицированные перечни QML, QPL, EPPL Европейской системы обмена информацией по компонентам космического применения (ESCIES). В то же время поставщик, не включенный в соответствующие квалифицированные перечни и имеющий статус случайного поставщика, должен демонстрировать в полном объеме возможность удовлетворения требований потребителя.<o:p></o:p></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center;"><b>Роль стандартов менеджмента качества в обеспечении качества компонентов при поставках<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center;"><b>Стандарты ISO для поставщиков<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">ISO 9001 является международным стандартом семейства стандартов ISO 9000, устанавливающим требования к СМК. ISO 9001 включает ряд требований к процессу закупок, включая информацию, которая должна обеспечить четкое понимание поставщиком потребностей потребителя, а также способов подтверждения соответствия поставляемой продукции требованиям потребителя. Поставщик использует системный подход к управлению качеством, гарантирующий уверенность в том, что потребности потребителя четко понимаются, согласуются и удовлетворяются.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Стандарт ISO 9001 не определяет требования к продукции. Компания должна определить собственные требования к продукции, связанные с ее целевым использованием, а также способы подтверждения выполнения этих требований. При неадекватности этих способов может оказаться, что хотя продукция и соответствует законодательству и всем заявленным требованиям, но при этом совершенно не соответствует предполагаемому применению.<o:p></o:p></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center;"><b>Требования к поставкам ЭРК для авиационной и космической техники<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">AS/EN/JISQ 9100 — это признанный во всем мире стандарт СМК в авиационной промышленности. Этот стандарт соблюдается и пользуется поддержкой со стороны ведущих производителей отрасли, среди которых Airbus, Boeing, Rolls<span lang="EN-US" style="font-family: 'MS Gothic';">‑</span>Royce, GEAE и др. Стандарт AS/EN/JISQ 9100 основан на ISO 9001 и дополнен конкретными требованиями, применимыми в авиационнокосмической промышленности. В нем уделено особое внимание качеству во всех областях авиационной промышленности. Стандарт применим ко всей цепи поставщиков частей и узлов для предприятий гражданской и военной авиации.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Специально разработанный для поставщиков стандарт AS 9120 дает им всеобъемлющую СМК, сосредотачиваясь на областях, непосредственно влияющих на безопасность и долговечность изделия. Например, для поставщиков компонентов требуется обеспечить соответствие спецификаций при поставках различными партиями. Процедура прослеживаемости содержит конкретные требования к управлению компонентами вплоть до доставки. Управление записями специфицировано для поставщиков: AS 9120 определяет документы, которые требуются от дистрибьюторов в качестве доказательства соответствия.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Безусловно, обязательной является сертификация разработчика, производителя и поставщика ЭКБ для авиационной и космической техники на соответствие ISO 9001.<o:p></o:p></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center;"><b>Требования к поставкам ЭРК для автомобильной промышленности<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Мировая автомобильная промышленность предъявляет высокие требования к качеству продукции, производительности и конкурентоспособности. Для достижения этой цели многие автомобилестроители настаивают на том, чтобы поставщики всей цепочки строго придерживались требований, изложенных в стандарте ISO/TS 16949 для компаний автомобильной промышленности, а также законодательных требований и установленных спецификаций. Для большинства ведущих автомобиле<span style="font-family: 'MS Gothic';">‑</span> строителей наличие сертификата соответствия ISO/TS 16949 является обязательным требованием для ведения бизнеса, причем стандарт применим для компаний<span style="font-family: 'MS Gothic';">‑</span> поставщиков всех типов: от мелких производителей до международных организаций.<o:p></o:p></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center;"><b>Система сертификации электронных компонентов IECQ<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">В области коммерческой электроники в течение последних 10–15 лет происходит внедрение новых материалов и технологий, разработанных уже не при поддержке военных и аэрокосмических программ. Аэрокосмическая промышленность в значительной степени зависит от электронных компонентов, которые разработаны и изготовлены для других рынков, таких как бытовая электроника, телекоммуникации и т. д. По этой причине аэрокосмической промышленности потребовалось определить свои требования, чтобы гарантировать надежность таких компонентов. Для решения этого вопроса МЭК опубликовал стандарт TS 62239, описывающий процессы для успешного использования компонентов в аэрокосмической промышленности. Сертификацию на соответствие<span lang="EN-US"> TS 62239 </span>осуществляет<span lang="EN-US"> IECQ (International Electrotechnical Commission Quality Assessment System for Electronic Components).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Около 20% от стоимости новых коммерческих самолетов, а при производстве военных самолетов — и более, составляет электроника. Авиационнокосмическая промышленность в настоящее время сталкивается с проблемами контроля устаревания продуктов, смягчения воздействия атмосферной радиации, применимости новых материалов в связи с законодательным запретом на использование свинца и других опасных материалов в электронных устройствах.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Аэрокосмический рынок, с другой стороны, остается сравнительно небольшим. На этом рынке существует множество особых требований к безопасности, прочности, надежности в течение всего жизненного цикла. Гражданский самолет может эксплуатироваться 20 и более лет, а некоторые военные самолеты могут летать и более 50 лет. Как следствие, аэрокосмическая отрасль все больше зависит от ЭРК, оборудования и систем, разработанных и произведенных для других отраслей. В отличие от ситуации, сложившейся 20 лет назад, аэрокосмическая отрасль сейчас не имеет влияния на поставщиков, которые стоят в начале цепочки: практически ни один из производителей компонентов, устройств или оборудования больше не ориентируется только на эту отрасль.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Покупатели авиационной радиоэлектроники, такие как Boeing, Airbus Industrie и др., стараются управлять электронной продукцией самостоятельно, выдвигая свои требования. Компании и ведомства при закупках хотят быть уверены, что радиоэлектронное оборудование и системы соответствуют предложенной цене, производительности, безопасности, прочности, надежности, которые существуют в отрасли. При управлении ЭРК в соответствии TS 62239 эти требования и должны обеспечиваться.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Обязывая производителей ЭРК использовать сертификат IECQ, покупатели могут уменьшить или даже исключить дорогие, отнимающие много времени испытания и экспертизы и в то же время сохранить полную уверенность в том, что компоненты действительно имеют заявленное качество.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Производители могут запрашивать сертификат IECQ для подтверждения качества в рамках планов управления электронными компонентами (ECMP), которые должны соблюдать поставщики. При сертификации IECQ для военных программ ECMP могут использоваться совместно с военными стандартами MIL<span style="font-family: 'MS Gothic';">‑</span>SPEC, а для сертификации в коммерческих целях могут использоваться стандарты МЭК и другие документы.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Сертификация IECQ применяется главным образом для сертификации электронных компонентов, используемых в аэрокосмической промышленности, однако применяется и для компонентов, используемых в военных или коммерческих целях. Сертификация IECQ особенно актуальна для производителей, которые имеют дело с масштабным автоматизированным производством. <o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">IECQ обеспечивает наглядность и независимость проверки электронных компонентов и связанных с ними материалов и процессов. В настоящее время в IECQ сертифицируются электронные компоненты и связанные с ними материалы, такие как активные и пассивные компоненты, интегральные схемы, электромагнитные и электромеханические, оптические компоненты, печатные платы и кабели.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">В IECQ предусмотрена аттестация технических возможностей, технологий, процессов управления при использовании опасных веществ в компонентах, а также аттестация независимых испытательных лабораторий.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Аттестация технологии основана на контроле и постоянном улучшении технологии производства. Производитель должен по<span style="font-family: 'MS Gothic';">‑</span> казать качественную систему организации производства, например, СМК, соответствующую ISO 9001, применять статистические и другие методы контроля.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Аттестация поставщика является гарантией того, что в каждом звене цепочки поставок компонентов требования заказчика будут выполнены в полном соответствии с методикой IECQ.<o:p></o:p></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center;"><b>Требования потребителя к Э</b><b>РК и их обеспечение в ведущих компаниях<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Перед предприятиями, которые выпускают продукцию для военных, авиационных или других ответственных применений, встает задача выбора компонентов, соответствующих жестким требованиям заказчика. Иностранные производители предлагают широкий спектр изделий, сертифицированных по системе стандартов Министерства обороны США (MIL<span style="font-family: 'MS Gothic';">‑</span>STD, MIL<span style="font-family: 'MS Gothic';">‑</span>SPEC), разработанных Центром поставок этого министерства. Эти стандарты применяются не только в военных, но и в гражданских отраслях.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Для ЭРК применимы группы стандартов, определяющих устойчивость к воздействию внешних факторов, к документации, информации и др. Так, MIL<span style="font-family: 'MS Gothic';">‑</span>STD<span style="font-family: 'MS Gothic';">‑</span>810 регламентирует уровень защиты оборудования от различных воздействий (вибрация, влага, удары, температура и т. п.). Тестирование по MIL<span style="font-family: 'MS Gothic';">‑</span>STD<span style="font-family: 'MS Gothic';">‑</span>810 предполагает исключительно выяснение реакции продукции на те или иные условия, а успешность прохождения теста на соответствие формализуется самим изготовителем.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Обеспечение качества ЭРК ведущих производителей ЭРК, таких как Vectron, K&amp;L Microwave, UMS, Voltronics, Dow<span lang="EN-US" style="font-family: 'MS Gothic';">‑</span>Key, NXP Semiconductors и др., основано на следующих принципах:<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="margin-top: 8pt;">- ориентация на потребителя;<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="margin-top: 8pt;">- вертикальная интеграция;<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="margin-top: 8pt;">- ограничение применения конкретных видов опасных веществ;<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="margin-top: 8pt;">- забота об окружающей среде;<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="margin-top: 8pt;">- непрерывное совершенствование.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">СМК этих компаний сертифицированы на соответствие ISO 9001, компании используют статистический контроль процессов в соответствии со стандартами JEDEC 19 и EIA<span lang="EN-US" style="font-family: 'MS Gothic';">‑</span>STD<span lang="EN-US" style="font-family: 'MS Gothic';">‑</span>557. В частности, обязательно проводятся механические и электрические тесты в процессе производства и тесты на радиационную стойкость.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Качество продукции этих компаний основано на использовании высококачественных материалов совместно со строгим исполнением технологических процессов и методов управления. Тестирование продукции про<span lang="EN-US" style="font-family: 'MS Gothic';">‑</span><span lang="EN-US"> </span>водится, как правило, в соответствии с требованиями MIL<span lang="EN-US" style="font-family: 'MS Gothic';">‑</span>I<span lang="EN-US" style="font-family: 'MS Gothic';">‑</span>45208A. Все это позволяет ведущим компаниям производить ЭРК с низким процентом брака и высокой надежностью.<o:p></o:p></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center;"><b>Контроль качества Э</b><b>РК в России<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">До 1990<span lang="EN-US" style="font-family: 'MS Gothic';">‑</span>х годов Россия имела сертифицированные IECQ производства компонентов и аттестованные испытательные лаборатории. Предпринимались попытки создать собственную научно<span lang="EN-US" style="font-family: 'MS Gothic';">‑</span>обоснованную систему сертификации производств ЭРК. Однако состояние отечественной электронной промышленности не позволило развиваться этим направлениям. В настоящее время в российской промышленности используется более 70% ЭРК иностранного производства, что сместило акцент в контроле качества на поставщиков ЭРК. Сертификация компаний<span lang="EN-US" style="font-family: 'MS Gothic';">‑</span>поставщиков в России проводится, в первую очередь, на соответствие их СМК требованиям стандарта ГОСТ Р ИСО 9001, гармонизированного с ISO 9001.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Сертификация ЭРК и изделий военного назначения стала откликом на современные проблемы в области обороноспособности страны, в частности, обеспечения перспективными радиоэлектронными средствами вооружения на основе высококачественной элементной базы. Сертификация осуществляется в рамках специализированной системы с применением как гражданских, так и военных стандартов, а также требований госзаказа на основе следующих положений:<o:p></o:p></p>
+ 
+<p class="MsoNormal">- реализация требований к системе обеспечения качества и надежности изделий, ориентированной на более ранние стадии их создания;<o:p></o:p></p>
+ 
+<p class="MsoNormal">- применение гибкой системы контроля качества готовой продукции, основанной на результатах приемочного контроля и информации о состоянии процесса производства изделий;<o:p></o:p></p>
+ 
+<p class="MsoNormal">- установление для всех групп изделий единых принципов статистического контроля и статистического регулирования технологического процесса;<o:p></o:p></p>
+ 
+<p class="MsoNormal">- введение статистических показателей надежности компонентов и методов их подтверждения, согласованных с требованиями надежности радиоэлектронной аппаратуры;<o:p></o:p></p>
+ 
+<p class="MsoNormal">- определение процедуры сертификации СМК и производства.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Компании<span lang="EN-US" style="font-family: 'MS Gothic';">‑</span>производители и поставщики компонентов и изделий для военных целей проходят сертификацию СМК в установлен<span lang="EN-US" style="font-family: 'MS Gothic';">‑</span><span lang="EN-US"> </span>ном порядке.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Российская авиационнокосмическая промышленность и военная промышленность нуждается в надежных и качественных ЭРК, так как их отказ в готовых изделиях приводит к огромным материальным затратам и зачастую определяет безопасность страны. Применению ЭРК промышленного класса (industrial) в аппаратуре для авиационной и космической техники препятствует ряд факторов. Помимо недостаточных гарантируемых изготовителем показателей надежности и радиационной стойкости, очень велики затраты на сертификацию такой ЭРК и дополнительные испытания, по стоимости соизмеримые с разработкой и изготовлением специализированных ЭРК. Для данного применения требуется как закупка сертифицированных ЭРК классов military и space у аттестованных поставщиков, так и контроль характеристик и испытания в соответствии с российскими требованиями.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Тестирование импортных ЭРК по всем параметрам в отечественных испытательных лабораториях дорого и возможно далеко не всегда, так как наряду со сложностью ЭРК нет доступа к технологической информации. Разрабатываются упрощенные алгоритмы тестирования, например, разработаны алгоритмы и аппаратура тестирования импортных сверхбольших интегральных схем.<o:p></o:p></p>
+<div class="cl"></div>
+    <div class="hr"></div>
+</div><div class="right_block"><h4>Темы блога</h4><a href="index-12.htm" tppabs="http://gcmatrix.com/blog/industry_news/">Отраслевые новости</a><a href="index-13.htm" tppabs="http://gcmatrix.com/blog/spec_xp/">Контрактная сборка</a><a href="index-5.htm" tppabs="http://gcmatrix.com/blog/quality/" class="selected">Вопросы качества</a><a href="index-14.htm" tppabs="http://gcmatrix.com/blog/purchase_xp/">Компоненты</a><a href="index-15.htm" tppabs="http://gcmatrix.com/blog/%D1%81ircuitry_talks/">Печатные платы</a><a href="index-16.htm" tppabs="http://gcmatrix.com/blog/the-company-matrix/">Компания Матрикс</a><a href="index-2.htm" tppabs="http://gcmatrix.com/blog/">Все темы блога</a></div><div class="cl"></div>
+    </div>
+</div>
+            </div>
+            <div class="footer">
+                <div class="layout">
+                    <div class="logo">
+	<a href="index.htm" tppabs="http://gcmatrix.com/">
+		<img src="/images/logo.jpg" tppabs="http://gcmatrix.com/img//images/logo.jpg" alt="Матрикс">
+	</a>
+</div><div class="menu">
+    <ul><li>
+                <a href="index-1.htm" tppabs="http://gcmatrix.com/about-company/">О компании</a>
+            </li><li class="act">
+                <a href="index-2.htm" tppabs="http://gcmatrix.com/blog/">Наш блог</a>
+            </li></ul><ul><li>
+                <a href="index-3.htm" tppabs="http://gcmatrix.com/contract-assembly/">Контрактная сборка</a>
+            </li><li>
+                <a href="javascript:if(confirm('https://pcb.gcmatrix.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://pcb.gcmatrix.com/'" tppabs="https://pcb.gcmatrix.com/">Печатные платы</a>
+            </li></ul><ul><li>
+                <a href="index-4.htm" tppabs="http://gcmatrix.com/components/">Компоненты</a>
+            </li></ul>
+    <div class="cl"></div>
+</div>                    <div class="phone">
+                        <b>+7 (383) 383-08-05</b><span>周一至周五，9点-18点</span>
+                    </div>
+                    <div class="cl"></div>
+                    <div class="copyright_site">©2012-2019 Все права защищены ООО «МАТРИКС ЭЛЕКТРОНИКА»
+<p align="center">
+ <br>
+</p>
+<p align="center">
+</p>
+<p>
+</p>
+ <br></div>
+                    <div class="cl"></div>
+                    <div class="bx-composite-bt">
+                        <div id="bx-composite-banner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'SVoXb2A8Sx';var d=document;var w=window;function l(){
+  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+  s.src = '//code.jivosite.com/script/widget/'+widget_id
+    ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+  if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
+  else{w.addEventListener('load',l,false);}}})();
+</script>
+<!-- {/literal} END JIVOSITE CODE -->
+    </body>
+</html><!--c24e65d86fbd552155baa53c1c90f668-->

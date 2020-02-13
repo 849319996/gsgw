@@ -1,0 +1,59 @@
+.magenta
+{
+	color: #efe6e9;
+	font-weight: bold;
+}
+.quote
+{
+    display: block;
+    width: 630px;
+    box-shadow: inset 0 0 1px rgba(44,43,44,0.8);
+    padding: 20px 50px 20px 20px;
+    border-left: 30px solid #2c2b2c;
+    margin-bottom: 30px;
+}
+.graybox{
+    display: block;
+    width: 100%;
+    background: #2c2b2c url("schema_bg.png")/*tpa=http://gcmatrix.com/img/schema_bg.png*/;
+    padding: 30px 30px 20px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.magenta_block{
+    display: block;
+    background: #ff045f;
+    color: #fff;
+    font: 500 15px 'Fira Sans', sans-serif;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+
+
+
+#nav {
+    margin-top: 50px;
+}
+
+#nav ul {
+    list-style: none;
+    margin-left: 50px;
+}
+
+#nav li {
+    display: inline;
+    line-height: 1px;
+    float: left;
+    width: 150px;
+    margin-left: -10px;
+}
+
+#nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 20px;
+}
+
+

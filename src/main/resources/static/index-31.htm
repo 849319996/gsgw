@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<style type="text/css">.bx-composite-btn {background: url("sprite-1x.png")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-1x.png*/ no-repeat right 0 #e94524;border-radius: 15px;color: #ffffff !important;display: inline-block;line-height: 30px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-size: 12px !important;font-weight: bold !important;height: 31px !important;padding: 0 42px 0 17px !important;vertical-align: middle !important;text-decoration: none !important;}@media screen   and (min-device-width: 1200px)   and (max-device-width: 1600px)   and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi) {.bx-composite-btn {background-image: url("sprite-2x.png")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-2x.png*/;background-size: 42px 124px;}}  .bx-composite-btn-fixed {position: absolute;top: -45px;right: 15px;z-index: 10;}  .bx-btn-white {background-position: right 0;color: #fff !important;}  .bx-btn-black {background-position: right -31px;color: #000 !important;}  .bx-btn-red {background-position: right -62px;color: #555 !important;}  .bx-btn-grey {background-position: right -93px;color: #657b89 !important;}  .bx-btn-border {border: 1px solid #d4d4d4;height: 29px !important;line-height: 29px !important;}  .bx-composite-loading {display: block;width: 40px;height: 40px;background: url("loading.gif")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/loading.gif*/;}</style>
+<script type="text/javascript" data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','banner':{'url':'http://www.1c-bitrix.ru/composite/','text':'','bgcolor':'#ff045f','style':'white'},'storageBlocks':[],'dynamicBlocks':[],'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}else{w.frameRequestFail = f;}return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();})(window, document);</script>
+
+
+<link href="core.min.css-14451916572854.css" tppabs="http://gcmatrix.com/bitrix/js/main/core/css/core.min.css?14451916572854" type="text/css" rel="stylesheet" />
+<link href="jquery.fancybox.css-14175171805160.css" tppabs="http://gcmatrix.com/css/jquery.fancybox.css?14175171805160" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="jquery.bxslider.css-14175171804040.css" tppabs="http://gcmatrix.com/css/jquery.bxslider.css?14175171804040" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="style.css-156947828531018.css" tppabs="http://gcmatrix.com/css/style.css?156947828531018" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="style.css-1417517180236.css" tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/style.css?1417517180236" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="styles.css-1554948055583.css" tppabs="http://gcmatrix.com/local/templates/main/styles.css?1554948055583" type="text/css" data-template-style="true" rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'http://gcmatrix.com/blog/%D1%81ircuitry_talks/purchase-wholesale-lots-how-to-protect-against-marriage/DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'mx','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/'});</script>
+
+
+<script type="text/javascript" src="core.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core.min.js?147851119173480"></script>
+<script type="text/javascript" src="core_db.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_db.min.js?14646669905048"></script>
+<script type="text/javascript" src="core_ajax.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ajax.min.js?147851119221031"></script>
+<script type="text/javascript" src="json2.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/json/json2.min.js?14175171793467"></script>
+<script type="text/javascript" src="core_ls.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ls.min.js?14451916607365"></script>
+<script type="text/javascript" src="core_fx.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_fx.min.js?14451916579592"></script>
+<script type="text/javascript" src="core_frame_cache.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_frame_cache.min.js?147851118811191"></script>
+<script type="text/javascript">var bxDate = new Date(); document.cookie="mx_TIME_ZONE="+bxDate.getTimezoneOffset()+"; path=/; expires=Fri, 01-Jan-2038 00:00:00 GMT"</script>
+
+
+
+<script type="text/javascript" src="jquery-3.4.1.min.js" tppabs="http://gcmatrix.com/js/jquery-3.4.1.min.js?142112976595790"></script>
+<script type="text/javascript" src="jquery.carouFredSel.js" tppabs="http://gcmatrix.com/js/jquery.carouFredSel.js?141751718036181"></script>
+<script type="text/javascript" src="jquery.bxslider.min.js" tppabs="http://gcmatrix.com/js/jquery.bxslider.min.js?141751718019368"></script>
+<script type="text/javascript" src="jquery-ui.js" tppabs="http://gcmatrix.com/js/jquery-ui.js?1417517180485937"></script>
+<script type="text/javascript" src="jquery.mask.min.js" tppabs="http://gcmatrix.com/js/jquery.mask.min.js?14175171804741"></script>
+<script type="text/javascript" src="jquery.formstyler.min.js" tppabs="http://gcmatrix.com/js/jquery.formstyler.min.js?141751718015758"></script>
+<script type="text/javascript" src="jquery.fancybox.js" tppabs="http://gcmatrix.com/js/jquery.fancybox.js?141751718050725"></script>
+<script type="text/javascript" src="script2.js" tppabs="http://gcmatrix.com/js/script.js?14175171807558"></script>
+<script type="text/javascript" src="script6.js" tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/script.js?1417517180990"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "72e5454bdb8b62a08488572b66bc822a"]); _ba.push(["host", "http://gcmatrix.com/blog/%D1%81ircuitry_talks/purchase-wholesale-lots-how-to-protect-against-marriage/gcmatrix.com"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+<title>Виды финишных покрытий печатных плат - Матрикс</title><!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(52706338, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="1.gif" tppabs="https://mc.yandex.ru/watch/52706338" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+<div id="panel">
+    </div>
+<div class="wrapper">
+    <div class="header">
+        <div class="layout">
+            <div class="logo">
+	<a href="index.htm" tppabs="http://gcmatrix.com/">
+		<img src="/images/logo.jpg" tppabs="http://gcmatrix.com/img//images/logo.jpg" alt="Матрикс">
+	</a>
+</div>            <div class="text">
+                Ведущий российский OEM производитель печатных плат            </div>
+            <div class="phone">
+				<b class="h2">+7 (383) 383-08-05</b><div class="d-flex">
+					<div class="mr-2">
+						<a href="skype:live:a2ad12d4eb62443e?chat" target="_blank"><span class="i-mess i-mess-skype"></span></a>
+						<a href="tg://resolve?domain=matrix_elektronika" target="_blank"><span class="i-mess i-mess-telegram"></span></a>
+						<a href="javascript:if(confirm('https://wa.me/79994638549  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://wa.me/79994638549'" tppabs="https://wa.me/79994638549" target="_blank"><span class="i-mess i-mess-whatsapp"></span></a>
+						<a href="viber://pa?chatURI=matrixelektronika" target="_blank"><span class="i-mess i-mess-viber"></span></a>
+					</div>
+					<div class="comment">周一至周五，9点-18点					</div>
+				</div>
+            </div>
+            <div class="cl"></div>
+            <div class="menu">
+    <a href="index.htm" tppabs="http://gcmatrix.com/" class="home"></a>
+    <ul><li>
+                <a href="index-1.htm" tppabs="http://gcmatrix.com/about-company/"  >О компании</a>
+            </li><li class="act">
+                <a href="index-2.htm" tppabs="http://gcmatrix.com/blog/"  >Наш блог</a>
+            </li><li>
+                <a href="index-3.htm" tppabs="http://gcmatrix.com/contract-assembly/"  >Контрактная сборка</a>
+            </li><li>
+                <a href="javascript:if(confirm('https://pcb.gcmatrix.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://pcb.gcmatrix.com/'" tppabs="https://pcb.gcmatrix.com/"   target="_blank">Печатные платы</a>
+            </li><li>
+                <a href="index-4.htm" tppabs="http://gcmatrix.com/components/"  >Компоненты</a>
+            </li></ul>
+    <div class="cl"></div>
+</div>        </div>
+    </div>
+    <div class="content"><div class="news blog_page">
+    <div class="layout"><div class="left text_page">
+    <h1>Виды финишных покрытий печатных плат</h1>
+    <span class="date">5 ноября</span>
+    <div class="cl"></div><div class="quote">Здравствуйте, уважаемые клиенты, в данной статье мы рассмотрим наиболее распространённые финишные покрытия печатных плат и выявим их наиболее сильные и слабые стороны.</div><p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Каждый, кто работает в сфере микроэлектроники знает, что основным проводящим материалом печатной платы является медь. Изначально все контактные площадки после изготовления платы не имеют финишного покрытия, если оставить их незащищенными, они окислятся и плата станет непригодной. Финишное покрытие является связующим звеном между компонентом и платой. Покрытие имеет две важные функции: защита открытой медной схемы и обеспечение паяемости при сборке.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Горячее лужение HASL когда-то был стабильным и результативным методом. Тем не менее, сложность плат и плотность расположения компонентов усложняет процесс пайки, так-как плотно расположенные контактные площадки &laquo;перетягивают&raquo; припой друг у друга. Выводы современных компонентов стали тоньше, поэтому появилась необходимость уменьшать саму толщину финишного покрытия. HASL создает определенные ограничение для производителей плат. Существует альтернатива HASL -  электролитические и иммерсионные процессы. Далее мы рассмотрим некоторые наиболее распространенные покрытия, используемые в производстве печатных плат, с их ключевыми достоинствами и недостатками. <o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;"><b>HASL\Безсвинцовый HASL<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">HASL наиболее часто используемый метод в производстве печатных плат. Процесс заключается в погружении платы в емкость с расплавом олова и свинца с последующим удалением излишков пасты при помощи «воздушных ножей», которые обдувают горячим воздухом поверхность платы. Одно из очевидных преимуществ технологии HASL заключается в том, что плата подвергается температурному воздействию в 265&deg;C, которое выявит такую проблему как расслоение, до того, как компоненты будут напаяны на плату. Однако, медь и олово обладают химическим сродством, неизбежно произойдет диффузия одного металла в другой, что непосредственно отразится на сроке хранения и общей производственной пригодности покрытии. Так же существует такой дефект как «оловянные усы», о котором можно подробно прочитать в специальной литературе.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">Преимущества:<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">&bull; низкая стоимость <o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• простота технологии<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• ремонтопригодность<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• долгий срок службы<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">Недостатки<span lang="EN-US">: <o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• неровная поверхность<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• ограничение по расстоянию между контактными площадками<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• содержит свинец <o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• Перегрев платы <o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• Возможны перемычки припоя<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• низкое качество металлизированных отверстий<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;"><b>Иммерсионное олово<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Согласно IPC, это металлическое покрытие, получаемое в результате реакции химического замещения, происходящего при нанесении непосредственно на основной металл на плате(медь) олова. Иммерсионное олово защищает медь от окисления в течение установленного срока годности.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">Преимущества: <o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• Плоская поверхность<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• возможность применять бессвинцовую технологию<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;"><span lang="EN-US">• </span>ремонтопригодность платы в сборке<span lang="EN-US"><o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">Недостатки: <o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• легко повредить при ручном монтаже<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• в производстве используются канцерогены <o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• открытое олово на после сборки подвержено коррозии<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• «Оловянные усы»<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• не адаптирована к многократному перепаю<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• трудно контролировать толщину при производстве<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;"><b>OSP/Entek<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><span lang="EN-US">OSP</span><span lang="EN-US"> </span>или антикоррозийное покрытие предохраняет медное покрытие от окисления нанесением тонкого защитного полимерного слоя на открытую медь. Используется органическое соединение на водной основе, которое селективно связывается с медью и обеспечивает органо-металлический слой, который защищает медь перед пайкой. Этот метод также экологичен, по сравнению с другими бессвинцовыми покрытиями, которым характерна токсичность и энергозатратность.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">Преимущества:<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• Плоская поверхность<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• бессвинцовая технология<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• простота процесса<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• ремонтопригодность<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• экономичность<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">Недостатки:<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• невозможно замерить толщину<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• низкое качество металлизированных отверстий<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• короткий срок службы<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• могут возникать проблемы с электроконтролем<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• после напая остаётся открытая медь<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• чувствительность к внешним воздействиям<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;"><b>Электролитический никель/иммерсионное золото (</b><b><span lang="EN-US">ENIG</span>)<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">ENIG &ndash; это двухслойное металлическое покрытие в 2-8 микродюймов Au и порядка 120–240 микродюймов Ni. Никель – покрытие, на которое паяются компоненты, золото защищает никель во время хранения, а также обеспечивает низкое контактное сопротивление. ENIG на сегодняшний день, пожалуй, наиболее часто используемое покрытие в производстве плат из-за повсеместного введения стандартов RoHs.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">Преимущества:<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• Плоская поверхность<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• бессвинцовая технология<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• высокое качество металлизированных отверстий<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• Длительный срок службы<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">Недостатки:<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• Стоимость <o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• не ремонтопригодность<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• Потери радиочастотного сигнала<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• сложный техпроцесс<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;"><b>Золото / </b><b><span lang="EN-US">Hard</span><span lang="EN-US"> </span></b><b><span lang="EN-US">Gold</span><o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Электролитическое золото наносится на промежуточный слой никеля. Золото отличается высокой прочностью, и чаще всего используется в местах с частым механическим воздействием.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">В отличие ENIG, толщина золота может варьироваться в зависимости от продолжительности цикла нанесения покрытия, хотя типичные минимальные значения для <span lang="EN-US">Au</span> 30 микродюймов и порядка 100 микродюймов для <span lang="EN-US">Ni</span> для приборов класса 1 и класса 2, но 50 микродюймов <span lang="EN-US">Au</span> и около 100 микродюймов <span lang="EN-US">Ni</span> для класса 3 по <span lang="EN-US">IPC</span>. Золото обычно не наносится на область пайки ввиду его высокой стоимости и относительно плохой паяемости. Максимальная толщина, которую IPC считает возможной для пайки 17.8 микродюймов, поэтому если этот тип золота используется на поверхностях, подлежащих пайке, рекомендуемая номинальная толщина должна быть примерно 5-10 микродюймов.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">Преимущества:<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• жесткая, прочная поверхность<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• бессвинцовая технология<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• долгий срок службы<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">Недостатки:<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• очень дорогая технология<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• трудоемкая технология<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;">• демаркация слоёв<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-indent: 35.4pt;"><b>Заключение<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Важно выбрать подходящее покрытие для вашего проекта, рассматривая различные варианты, так как производство может повлечь за собой дополнительные материалозатраты. Например, если вас интересует низкая цена, хороший вариант - HASL, но он не подходит для продуктов, соответствующих RoHS стандартам. Если ваш продукт требует соответствия RoHS, рассмотрите безсвинцовый HASL, но он подойдет только если нет компонентов с особо тонкими и плотно расположенными контактами, так как безсвинцовый HASL не может быть нанесен безупречно тонко. Если ваш проект должен соответствовать RoHS и использовать компоненты с плотным расположение контактов, вам следует выбрать тонкое, безсвинцовое покрытие, такое как иммерсионное серебро ENIG. Имейте в виду, что это приведет к использованию более дорогой высокотемпературной обработки. Не уверены в том, что вам нужно? Проконсультируйтесь с изготовителем печатных плат до принятия решения. Это гарантирует, что выбор покрытия и материала не отразится качестве изделия, бюджете проекта и конечный продукт будет соответствовать вашим ожиданиям.<o:p></o:p></p>
+<div class="cl"></div>
+    <div class="hr"></div>
+</div><div class="right_block"><h4>Темы блога</h4><a href="index-12.htm" tppabs="http://gcmatrix.com/blog/industry_news/">Отраслевые новости</a><a href="index-13.htm" tppabs="http://gcmatrix.com/blog/spec_xp/">Контрактная сборка</a><a href="index-5.htm" tppabs="http://gcmatrix.com/blog/quality/">Вопросы качества</a><a href="index-14.htm" tppabs="http://gcmatrix.com/blog/purchase_xp/">Компоненты</a><a href="index-15.htm" tppabs="http://gcmatrix.com/blog/%D1%81ircuitry_talks/" class="selected">Печатные платы</a><a href="index-16.htm" tppabs="http://gcmatrix.com/blog/the-company-matrix/">Компания Матрикс</a><a href="index-2.htm" tppabs="http://gcmatrix.com/blog/">Все темы блога</a></div><div class="cl"></div>
+    </div>
+</div>
+            </div>
+            <div class="footer">
+                <div class="layout">
+                    <div class="logo">
+	<a href="index.htm" tppabs="http://gcmatrix.com/">
+		<img src="/images/logo.jpg" tppabs="http://gcmatrix.com/img//images/logo.jpg" alt="Матрикс">
+	</a>
+</div><div class="menu">
+    <ul><li>
+                <a href="index-1.htm" tppabs="http://gcmatrix.com/about-company/">О компании</a>
+            </li><li class="act">
+                <a href="index-2.htm" tppabs="http://gcmatrix.com/blog/">Наш блог</a>
+            </li></ul><ul><li>
+                <a href="index-3.htm" tppabs="http://gcmatrix.com/contract-assembly/">Контрактная сборка</a>
+            </li><li>
+                <a href="javascript:if(confirm('https://pcb.gcmatrix.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://pcb.gcmatrix.com/'" tppabs="https://pcb.gcmatrix.com/">Печатные платы</a>
+            </li></ul><ul><li>
+                <a href="index-4.htm" tppabs="http://gcmatrix.com/components/">Компоненты</a>
+            </li></ul>
+    <div class="cl"></div>
+</div>                    <div class="phone">
+                        <b>+7 (383) 383-08-05</b><span>周一至周五，9点-18点</span>
+                    </div>
+                    <div class="cl"></div>
+                    <div class="copyright_site">©2012-2020 BOMIC ELECTRON LLC
+<p align="center">
+ <br>
+</p>
+<p align="center">
+</p>
+<p>
+</p>
+ <br></div>
+                    <div class="cl"></div>
+                    <div class="bx-composite-bt">
+                        <div id="bx-composite-banner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'SVoXb2A8Sx';var d=document;var w=window;function l(){
+  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+  s.src = '//code.jivosite.com/script/widget/'+widget_id
+    ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+  if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
+  else{w.addEventListener('load',l,false);}}})();
+</script>
+<!-- {/literal} END JIVOSITE CODE -->
+    </body>
+</html><!--76e2fc4ffdf071f8ccfea1593b7307be-->

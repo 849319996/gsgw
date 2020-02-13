@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="robots" content="index, follow"/>
+    <style type="text/css">.bx-composite-btn {
+        background: url("sprite-1x.png") /*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-1x.png*/ no-repeat right 0 #e94524;
+        border-radius: 15px;
+        color: #ffffff !important;
+        display: inline-block;
+        line-height: 30px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-size: 12px !important;
+        font-weight: bold !important;
+        height: 31px !important;
+        padding: 0 42px 0 17px !important;
+        vertical-align: middle !important;
+        text-decoration: none !important;
+    }
+
+    @media screen   and (min-device-width: 1200px)   and (max-device-width: 1600px)   and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi) {
+        .bx-composite-btn {
+            background-image: url("sprite-2x.png") /*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-2x.png*/;
+            background-size: 42px 124px;
+        }
+    }
+
+    .bx-composite-btn-fixed {
+        position: absolute;
+        top: -45px;
+        right: 15px;
+        z-index: 10;
+    }
+
+    .bx-btn-white {
+        background-position: right 0;
+        color: #fff !important;
+    }
+
+    .bx-btn-black {
+        background-position: right -31px;
+        color: #000 !important;
+    }
+
+    .bx-btn-red {
+        background-position: right -62px;
+        color: #555 !important;
+    }
+
+    .bx-btn-grey {
+        background-position: right -93px;
+        color: #657b89 !important;
+    }
+
+    .bx-btn-border {
+        border: 1px solid #d4d4d4;
+        height: 29px !important;
+        line-height: 29px !important;
+    }
+
+    .bx-composite-loading {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: url("loading.gif") /*tpa=http://gcmatrix.com/bitrix/images/main/composite/loading.gif*/;
+    }</style>
+    <script type="text/javascript" data-skip-moving="true">(function (w, d) {
+        var v = w.frameCacheVars = {
+            'CACHE_MODE': 'HTMLCACHE',
+            'banner': {
+                'url': 'http://www.1c-bitrix.ru/composite/',
+                'text': '',
+                'bgcolor': '#ff045f',
+                'style': 'white'
+            },
+            'storageBlocks': [],
+            'dynamicBlocks': [],
+            'AUTO_UPDATE': true,
+            'AUTO_UPDATE_TTL': '0'
+        };
+        var inv = false;
+        if (v.AUTO_UPDATE === false) {
+            if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0) {
+                var lm = Date.parse(d.lastModified);
+                if (!isNaN(lm)) {
+                    var td = new Date().getTime();
+                    if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td) {
+                        w.frameRequestStart = false;
+                        w.preventAutoUpdate = true;
+                        return;
+                    }
+                    inv = true;
+                }
+            } else {
+                w.frameRequestStart = false;
+                w.preventAutoUpdate = true;
+                return;
+            }
+        }
+        var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);
+        if (!r) {
+            return;
+        }
+        w.frameRequestStart = true;
+        var m = v.CACHE_MODE;
+        var l = w.location;
+        var x = new Date().getTime();
+        var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");
+        var u = l.protocol + "//" + l.host + l.pathname + q;
+        r.open("GET", u, true);
+        r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");
+        r.setRequestHeader("BX-CACHE-MODE", m);
+        r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");
+        if (inv) {
+            r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");
+        }
+        try {
+            r.setRequestHeader("BX-REF", d.referrer || "");
+        } catch (e) {
+        }
+        if (m === "APPCACHE") {
+            r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));
+            r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");
+        }
+        r.onreadystatechange = function () {
+            if (r.readyState != 4) {
+                return;
+            }
+            var a = r.getResponseHeader("BX-RAND");
+            var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;
+            if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)) {
+                var f = {error: true, reason: a != x ? "bad_rand" : "bad_status", url: u, xhr: r, status: r.status};
+                if (w.BX && w.BX.ready) {
+                    BX.ready(function () {
+                        setTimeout(function () {
+                            BX.onCustomEvent("onFrameDataRequestFail", [f]);
+                        }, 0);
+                    });
+                } else {
+                    w.frameRequestFail = f;
+                }
+                return;
+            }
+            if (b) {
+                b.onFrameDataReceived(r.responseText);
+                if (!w.frameUpdateInvoked) {
+                    b.update(false);
+                }
+                w.frameUpdateInvoked = true;
+            } else {
+                w.frameDataString = r.responseText;
+            }
+        };
+        r.send();
+    })(window, document);</script>
+
+
+    <link href="core.min.css-14451916572854.css"
+          tppabs="http://gcmatrix.com/bitrix/js/main/core/css/core.min.css?14451916572854" type="text/css"
+          rel="stylesheet"/>
+    <link href="jquery.fancybox.css-14175171805160.css"
+          tppabs="http://gcmatrix.com/css/jquery.fancybox.css?14175171805160" type="text/css" data-template-style="true"
+          rel="stylesheet"/>
+    <link href="jquery.bxslider.css-14175171804040.css"
+          tppabs="http://gcmatrix.com/css/jquery.bxslider.css?14175171804040" type="text/css" data-template-style="true"
+          rel="stylesheet"/>
+    <link href="style.css-156947828531018.css" tppabs="http://gcmatrix.com/css/style.css?156947828531018"
+          type="text/css" data-template-style="true" rel="stylesheet"/>
+    <link href="style.css-1417517180236.css"
+          tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/style.css?1417517180236"
+          type="text/css" data-template-style="true" rel="stylesheet"/>
+    <link href="styles.css-1554948055583.css" tppabs="http://gcmatrix.com/local/templates/main/styles.css?1554948055583"
+          type="text/css" data-template-style="true" rel="stylesheet"/>
+    <script type="text/javascript">if (!window.BX) window.BX = {
+        message: function (mess) {
+            if (typeof mess == 'object') for (var i in mess) BX.message[i] = mess[i];
+            return true;
+        }
+    };</script>
+    <script type="text/javascript">(window.BX || top.BX).message({
+        'JS_CORE_LOADING': 'Загрузка...',
+        'JS_CORE_NO_DATA': '- Нет данных -',
+        'JS_CORE_WINDOW_CLOSE': 'Закрыть',
+        'JS_CORE_WINDOW_EXPAND': 'Развернуть',
+        'JS_CORE_WINDOW_NARROW': 'Свернуть в окно',
+        'JS_CORE_WINDOW_SAVE': 'Сохранить',
+        'JS_CORE_WINDOW_CANCEL': 'Отменить',
+        'JS_CORE_WINDOW_CONTINUE': 'Продолжить',
+        'JS_CORE_H': 'ч',
+        'JS_CORE_M': 'м',
+        'JS_CORE_S': 'с',
+        'JSADM_AI_HIDE_EXTRA': 'Скрыть лишние',
+        'JSADM_AI_ALL_NOTIF': 'Показать все',
+        'JSADM_AUTH_REQ': 'Требуется авторизация!',
+        'JS_CORE_WINDOW_AUTH': 'Войти',
+        'JS_CORE_IMAGE_FULL': 'Полный размер'
+    });</script>
+    <script type="text/javascript">(window.BX || top.BX).message({
+        'LANGUAGE_ID': 'ru',
+        'FORMAT_DATE': 'http://gcmatrix.com/DD.MM.YYYY',
+        'FORMAT_DATETIME': 'DD.MM.YYYY HH:MI:SS',
+        'COOKIE_PREFIX': 'mx',
+        'SERVER_TZ_OFFSET': '10800',
+        'SITE_ID': 's1',
+        'SITE_DIR': '/'
+    });</script>
+
+
+    <script type="text/javascript" src="core.min.js"
+            tppabs="http://gcmatrix.com/bitrix/js/main/core/core.min.js?147851119173480"></script>
+    <script type="text/javascript" src="core_db.min.js"
+            tppabs="http://gcmatrix.com/bitrix/js/main/core/core_db.min.js?14646669905048"></script>
+    <script type="text/javascript" src="core_ajax.min.js"
+            tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ajax.min.js?147851119221031"></script>
+    <script type="text/javascript" src="json2.min.js"
+            tppabs="http://gcmatrix.com/bitrix/js/main/json/json2.min.js?14175171793467"></script>
+    <script type="text/javascript" src="core_ls.min.js"
+            tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ls.min.js?14451916607365"></script>
+    <script type="text/javascript" src="core_fx.min.js"
+            tppabs="http://gcmatrix.com/bitrix/js/main/core/core_fx.min.js?14451916579592"></script>
+    <script type="text/javascript" src="core_frame_cache.min.js"
+            tppabs="http://gcmatrix.com/bitrix/js/main/core/core_frame_cache.min.js?147851118811191"></script>
+    <script type="text/javascript">var bxDate = new Date();
+    document.cookie = "mx_TIME_ZONE=" + bxDate.getTimezoneOffset() + "; path=/; expires=Fri, 01-Jan-2038 00:00:00 GMT"</script>
+
+
+    <script type="text/javascript" src="jquery-3.4.1.min.js"
+            tppabs="http://gcmatrix.com/js/jquery-3.4.1.min.js?142112976595790"></script>
+    <script type="text/javascript" src="jquery.carouFredSel.js"
+            tppabs="http://gcmatrix.com/js/jquery.carouFredSel.js?141751718036181"></script>
+    <script type="text/javascript" src="jquery.bxslider.min.js"
+            tppabs="http://gcmatrix.com/js/jquery.bxslider.min.js?141751718019368"></script>
+    <script type="text/javascript" src="jquery-ui.js"
+            tppabs="http://gcmatrix.com/js/jquery-ui.js?1417517180485937"></script>
+    <script type="text/javascript" src="jquery.mask.min.js"
+            tppabs="http://gcmatrix.com/js/jquery.mask.min.js?14175171804741"></script>
+    <script type="text/javascript" src="jquery.formstyler.min.js"
+            tppabs="http://gcmatrix.com/js/jquery.formstyler.min.js?141751718015758"></script>
+    <script type="text/javascript" src="jquery.fancybox.js"
+            tppabs="http://gcmatrix.com/js/jquery.fancybox.js?141751718050725"></script>
+    <script type="text/javascript" src="script2.js"
+            tppabs="http://gcmatrix.com/js/script.js?14175171807558"></script>
+    <script type="text/javascript" src="script6.js"
+            tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/script.js?1417517180990"></script>
+    <script type="text/javascript" src="script4.js"
+            tppabs="http://gcmatrix.com/local/components/matrix/form.request_resume/templates/.default/script.js?14175171801322"></script>
+    <script type="text/javascript" src="script7.js"
+            tppabs="http://gcmatrix.com/local/components/matrix/form.request_news/templates/.default/script.js?14175171801162"></script>
+    <script type="text/javascript" src="script5.js"
+            tppabs="http://gcmatrix.com/local/components/matrix/form.request_callback/templates/.default/script.js?14175171801178"></script>
+    <script type="text/javascript" src="script3.js"
+            tppabs="http://gcmatrix.com/local/components/matrix/form.request_service/script.js?14175171802187"></script>
+    <script type="text/javascript">var _ba = _ba || [];
+    _ba.push(["aid", "72e5454bdb8b62a08488572b66bc822a"]);
+    _ba.push(["host", "http://gcmatrix.com/gcmatrix.com"]);
+    (function () {
+        var ba = document.createElement("script");
+        ba.type = "text/javascript";
+        ba.async = true;
+        ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ba, s);
+    })();</script>
+
+
+    <title>Global Electronic Components Stock Distributor</title><!-- Yandex.Metrika counter -->
+
+    <noscript>
+        <div><img src="1.gif" tppabs="https://mc.yandex.ru/watch/52706338" style="position:absolute; left:-9999px;"
+                  alt=""/></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+</head>
+<body>
+<div id="panel">
+</div>
+<div class="wrapper">
+    <div class="header">
+        <div class="layout">
+            <div class="logo">
+                <a>
+                    <img src="/images/logo.jpg" tppabs="http://gcmatrix.com/img//images/logo.jpg" alt="Матрикс">
+                </a>
+            </div>
+            <div class="text">
+                <b class="h2"> One-stop supplier of electronic components</b>
+                <br/> trustworthy、time-saving、 excellent、 reasonable
+            </div>
+            <div class="phone">
+                <b class="h3">sales@bomic.cn</b>
+                <div class="d-flex">
+                    <div class="mr-2">
+                        <a href="skype:live:.cid.2d9de528ead4f02d?chat" target="_blank"><span
+                                class="i-mess i-mess-skype"></span></a>
+
+                    </div>
+                    <div class="comment">Monday to Friday, 9-18pm</div>
+                </div>
+            </div>
+            <div class="cl"></div>
+            <div class="menu">
+
+                <ul>
+                    <li>
+                        <a href="index.html" tppabs="http://gcmatrix.com/about-company/">Home</a>
+                    </li>
+                    <li>
+                        <a href="index-2.htm" tppabs="http://gcmatrix.com/blog/">About us</a>
+                    </li>
+                    <li>
+                        <a href="index-3.htm" tppabs="http://gcmatrix.com/contract-assembly/">PCBA</a>
+                    </li>
+                    <li>
+                        <a href="index-pcb.htm" tppabs="http://gcmatrix.com/contract-assembly/">PCB</a>
+                    </li>
+                    <li>
+                        <a href="index-4.htm" tppabs="http://gcmatrix.com/components/">Component</a>
+                    </li>
+                </ul>
+                <div class="cl"></div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="slider">
+            <div class="first-img" style="background-image:url(/bj.jpg)"></div>
+            <div class="second-img" style="background-image:url(/images/bj.jpg)"></div>
+            <div class="layout">
+                <div class="item act" id="bx_3218110189_298">
+                    <div class="promo">
+
+                        <div>We provide pcb assembly<br/>
+                            <br/>
+                            Our 18 years of experience and modern technology support assembly quality.
+                        </div>
+                        <a href="#order" class="btn btn_bid contract_assembly">Request</a>
+                    </div>
+                    <a href="#info" class="toggle">PCBA</a>
+                    <img
+                            src="1e08ecfe12d3d5146cba3cb880e43ad9.jpg"
+                            class="bg"
+                    >
+                </div>
+                <div class="item" id="bx_3218110189_299">
+                    <div class="promo">
+                        <div>We provide pcb assembly<br/>
+                            <br/>
+                            Our 18 years of experience and modern technology support assembly quality.
+                        </div>
+                        <a href="#order" class="btn btn_bid circuit_packs">Request</a>
+                    </div>
+                    <a href="#info" class="toggle">PCB</a>
+                    <img
+                            src="e71f86e75705dd118383123765e73f60.png"
+                            class="bg"
+                    >
+                </div>
+                <div class="item fr" id="bx_3218110189_300">
+                    <div class="promo">
+                        <div>We provide pcb assembly<br/>
+                            <br/>
+                            Our 18 years of experience and modern technology support assembly quality.
+                        </div>
+                        <a href="#order" class="btn btn_bid components">Request</a>
+                    </div>
+                    <a href="#info" class="toggle">Component</a>
+                    <img
+                            src="d72aed9cd95e9cc57bfb8075eeff76de.png"
+                            class="bg"
+                    >
+                </div>
+                <div class="cl"></div>
+            </div>
+        </div>
+
+        <div class="benefits">
+            <div class="layout"><h2 class="magenta">Why Choose US</h2>
+                <div id="tabs">
+
+                    <div class="cl"></div>
+                    <div id="threecols">
+                        <div class="item" id="bx_3946748719_21">
+                            <img
+                                    src="bdb819778e105b13986f05db6fbe3451.png"
+                            >
+                            <p>Fastest turn on PCB prototype cycle</p>
+                        </div>
+                        <div class="item" id="bx_3946748719_28">
+                            <img
+                                    src="e7b4903414895987a386ca963c72774a.png"
+                            >
+                            <p>ISO9000 quality standard</p>
+                        </div>
+                        <div class="item" id="bx_3946748719_22">
+                            <img
+                                    src="92e09106690ca5a6b391acda1b453b14.png"
+                            >
+                            <p>Low attrition rate</p>
+                        </div>
+                        <div class="item " id="bx_3946748719_26">
+                            <img
+                                    src="38c6a251af061cc8aab63d27ac0db953.png"
+                            >
+                            <p>Fast delivery</p>
+                        </div>
+
+                        <div class="item" id="bx_3946748719_29">
+                            <img
+                                    src="ac0e1cf0840cd47e4bed9deac6e037f2.png"
+                            >
+                            <p>Fast logistics</p>
+                        </div>
+                        <div class="item" id="bx_3946748719_30">
+                            <img
+                                    src="24a103f53a17050c5c0c90bb0679e99c.png"
+                            >
+                            <p>high quality</p>
+                        </div>
+                        <div class="item " id="bx_3946748719_31">
+                            <img
+                                    src="10cb5fdc78f2d580035022eca59be706.png"
+                            >
+                            <p>Free engineering review and support</p>
+                        </div>
+                        <div class="item" id="bx_3946748719_32">
+                            <img
+                                    src="d4c01e0cbeca609c32685b519fab7259.png"
+                            >
+                            <p>Advanced PCB equipment/fabrication</p>
+                        </div>
+                        <div class="item " id="bx_3946748719_34">
+                            <img
+                                    src="af2c03381348c70d75688697c44dafa8.png"
+                            >
+                            <p>We can provide mass production</p>
+                        </div>
+                        <div class="item" id="bx_3946748719_33">
+                            <img
+                                    src="c1fedadbc9fca7d9aebcb1b80a2409c2.png"
+                            >
+                            <p>Extremely fast response time</p>
+                        </div>
+
+                        <div class="item" id="bx_3946748719_444">
+                            <img
+                                    src="bdb819778e105b13986f05db6fbe3451.png"
+                            >
+                            <p>Service operation</p>
+                        </div>
+                        <div class="item " id="bx_3946748719_446">
+                            <img
+                                    src="24a103f53a17050c5c0c90bb0679e99c.png"
+                            >
+                            <p>Manufacturing of batteries and battery packs</p>
+                        </div>
+                        <div class="item" id="bx_3946748719_441">
+                            <img
+                                    src="check_60-6.png"
+                            >
+                            <p>Production base of electronic components in China </p>
+                        </div>
+                        <div class="item" id="bx_3946748719_442">
+                            <img
+                                    src="92e09106690ca5a6b391acda1b453b14.png"
+                            >
+                            <p>Produce membrane keyboard according to TK or model</p>
+                        </div>
+
+                        <div class="cl"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="manufacturer">
+            <div class="layout">
+                <h1>One-stop supplier of electronic components No1</h1>
+                <div class="text1"><p>We are a leader in contract assembly manufacturers of printed circuit boards in China.</p>
+                    <p>Our own production and high-level experts, perfect logistics processes and know-how enable us to provide the market with incredible quality products.</p>
+                    <p>We can provide advanced contract assembly for elements of any accuracy class.</p></div>
+                <div class="cl"></div>
+            </div>
+        </div>
+        <div class="schema_work">
+            <div class="layout"><h2>work process</h2><img src="arr_line1.png"
+                                                       tppabs="http://gcmatrix.com/img/arr_line1.png" alt=""
+                                                       class="line fl"><img src="arr_line1.png"
+                                                                            tppabs="http://gcmatrix.com/img/arr_line1.png"
+                                                                            alt="" class="line fr">
+                <div class="item" id="bx_1373509569_8">
+                    <div class="count">1</div>
+                    <p>Your needs for production assembly</p>
+                </div>
+                <div class="item" id="bx_1373509569_9">
+                    <div class="count">2</div>
+                    <p>by <a href="#order" class="btn_bid"><span>Application form</span></a> Or email us, sales@bomic.cn for quotation</p>
+                </div>
+                <div class="item fr" id="bx_1373509569_10">
+                    <div class="count">3</div>
+                    <p>After clarifying your needs, our manager will prepare a proposal and you can fully calculate the fees and terms after 1-2 hours.</p>
+                </div>
+                <div class="cl"></div>
+                <img src="arr_line2.png" tppabs="http://gcmatrix.com/img/arr_line2.png" alt="" class="line">
+                <div class="item" id="bx_1373509569_11">
+                    <div class="count">4</div>
+                    <p>You need to pay in advance and we will start producing the project.</p>
+                </div>
+                <div class="item" id="bx_1373509569_12">
+                    <div class="count">5</div>
+                    <p>Pay the remaining order amount after the goods are produced.</p>
+
+                </div>
+
+                <div class="item fr" id="bx_1373509569_13">
+                    <div class="count">6</div>
+                    <p>Warehouse arrangement logistics</p>
+                </div>
+
+                <div class="cl"></div>
+                <img src="arr_line3.png" tppabs="http://gcmatrix.com/img/arr_line3.png" alt="" class="line fr"><img
+                        src="arr_line3.png" tppabs="http://gcmatrix.com/img/arr_line3.png" alt="" class="line fl">
+                <div class="cl"></div>
+            </div>
+        </div>
+
+        <div class="blog">
+            <div class="layout"><h2>Читайте <a href="index-5.htm" tppabs="http://gcmatrix.com/blog/quality/">наш
+                блог</a> об обеспечении качества на производстве</h2>
+                <div class="item" id="bx_3485106786_417"><a href="index-6.htm"
+                                                            tppabs="http://gcmatrix.com/blog/quality/the-formation-of-voids-in-solder-joints/">
+                    <img
+                            src="c5a268cda3a933e621bd7900eb96a236.jpg"
+                            tppabs="http://gcmatrix.com/upload/resize_cache/iblock/c5a/135_135_2/c5a268cda3a933e621bd7900eb96a236.jpg"
+                            alt="Образование пустот в паяных соединениях"
+                            title="Образование пустот в паяных соединениях"
+                    >
+                </a>
+                    <div class="text">
+                        <h4>Образование пустот в паяных соединениях</h4>Образование пустот в паяных соединениях — одно
+                        из явлений, присущих пайке оплавлением. Пустоты отрицательно влияют на механические свой...
+                        <div class="cl"></div>
+                        <a href="index-6.htm"
+                           tppabs="http://gcmatrix.com/blog/quality/the-formation-of-voids-in-solder-joints/">Читать
+                            полностью</a></div>
+                </div>
+                <div class="item fr" id="bx_3485106786_416"><a href="index-7.htm"
+                                                               tppabs="http://gcmatrix.com/blog/quality/nerazrushaushsii-quality-control-methods-of-mounting-semiconductor-crystals-and-housing-ic/">
+                    <img
+                            src="4b5ebf1d98983f110230141c94f89840.jpg"
+                            tppabs="http://gcmatrix.com/upload/resize_cache/iblock/4b5/135_135_2/4b5ebf1d98983f110230141c94f89840.jpg"
+                            alt="Неразрущающие методы контроля качества монтажа полупроводниковых кристаллов и корпуса ИМС"
+                            title="Неразрущающие методы контроля качества монтажа полупроводниковых кристаллов и корпуса ИМС"
+                    >
+                </a>
+                    <div class="text">
+                        <h4>Неразрущающие методы контроля качества монтажа полупроводниковых кристаллов и корпуса
+                            ИМС</h4>В данной статье мы хотим раскрыть перед читателем новые возможности как
+                        традиционного метода неразрушающего контроля — лазерной микроин...
+                        <div class="cl"></div>
+                        <a href="index-7.htm"
+                           tppabs="http://gcmatrix.com/blog/quality/nerazrushaushsii-quality-control-methods-of-mounting-semiconductor-crystals-and-housing-ic/">Читать
+                            полностью</a></div>
+                </div>
+                <div class="cl"></div>
+                <div class="cl"></div>
+            </div>
+        </div>
+
+
+
+        <div class="overlay">
+            <div class="popup">
+                <a href="#close" class="close"></a>
+                <h3>demand</h3>
+                <p>In order for us to process your application quickly and clearly, please describe in detail the task you are facing.</p>
+                <p>If necessary, attach files to the task.</p>
+                <div class="download">
+                    <!--<a  οnclick="changeTzzt();return false" href=""><img src="/images/excel.png" alt="Excel"><p>Download</p></a><span>(Download the .xls file and then fill out to upload)</span>-->
+                    <a   href="http://132.232.16.37:8080/download"><img src="/images/excel.png" alt="Excel"><p>Download</p></a><span>(Download the .xls file and then fill out to upload)</span>
+                    <!--<a    href="javascript:void(0)" οnclick="aaa()"><img src="/images/excel.png" alt="Excel"><p>Download</p></a><span>(Download the .xls file and then fill out to upload)</span>-->
+                </div>
+                <div></div>
+                <!--http://127.0.0.1/excelUpload-->
+
+                <form class="form" action="http://132.232.16.37:8080/excelUpload" id="registSubmit" method="post" name="mainform"  enctype="multipart/form-data">
+                <!--<form class="form"  id="registSubmit" method="post" name="mainform"  enctype="multipart/form-data">-->
+                    <div class="row"><label for="upName">Name:</label> <input name="upName" id="upName" class="form-st" type="text"></div>
+                    <div class="row"><label for="upEmail">Email:</label> <input name="upEmail" id="subemail" class="form-st" type="text"></div>
+                    <div class="row"><label for="upMobile">Mobile no:</label> <input name="upMobile" id="subphone" class="form-st" type="text"></div>
+                    <div class="row"><label for="attachment">Upload your filled form:</label><input name="file" id="file" data-placeholder="upload files" class="form-st" type="file"></div>
+                    <div class="row"><input type="button"  onclick='upload()' id="submit" name="Submit" value="Send"/></div>
+                    <div class="row"><input type="reset" name="Reset" id="reset" value="Reset"/></div>
+
+                </form>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</div>
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+
+
+    // $('#registSubmit').on('submit', function(){
+    //     registPost()
+    //     event.preventDefault() //阻止form表单默认提交
+    //
+    // })
+    // function registPost () {
+
+
+    function aaa(){
+        $.ajax({
+            type:'POST',
+            url:'/download',
+            data:{"workDataId":1},
+            dataType:"json",
+            global:false,
+            success:function(json){
+
+            }
+        });
+    }
+
+    function upload(){
+        var formData = new FormData()  //创建一个forData
+        formData.append('file', $('#file')[0].files[0]) //把file添加进去  name命名为img
+        var subphone= $('#subphone').val();
+        var subemail= $('#subemail').val();
+        var upName= $('#upName').val();
+        formData.append("file", file);
+        formData.append("upMobile", subphone);
+        formData.append("upEmail", subemail);
+        formData.append("upName", upName);
+        $.ajax({
+            url: "/excelUpload",
+            data: formData,
+            type: "POST",
+            async: false,
+            cache: false,
+            contentType: false,
+            processData: false,
+            success: function(data) {
+                alert("上传成功")
+                $('.overlay, .popup').fadeOut();
+            //成功
+        },
+        error: function() {
+            //失败
+            alert("请选择文件")
+        }
+    })
+    }
+
+
+        $("#submit1").click(function(){
+
+        var file = $('#file')[0].files[0];
+        var subphone= $('#subphone').val();
+        var subemail= $('#subemail').val();
+        var upName= $('#upName').val();
+        var formData = new FormData();
+        formData.append("file", file);
+        formData.append("upMobile", subphone);
+        formData.append("upEmail", subemail);
+        formData.append("upName", upName);
+        $.ajax({
+            type: "post",
+            url: "/excelUpload",
+            data: {
+                "file":formData,
+                "upMobile":subphone,
+                "upEmail":subemail,
+                "upName":upName
+            },
+        }).success(function(message) {
+            console.log(message)
+        }).fail(function(err){
+            console.log(err)
+        })
+        /*
+         或者用jquery.form.min.js提交
+         $('#registSubmit').ajaxSubmit(function(message){
+            console.log(message);
+         })
+         */
+    });
+
+
+
+</script>
+<!-- {/literal} END JIVOSITE CODE -->
+</body>
+</html><!--e2260f8fbb19a4604ac3ff717f77f030-->

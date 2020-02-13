@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<style type="text/css">.bx-composite-btn {background: url("sprite-1x.png")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-1x.png*/ no-repeat right 0 #e94524;border-radius: 15px;color: #ffffff !important;display: inline-block;line-height: 30px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-size: 12px !important;font-weight: bold !important;height: 31px !important;padding: 0 42px 0 17px !important;vertical-align: middle !important;text-decoration: none !important;}@media screen   and (min-device-width: 1200px)   and (max-device-width: 1600px)   and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi) {.bx-composite-btn {background-image: url("sprite-2x.png")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-2x.png*/;background-size: 42px 124px;}}  .bx-composite-btn-fixed {position: absolute;top: -45px;right: 15px;z-index: 10;}  .bx-btn-white {background-position: right 0;color: #fff !important;}  .bx-btn-black {background-position: right -31px;color: #000 !important;}  .bx-btn-red {background-position: right -62px;color: #555 !important;}  .bx-btn-grey {background-position: right -93px;color: #657b89 !important;}  .bx-btn-border {border: 1px solid #d4d4d4;height: 29px !important;line-height: 29px !important;}  .bx-composite-loading {display: block;width: 40px;height: 40px;background: url("loading.gif")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/loading.gif*/;}</style>
+<script type="text/javascript" data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','banner':{'url':'http://www.1c-bitrix.ru/composite/','text':'','bgcolor':'#ff045f','style':'white'},'storageBlocks':[],'dynamicBlocks':[],'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}else{w.frameRequestFail = f;}return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();})(window, document);</script>
+
+
+<link href="core.min.css-14451916572854.css" tppabs="http://gcmatrix.com/bitrix/js/main/core/css/core.min.css?14451916572854" type="text/css" rel="stylesheet" />
+<link href="jquery.fancybox.css-14175171805160.css" tppabs="http://gcmatrix.com/css/jquery.fancybox.css?14175171805160" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="jquery.bxslider.css-14175171804040.css" tppabs="http://gcmatrix.com/css/jquery.bxslider.css?14175171804040" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="style.css-156947828531018.css" tppabs="http://gcmatrix.com/css/style.css?156947828531018" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="style.css-1417517180236.css" tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/style.css?1417517180236" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="styles.css-1554948055583.css" tppabs="http://gcmatrix.com/local/templates/main/styles.css?1554948055583" type="text/css" data-template-style="true" rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'http://gcmatrix.com/blog/purchase_xp/the-selection-of-resistors-specified-classes/DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'mx','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/'});</script>
+
+
+<script type="text/javascript" src="core.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core.min.js?147851119173480"></script>
+<script type="text/javascript" src="core_db.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_db.min.js?14646669905048"></script>
+<script type="text/javascript" src="core_ajax.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ajax.min.js?147851119221031"></script>
+<script type="text/javascript" src="json2.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/json/json2.min.js?14175171793467"></script>
+<script type="text/javascript" src="core_ls.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ls.min.js?14451916607365"></script>
+<script type="text/javascript" src="core_fx.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_fx.min.js?14451916579592"></script>
+<script type="text/javascript" src="core_frame_cache.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_frame_cache.min.js?147851118811191"></script>
+<script type="text/javascript">var bxDate = new Date(); document.cookie="mx_TIME_ZONE="+bxDate.getTimezoneOffset()+"; path=/; expires=Fri, 01-Jan-2038 00:00:00 GMT"</script>
+
+
+
+<script type="text/javascript" src="jquery-3.4.1.min.js" tppabs="http://gcmatrix.com/js/jquery-3.4.1.min.js?142112976595790"></script>
+<script type="text/javascript" src="jquery.carouFredSel.js" tppabs="http://gcmatrix.com/js/jquery.carouFredSel.js?141751718036181"></script>
+<script type="text/javascript" src="jquery.bxslider.min.js" tppabs="http://gcmatrix.com/js/jquery.bxslider.min.js?141751718019368"></script>
+<script type="text/javascript" src="jquery-ui.js" tppabs="http://gcmatrix.com/js/jquery-ui.js?1417517180485937"></script>
+<script type="text/javascript" src="jquery.mask.min.js" tppabs="http://gcmatrix.com/js/jquery.mask.min.js?14175171804741"></script>
+<script type="text/javascript" src="jquery.formstyler.min.js" tppabs="http://gcmatrix.com/js/jquery.formstyler.min.js?141751718015758"></script>
+<script type="text/javascript" src="jquery.fancybox.js" tppabs="http://gcmatrix.com/js/jquery.fancybox.js?141751718050725"></script>
+<script type="text/javascript" src="script2.js" tppabs="http://gcmatrix.com/js/script.js?14175171807558"></script>
+<script type="text/javascript" src="script6.js" tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/script.js?1417517180990"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "72e5454bdb8b62a08488572b66bc822a"]); _ba.push(["host", "http://gcmatrix.com/blog/purchase_xp/the-selection-of-resistors-specified-classes/gcmatrix.com"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+<title>ШИМ контроллеры от ON Semiconductors - Матрикс</title><!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(52706338, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="1.gif" tppabs="https://mc.yandex.ru/watch/52706338" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+<div id="panel">
+    </div>
+<div class="wrapper">
+    <div class="header">
+        <div class="layout">
+            <div class="logo">
+                <a>
+                    <img src="/images/logo.jpg" tppabs="http://gcmatrix.com/img//images/logo.jpg" alt="Матрикс">
+                </a>
+            </div>            <div class="text">
+            中国领先的印刷电路板OEM制造商                       </div>
+            <div class="phone">
+                <b class="h2">+7 (383) 383-08-05</b><div class="d-flex">
+                <div class="mr-2">
+                    <a href="skype:live:a2ad12d4eb62443e?chat" target="_blank"><span class="i-mess i-mess-skype"></span></a>
+                    <a href="tg://resolve?domain=matrix_elektronika" target="_blank"><span class="i-mess i-mess-telegram"></span></a>
+                    <a href="javascript:if(confirm('https://wa.me/79994638549  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://wa.me/79994638549'" tppabs="https://wa.me/79994638549" target="_blank"><span class="i-mess i-mess-whatsapp"></span></a>
+                    <a href="viber://pa?chatURI=matrixelektronika" target="_blank"><span class="i-mess i-mess-viber"></span></a>
+                </div>
+                <div class="comment">周一至周五，9点-18点					</div>
+            </div>
+            </div>
+            <div class="cl"></div>
+            <div class="menu">
+                <a href="index.htm" tppabs="http://gcmatrix.com/" class="home"></a>
+                <ul><li>
+                    <a href="index.html" tppabs="http://gcmatrix.com/about-company/"  >首页</a>
+                </li><li>
+                    <a href="index-2.htm" tppabs="http://gcmatrix.com/blog/"  >关于我们</a>
+                </li><li>
+                    <a href="index-3.htm" tppabs="http://gcmatrix.com/contract-assembly/"  >PCB组装</a>
+                </li><li>
+                    <a href="javascript:if(confirm('https://pcb.gcmatrix.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://pcb.gcmatrix.com/'" tppabs="https://pcb.gcmatrix.com/"   target="_blank">PCB</a>
+                </li><li>
+                    <a href="index-4.htm" tppabs="http://gcmatrix.com/components/"  >电子元器件</a>
+                </li></ul>
+                <div class="cl"></div>
+            </div>        </div>
+    </div>
+    <div class="content"><div class="news blog_page">
+    <div class="layout"><div class="left text_page">
+    <h1>ШИМ контроллеры от ON Semiconductors</h1>
+    <span class="date">18 ноября</span>
+    <div class="cl"></div><div class="quote">Ключевым элементом любого изделия является его блок питания, в данной статье мы рассмотрим ШИМ-контроллеры, которые вы можете применить в своих разработках для оптимизации питания.</div>
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Основная схема, по которой выполнены многие импульсные источники питания малой и средней мощности, &mdash; это обратноходовой преобразователь. Основное преимущество обратноходовой топологии — дешевизна и малое количество компонентов. Поэтому практически все сетевые источники питания мощностью до 30&ndash;50 Вт строятся именно по этой топологии. Эта схема преобразует одно постоянное напряжение в другое, регулируя выходное напряжение посредством широтно-импульсной модуляции (ШИМ) либо частотно-импульсной модуляции (ЧИМ). Модуляция ширины импульса — это метод управления, основанный на изменении отношения длительности включенного состояния ключа к выключенному при постоянной частоте. В обратноходовом преобразователе длительность включенного состояния ключа больше длительности выключенного состояния: при этом большее количество энергии запасается в трансформаторе и передается в нагрузку.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">В номенклатуре ON Semi в настоящее время имеется свыше 40 типов ШИМ-контроллеров типа Flyback. По сути, все микросхемы построены на базовой архитектуре, которая впервые была использована в микросхеме интегрального ШИМ-контроллера UC384x, разработанной более 15 лет назад. Микросхема очень популярна среди разработчиков источников питания и до сих пор выпускается многими производителями, в том числе и ON Semi.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><img src="814303e65cb6d5fb86dd91aad6a0e55d.png" tppabs="http://gcmatrix.com/upload/medialibrary/814/814303e65cb6d5fb86dd91aad6a0e55d.png" title="р1.png" border="0" alt="р1.png" width="650" height="424"  /></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Основная функция ШИМ-контроллера — управление силовым транзистором (транзисторами), стоящим(и) в первичной цепи импульсного трансформатора, и поддержание выходного напряжения на заданном уровне с помощью сигнала обратной связи.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Структура современных ШИМ-контроллеров обеспечивает и дополнительные функции, повышающие эффективность и надежность источника питания:<o:p></o:p></p>
+ 
+<p class="MsoNormal">- ограничение тока и скважности импульсов в цепи управления силовыми транзисторами;<o:p></o:p></p>
+ 
+<p class="MsoNormal">- плавный запуск преобразователя после подачи питания;<o:p></o:p></p>
+ 
+<p class="MsoNormal">- встроенный динамический источник питания от высоковольтного входного напряжения;<o:p></o:p></p>
+ 
+<p class="MsoNormal">- контроль уровня входного напряжения с устранением &laquo;провалов&raquo; и «выбросов»;<o:p></o:p></p>
+ 
+<p class="MsoNormal">- защита от КЗ в цепи силового трансформатора и цепях выходного выпрямителя;<o:p></o:p></p>
+ 
+<p class="MsoNormal">- температурная защита контроллера, а также ключевого элемента;<o:p></o:p></p>
+ 
+<p class="MsoNormal">- блокировка работы преобразователя при пониженном и повышенном входном напряжении;<o:p></o:p></p>
+ 
+<p class="MsoNormal">- оптимизация управления для дежурного режима и режима с пониженным током в нагрузке (пропуск циклов или переход на пониженную частоту преобразования);<o:p></o:p></p>
+ 
+<p class="MsoNormal">- оптимизация уровня ЭМИ.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Интересующие нас ШИМ-контроллеры не имеют встроенного силового транзистора, управляющего током в первичной цепи силового трансформатора. Рассмотрим структуру и параметры ШИМ-контроллеров топологии Flyback, которые представлены линейкой NCP12xx и разработаны ON Semi за последнее время: к ним относятся микросхемы NCP1216/17 и NCP1252/53. Структура этих контроллеров является дальнейшим развитием архитектуры линейки NCP1200/1203, разработанной в начале 2000-х годов<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Следует отметить, что в структуре микросхем Flyback ШИМ-контроллеров последних разработок используется практически один и тот базовый же набор типовых функциональных модулей. Основные различия определяются нагрузочной способностью выходного каскада по току (от 110 до 800 мА), режимом частотного управления (частота постоянная или варьируемая), а также логикой работы при обнаружении критических ситуаций. Структура ШИМ-контроллера содержит логику, задающую автомат состояний. Схема автомата переходов реализована на компараторах, триггерах, таймерах и элементах логики.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Основные состояния контроллера: начальный пуск частотного генератора, выход на рабочий режим, адаптивное слежение за током нагрузки и выбор оптимального режима, обнаружение критических ситуаций, переход в аварийный режим, автовосстановление после сбоев. Б&oacute;льшая часть микросхем Flyback-контроллеров выполнена в компактных 8-выводных корпусах (SOIC-8, PDIP-8). Несмотря на схожесть структуры, назначение и расположение выводов микросхем контроллеров для различных типов сильно отличаются. Прежде чем оценивать и сравнивать параметры новых контроллеров, рассмотрим основные функции базовых модулей контроллера.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify;"><b>Защита и безопасность работы<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Сетевые преобразователи должны обеспечивать достаточный уровень безопасности при работе без деградации характеристик силовых элементов в случае возникновения токовых перегрузок, в первую очередь вследствие коротких замыканий в обмотках трансформатора или в нагрузке. Короткое замыкание обнаруживается по внезапному исчезновению сигнала обратной связи через оптрон. Нужно отключить драйвер выходного транзистора, чтобы предотвратить перегрев транзистора и насыщение трансформатора. Однако и в процессе запуска сигнал обратной связи также отсутствует некоторое время. Нужно идентифицировать эти две ситуации.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><img src="153b926a657639b92e2c3d052714949d.png" tppabs="http://gcmatrix.com/upload/medialibrary/153/153b926a657639b92e2c3d052714949d.png" title="т1.png" border="0" alt="т1.png" width="650" height="355"  /></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">В некоторых недорогих контроллерах защита от короткого замыкания по выходу не реализована. В таких случаях возникновение токовой перегрузки приведет к неконтролируемым последствиям и может в считаные секунды привести к разрушению силовых элементов преобразователя. Короткое замыкание может быть нескольких типов — в самой нагрузке, обмотках, электролитическом конденсаторе выходного выпрямителя, выпрямительных диодах. Введение детерминируемых состояний увеличивает сложность автомата, но повышает надежность работы преобразователя.<o:p></o:p></p>
+ 
+<p class="MsoNormal"><b>Функция блокировки и автовосстановления при аварийных ситуациях<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">В настоящее время используется несколько вариантов сценариев отработки аварийных ситуаций, возникающих в источниках питания на основе Flyback ШИМ-контроллеров. Переход в аварийный режим при обнаружении критических ситуаций может предусматривать как принудительное ограничение тока, так и полную блокировку работы преобразователя. При блокировке останавливается задающий ШИМ-генератор и запрещается подача активного сигнала для силового транзистора.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">В зависимости от типа или модификаций микросхем возможны два сценария блокировки. В первом случае после срабатывания блокировки преобразователь «защелкивается» в этом состоянии и не меняет его, даже если условие, вызвавшее это состояние, уже пропало. Восстановление работы преобразователя возможно лишь после выключения сетевого напряжения и повторного включения питания.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Во втором случае реализуются попытки автовосстановления нормальной работы преобразователя. Для этого в структуре контроллера запускается таймер на время около 1,5 с. После истечения этого времени контроллер вновь проверяет наличие критических ситуаций, и, если они сохраняются, блокировка остается. В этом случае светодиодный индикатор сетевого источника будет мигать с периодом 1,5 с.<o:p></o:p></p>
+ 
+<p class="MsoNormal"><o:p> </o:p></p>
+ 
+<p class="MsoNormal"><b>Защита при пониженном напряжении на входе<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify;">Понижение напряжения на входе питания микросхемы контроллера ниже порогового в первую очередь может привести к неправильной работе драйвера, управляющего силовым транзистором. А это приведет к неоптимальной и несогласованной работе силового каскада, перегреву полевого транзистора, насыщению трансформатора и аварийному повышению тока. Защита обеспечивает автоматическую блокировку работы генератора и затворного драйвера, тем самым предотвращается аварийная ситуация. Модуль защиты состоит из порогового компаратора и логической схемы, которая определяет алгоритм работы защитного модуля. Для данного типа защиты могут быть использованы режимы защелки или автовосстановления после прекращения аварийной ситуации.<o:p></o:p></p>
+ 
+<p class="MsoNormal"><b>Малое потребление в дежурном режиме<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">В дежурном режиме ток в нагрузке практически отсутствует и основное потребление от сети будет по цепи питания логики контроллера. Питание микросхем контроллеров осуществляется через резистор, подключаемый к шине выпрямленного напряжения сети. Потребление всего источника питания в дежурном режиме будет определяться величиной тока, протекающего в этой цепи. Однако сделать его ничтожно малым нельзя, поскольку требуется обеспечить работу логики при начальном запуске преобразователя при переходе из дежурного в рабочий режим. Современные контроллеры имеют сверхнизкий ток потребления в дежурном режиме — 100 мкА и менее.<o:p></o:p></p>
+ 
+<p class="MsoNormal"><b>Режим пониженной частоты<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify;">В контроллерах последних разработок используется режим с переходом на пониженную частоту (Frequency foldback). Этот переход происходит при снижении сигнала обратной связи менее порогового значения. Понижение частоты преобразования позволяет уменьшить потребление в дежурном режиме.<o:p></o:p></p>
+ 
+<p class="MsoNormal"><b>Режим пропуска циклов<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Режим пропуска частотных циклов позволяет уменьшить потребление в дежурном режиме. Режим активизируется при уменьшении уровня амплитуды сигнала обратной связи ниже установленного порога. Skip-Cycle и Frequency foldback реализуются в одном структурном модуле контроллера.<o:p></o:p></p>
+ 
+<p class="MsoNormal"><b>Уменьшение ЭМИ за счет джиттера внутреннего генератора<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Для контроллеров, работающих на фиксированной частоте, может использоваться прием введения малой частотной модуляции &plusmn;5% около центральной частоты (джиттер). Наличие джиттера не влияет на работу преобразователя, однако позволяет «размыть» спектр ЭМИ и таким образом уменьшить амплитуду помех.<o:p></o:p></p>
+ 
+<p class="MsoNormal"><b>Компенсация пилообразности сигнала обратной связи<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">В контроллерах Flyback можно использовать режимы как с непрерывным, так и с прерывистым током. Во всех рассматриваемых ниже микросхемах контроллеров есть режим неразрывных токов, который обеспечивает больший КПД. Однако этот режим чреват неустойчивостью работы и возникновением субгармонических колебаний в силовых цепях. Субгармонические колебания могут приводить к выходу из строя силовых элементов. Для устранения этого паразитного эффекта в последних разработках Flyback ШИМ-контроллеров применяется компенсация пилообразности сигнала обратной связи, которая позволяет улучшить режим стабилизации в процессе регулирования. Сигнал для компенсации спада снимается с токового датчика (резистора) в цепи силового ключа.<o:p></o:p></p>
+ 
+<p class="MsoNormal"><o:p> </o:p></p>
+ 
+<p class="MsoNormal"><b>NCP1216 — контроллер для сетевых адаптеров питания<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Микросхема NCP1216 выпускается в корпусах SOIC-8 и PDIP-7. Она представляет собой расширенную версию ранее разработанного контроллера NCP1200 и полностью совестима с ним по цоколевке выводов. В отличие от предшествующей модели микросхема NCP1216 имеет повышенную нагрузочную способность по каналу управления затвором силового полевого ключа. Кроме того, добавлена функция компенсации спада токовой характеристики и введена функция джиттеринга (принудительного качания основной частоты встроенного тактового генератора). Эта функция обеспечивает уменьшение уровня ЭМИ при сохранении высокого КПД преобразования. Эти новшества обеспечивают упрощение разработки современных сетевых адаптеров питания.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><img src="06b24ed61503bfd147df7ea7c3170dc8.png" tppabs="http://gcmatrix.com/upload/medialibrary/06b/06b24ed61503bfd147df7ea7c3170dc8.png" title="р2.png" border="0" alt="р2.png" width="650" height="351"  /></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Имеются опции микросхем с разными фиксированными значениями частоты встроенного генератора, что обеспечивает определенную свободу выбора для разработчика. Питание микросхемы производится от выпрямленного сетевого напряжения и не требует наличия дополнительных обмоток импульсного трансформатора для организации этого питания.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">На базе контроллера можно разрабатывать зарядные устройства для аккумуляторов или сетевые адаптеры питания для ЖК-телевизоров. Режим управления по току обеспечивает минимальные пульсации на выходе источника и может быть использован для питания звуковой аппаратуры, для которой критичен уровень пульсации питающего напряжения. Встроенная компенсация спада характеристики предотвращает появление паразитных субгармонических колебаний выходного напряжения, которые характерны для метода управления с непрерывной проводимостью. Когда ток уменьшается ниже заданного порога, то есть выходная мощность уменьшается, микросхема автоматически переходит в так называемый режим пропуска циклов и сохраняет высокую эффективность при малой токовой нагрузке. Поскольку это происходит при малых пиковых значениях тока, то работа в этом режиме не вызывает появления дополнительного акустического шума трансформатора.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Контроллер NCP1216 имеет эффективные встроенные модули защиты, которые обеспечивают отключение выхода при аварийных значениях выходного тока. При этом микросхема переходит в защищенный режим с циклическими попытками рестарта, чтобы возобновить нормальный режим после прекращения токовой перегрузки. Существуют разные версии микросхем, отличающиеся алгоритмом поведения при возникновении токовой перегрузки: с автоматическим восстановлением рабочего состояния и восстановлением через отключение и повторное включение питания. Разработчик в зависимости от условий работы источника питания может выбрать нужную версию микросхемы контроллера.<o:p></o:p></p>
+ 
+<p class="MsoNormal">Основные параметры NCP1216:<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Для питания не требуется дополнительная обмотка импульсного трансформатора.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Режим управления по току с подстройкой пропуска циклов при малой нагрузке.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Внутренняя компенсация спада характеристики.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Ограниченная скважность до 50% (только для версии NCP1216A).<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Внутренняя задержка для плавного пуска на 1 мс (только NCP1216A).<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Качание частоты задающего генератора для уменьшения уровня ЭМИ.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Режим автовосстановления после токовой перегрузки на выходе.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Защита от короткого замыкания на выходе.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Низкое потребление внутренней логики в дежурном режиме.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Нагрузочная токовая способность по выходу: 500 мА.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Версии с фиксированными частотами тактового генератора: 65/100/133 кГц.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Внутренняя защита от перегрева.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Прямое подключение к оптопаре.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Доступна SPICE-модель для моделирования.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Совместимость pin-to-pin с контроллером серии NCP1200.<o:p></o:p></p>
+ 
+<p class="MsoNormal">Типовые применения: <o:p></o:p></p>
+ 
+<p class="MsoNormal">- Сетевые адаптеры высокой мощности для ЖК-телевизоров, спутниковых ресиверов и другой домашней аудио/видеоаппаратуры.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Сетевые адаптеры для ноутбуков (с дежурным режимом).<o:p></o:p></p>
+ 
+<p class="MsoNormal">- DC/DC-конверторы для телекоммуникационной аппаратуры.<o:p></o:p></p>
+ 
+<p class="MsoNormal"><b>Микросхема контроллера NCP1217<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Микросхема NCP1217 в нестандартном корпусе (SOIC-7 или PDIP-7) представляет собой следующее поколение контроллеров, развивающих архитектуру NCP1203. В структуре NCP1217 используется драйвер управления затвором внешнего полевого ключа с повышенной токовой нагрузочной способностью. Кроме того, введена цепь компенсации спада характеристики, а также добавлена цепь защиты от перенапряжения на выходе, что в целом увеличивает надежность работы микросхемы и всего источника питания и облегчает разработку источника питания. Контроллер NCP1217 может быть использован как альтернатива хорошо известному и широко используемому контроллеру серии UC384X.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Внутренний тактовый генератор может работать на одной из трех фиксированных частот (65, 100, 133 кГц) для разных версий микросхемы. Внутренняя цепь компенсации спада позволяет предотвратить возникновение субгармонических колебаний, которые очень характерны для режима с непрерывной проводимостью. В микросхеме также реализован переход в режим с пропуском циклов при значительном уменьшении тока в нагрузке.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify;">В контроллере NCP1217 реализованы два модуля эффективной защиты:<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Защита при коротком замыкании и токовой перегрузке на выходе, при которой блокируется подача импульсов управления на силовой ключ, контроллер переходит в безопасный режим с периодическими попытками рестарта. По умолчанию используется автовосстановление нормального режима после аварийной ситуации.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Вход сигнала блокировки работы от внешнего источника. Наличие этого входа позволяет, например, контролировать температуру внешних силовых цепей, в частности, в самой нагрузке, и при аварийной ситуации непосредственно блокировать преобразователь, не ожидая, пока сработает его собственная защита.<o:p></o:p></p>
+ 
+<p class="MsoNormal"><b>ШИ</b><b>М-контроллер NCP1252<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Контроллер NCP1252 в основном ориентирован на использование в ATX сетевых блоков питания компьютеров. Имеется функция защиты при пониженном напряжении на входе, что обеспечивает безопасную работу в различных режимах. Микросхема не совместима по выводам и по схеме включения с версиями контроллеров NCP1216/NCP1217.<o:p></o:p></p>
+ 
+<p class="MsoNormal">Основные параметры:<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Режим регулирования по пиковому значению тока.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Регулируемая частота преобразователя: вплоть до 500 кГц.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Диапазон качания частоты (для джиттеринга): ±5% от основной частоты.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Защита от броска тока при включении (фиксированная задержка включения на 10 мс).<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Задержка включения производится через внутренний таймер и не требует внешних времязадающих элементов.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Регулируемый таймер плавного пуска.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Режим автовосстановления при обнаружении падения напряжения на выходе ниже допустимого значения.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Порог защиты UVLO задается, как и у микросхем серии UC384X.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Диапазон питающих напряжений микросхемы: от 9 до 28 В (есть функция авто-восстановления при понижении питания на входе).<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Внутренняя регулируемая компенсация спада характеристики.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Нагрузочная способность затворного драйвера: +500/–800 мA.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Ограничение скважности выходных импульсов управления затвором:<o:p></o:p></p>
+ 
+<p class="MsoNormal">* максимум 50% (версия A);<o:p></o:p></p>
+ 
+<p class="MsoNormal">* максимум 80% (версия B).<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Корпус SOIC-8.<o:p></o:p></p>
+ 
+<p class="MsoNormal">Типовые применения — источники питания персональных компьютеров.<o:p></o:p></p>
+ 
+<p class="MsoNormal"><img src="b0167544215f3c7f093b7d00b6c6c219.png" tppabs="http://gcmatrix.com/upload/medialibrary/b01/b0167544215f3c7f093b7d00b6c6c219.png" title="р3.png" border="0" alt="р3.png" width="650" height="371"  /></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Выбор частоты, а также возможность работы на высоких частотах (до 500 кГц) позволяют оптимизировать различные параметры сетевого преобразователя, в зависимости от предъявляемых требований как к электрическим параметрам (КПД, выходная мощность, максимальный ток, диапазон входных напряжений), так и к размерам трансформатора и занимаемому месту на печатной плате. Высокая нагрузочная способность затворного драйвера (до 800 мА) при высоком КПД (работа на 500 кГц) позволяет использовать топологию Flyback для проектирования экономичных сетевых источников средней и высокой мощности, в первую очередь источников питания для компьютеров.<o:p></o:p></p>
+ 
+<p class="MsoNormal"><b>6-выводной ШИМ-контроллер NCP1253<o:p></o:p></b></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Микросхема NCP1253 представляет собой работающий на фиксированной частоте ШИМ-контроллер, предназначенный для маломощных сетевых адаптеров питания с мощностью менее 50 Вт. Особенность контроллера — сверхкомпактный корпус TSOP-6 с минимальным числом выводов. Реально же из шести выводов корпуса TSOP-6 задействованы всего только пять:<o:p></o:p></p>
+ 
+<p class="MsoNormal">1-Питание микросхемы.<o:p></o:p></p>
+ 
+<p class="MsoNormal">2-GND.<o:p></o:p></p>
+ 
+<p class="MsoNormal">3-Сигнал обратной связи.<o:p></o:p></p>
+ 
+<p class="MsoNormal">4-Выходной сигнал управления силовым ключом.<o:p></o:p></p>
+ 
+<p class="MsoNormal">5-Датчик тока/подключение цепочки компенсации спада характеристики.<o:p></o:p></p>
+ 
+<p class="MsoNormal"><img src="987cdca0f8cbbbb6619173da19040ecd.png" tppabs="http://gcmatrix.com/upload/medialibrary/987/987cdca0f8cbbbb6619173da19040ecd.png" title="р4.png" border="0" alt="р4.png" width="650" height="423"  /></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">Микросхему можно использовать в компактных и бюджетных сетевых источниках питания малой и средней мощности. Соответственно, в ней оптимизирован набор функциональных модулей. Нет функции мониторинга входного напряжения для реализации защиты при пониженном напряжении. Частота не регулируемая: заданы два фиксированных значения (65 и 100 кГц) для двух версий микросхемы А и B. Период плавного пуска — фиксированный и не регулируется, как в NCP1252. Ток выходного драйвера управления затвором силового транзистора существенно меньше. Допускается функционирование в дежурном режиме и в широком диапазоне изменения нагрузки. В микросхеме реализована функция снижения частоты и пропуска циклов при значительном снижении тока в нагрузке, при этом сохраняется высокая эффективность преобразования для всего диапазона изменения нагрузки.<o:p></o:p></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><img src="37bdc49c9c15ed6a5f05e8b676bf4c64.png" tppabs="http://gcmatrix.com/upload/medialibrary/37b/37bdc49c9c15ed6a5f05e8b676bf4c64.png" title="р5.png" border="0" alt="р5.png" width="574" height="688"  /></p>
+ 
+<p class="MsoNormal">Основные параметры:<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Фиксированные частоты внутреннего генератора: 65/100 кГц.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Режим управления — по току.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Режим перехода на пониженную частоту до 26 кГц и режим пропуска циклов для малых нагрузок.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Регулируемая компенсация спада характеристики.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Нагрузочная способность затворного драйвера: +300/–500 мA.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Плавный пуск: 4 мс.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Режим автовосстановления (с таймером) или же защелкивание при коротком замыкании на выходе.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Качание частоты задающего генератора, а также режим перехода на низкую частоту при резком снижении тока в нагрузке.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Защита от перенапряжения на входе.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Напряжение питания: до 28 В<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Сверхнизкое потребление внутренней логики в дежурном режиме.<o:p></o:p></p>
+ 
+<p class="MsoNormal"><img src="b69a8f083583db4f4d32f7d0fd8ed0d0.png" tppabs="http://gcmatrix.com/upload/medialibrary/b69/b69a8f083583db4f4d32f7d0fd8ed0d0.png" title="р6.png" border="0" alt="р6.png" width="650" height="297"  /></p>
+ 
+<p class="MsoNormal">Типовое применение:<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Сетевые адаптеры для ЖК-телевизоров, ресиверов спутникового ТВ, принтеров.<o:p></o:p></p>
+ 
+<p class="MsoNormal">- Внешний сетевой адаптер для ноутбуков и нетбуков.<o:p></o:p></p>
+ 
+<p class="MsoNormal"><img src="7379fc564cbe926a1e721278d8eae415.png" tppabs="http://gcmatrix.com/upload/medialibrary/737/7379fc564cbe926a1e721278d8eae415.png" title="т2.png" border="0" alt="т2.png" width="424" height="236"  /></p>
+ 
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;">В микросхеме NCP1253 используется стандартная архитектура с управлением по току, когда фазы состояний силового ключа определяются величиной порога пикового тока. Архитектура серии NCP1200 продолжает развиваться, и контроллер NCP1253 содержит все компоненты, необходимые для реализации современного и надежного источника питания, в том числе защиту при перенапряжении питающего напряжения, а также регулируемый сигнал компенсации спада характеристики. Микросхема имеет очень низкий ток потребления в дежурном режиме — всего 15 мкА. Есть четыре различных версии исполнения, которые отличаются частотой работы внутреннего генератора, а также сценариями работы защиты при токовой перегрузке.<o:p></o:p></p>
+ <div class="cl"></div>
+    <div class="hr"></div>
+</div><div class="right_block"><h4>Темы блога</h4><a href="index-12.htm" tppabs="http://gcmatrix.com/blog/industry_news/">Отраслевые новости</a><a href="index-13.htm" tppabs="http://gcmatrix.com/blog/spec_xp/">Контрактная сборка</a><a href="index-5.htm" tppabs="http://gcmatrix.com/blog/quality/">Вопросы качества</a><a href="index-14.htm" tppabs="http://gcmatrix.com/blog/purchase_xp/" class="selected">Компоненты</a><a href="index-15.htm" tppabs="http://gcmatrix.com/blog/%D1%81ircuitry_talks/">Печатные платы</a><a href="index-16.htm" tppabs="http://gcmatrix.com/blog/the-company-matrix/">Компания Матрикс</a><a href="index-2.htm" tppabs="http://gcmatrix.com/blog/">Все темы блога</a></div><div class="cl"></div>
+    </div>
+</div>
+            </div>
+            <div class="footer">
+                <div class="layout">
+                    <div class="logo">
+	<a href="index.htm" tppabs="http://gcmatrix.com/">
+		<img src="/images/logo.jpg" tppabs="http://gcmatrix.com/img//images/logo.jpg" alt="Матрикс">
+	</a>
+</div><div class="menu">
+    <ul><li>
+                <a href="index-1.htm" tppabs="http://gcmatrix.com/about-company/">О компании</a>
+            </li><li class="act">
+                <a href="index-2.htm" tppabs="http://gcmatrix.com/blog/">Наш блог</a>
+            </li></ul><ul><li>
+                <a href="index-3.htm" tppabs="http://gcmatrix.com/contract-assembly/">Контрактная сборка</a>
+            </li><li>
+                <a href="javascript:if(confirm('https://pcb.gcmatrix.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://pcb.gcmatrix.com/'" tppabs="https://pcb.gcmatrix.com/">Печатные платы</a>
+            </li></ul><ul><li>
+                <a href="index-4.htm" tppabs="http://gcmatrix.com/components/">Компоненты</a>
+            </li></ul>
+    <div class="cl"></div>
+</div>                    <div class="phone">
+                        <b>+7 (383) 383-08-05</b><span>周一至周五，9点-18点</span>
+                    </div>
+                    <div class="cl"></div>
+                    <div class="copyright_site">©2012-2020 BOMIC ELECTRON LLC
+<p align="center">
+ <br>
+</p>
+<p align="center">
+</p>
+<p>
+</p>
+ <br></div>
+                    <div class="cl"></div>
+                    <div class="bx-composite-bt">
+                        <div id="bx-composite-banner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'SVoXb2A8Sx';var d=document;var w=window;function l(){
+  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+  s.src = '//code.jivosite.com/script/widget/'+widget_id
+    ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+  if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
+  else{w.addEventListener('load',l,false);}}})();
+</script>
+<!-- {/literal} END JIVOSITE CODE -->
+    </body>
+</html><!--5d65e8b76bd1bd2e2ab1f6275be1c2d0-->

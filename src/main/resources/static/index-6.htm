@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<style type="text/css">.bx-composite-btn {background: url("sprite-1x.png")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-1x.png*/ no-repeat right 0 #e94524;border-radius: 15px;color: #ffffff !important;display: inline-block;line-height: 30px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-size: 12px !important;font-weight: bold !important;height: 31px !important;padding: 0 42px 0 17px !important;vertical-align: middle !important;text-decoration: none !important;}@media screen   and (min-device-width: 1200px)   and (max-device-width: 1600px)   and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi) {.bx-composite-btn {background-image: url("sprite-2x.png")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-2x.png*/;background-size: 42px 124px;}}  .bx-composite-btn-fixed {position: absolute;top: -45px;right: 15px;z-index: 10;}  .bx-btn-white {background-position: right 0;color: #fff !important;}  .bx-btn-black {background-position: right -31px;color: #000 !important;}  .bx-btn-red {background-position: right -62px;color: #555 !important;}  .bx-btn-grey {background-position: right -93px;color: #657b89 !important;}  .bx-btn-border {border: 1px solid #d4d4d4;height: 29px !important;line-height: 29px !important;}  .bx-composite-loading {display: block;width: 40px;height: 40px;background: url("loading.gif")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/loading.gif*/;}</style>
+<script type="text/javascript" data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','banner':{'url':'http://www.1c-bitrix.ru/composite/','text':'','bgcolor':'#ff045f','style':'white'},'storageBlocks':[],'dynamicBlocks':[],'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}else{w.frameRequestFail = f;}return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();})(window, document);</script>
+
+
+<link href="core.min.css-14451916572854.css" tppabs="http://gcmatrix.com/bitrix/js/main/core/css/core.min.css?14451916572854" type="text/css" rel="stylesheet" />
+<link href="jquery.fancybox.css-14175171805160.css" tppabs="http://gcmatrix.com/css/jquery.fancybox.css?14175171805160" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="jquery.bxslider.css-14175171804040.css" tppabs="http://gcmatrix.com/css/jquery.bxslider.css?14175171804040" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="style.css-156947828531018.css" tppabs="http://gcmatrix.com/css/style.css?156947828531018" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="style.css-1417517180236.css" tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/style.css?1417517180236" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="styles.css-1554948055583.css" tppabs="http://gcmatrix.com/local/templates/main/styles.css?1554948055583" type="text/css" data-template-style="true" rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'http://gcmatrix.com/blog/quality/the-formation-of-voids-in-solder-joints/DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'mx','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/'});</script>
+
+
+<script type="text/javascript" src="core.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core.min.js?147851119173480"></script>
+<script type="text/javascript" src="core_db.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_db.min.js?14646669905048"></script>
+<script type="text/javascript" src="core_ajax.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ajax.min.js?147851119221031"></script>
+<script type="text/javascript" src="json2.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/json/json2.min.js?14175171793467"></script>
+<script type="text/javascript" src="core_ls.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ls.min.js?14451916607365"></script>
+<script type="text/javascript" src="core_fx.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_fx.min.js?14451916579592"></script>
+<script type="text/javascript" src="core_frame_cache.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_frame_cache.min.js?147851118811191"></script>
+<script type="text/javascript">var bxDate = new Date(); document.cookie="mx_TIME_ZONE="+bxDate.getTimezoneOffset()+"; path=/; expires=Fri, 01-Jan-2038 00:00:00 GMT"</script>
+
+
+
+<script type="text/javascript" src="jquery-3.4.1.min.js" tppabs="http://gcmatrix.com/js/jquery-3.4.1.min.js?142112976595790"></script>
+<script type="text/javascript" src="jquery.carouFredSel.js" tppabs="http://gcmatrix.com/js/jquery.carouFredSel.js?141751718036181"></script>
+<script type="text/javascript" src="jquery.bxslider.min.js" tppabs="http://gcmatrix.com/js/jquery.bxslider.min.js?141751718019368"></script>
+<script type="text/javascript" src="jquery-ui.js" tppabs="http://gcmatrix.com/js/jquery-ui.js?1417517180485937"></script>
+<script type="text/javascript" src="jquery.mask.min.js" tppabs="http://gcmatrix.com/js/jquery.mask.min.js?14175171804741"></script>
+<script type="text/javascript" src="jquery.formstyler.min.js" tppabs="http://gcmatrix.com/js/jquery.formstyler.min.js?141751718015758"></script>
+<script type="text/javascript" src="jquery.fancybox.js" tppabs="http://gcmatrix.com/js/jquery.fancybox.js?141751718050725"></script>
+<script type="text/javascript" src="script2.js" tppabs="http://gcmatrix.com/js/script.js?14175171807558"></script>
+<script type="text/javascript" src="script6.js" tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/script.js?1417517180990"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "72e5454bdb8b62a08488572b66bc822a"]); _ba.push(["host", "http://gcmatrix.com/blog/quality/the-formation-of-voids-in-solder-joints/gcmatrix.com"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+<title>Образование пустот в паяных соединениях - Матрикс</title><!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(52706338, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="1.gif" tppabs="https://mc.yandex.ru/watch/52706338" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+<div id="panel">
+    </div>
+<div class="wrapper">
+    <div class="header">
+        <div class="layout">
+            <div class="logo">
+                <a>
+                    <img src="/images/logo.jpg" tppabs="http://gcmatrix.com/img//images/logo.jpg" alt="Матрикс">
+                </a>
+            </div>            <div class="text">
+            中国领先的印刷电路板OEM制造商                       </div>
+            <div class="phone">
+                <b class="h2">+7 (383) 383-08-05</b><div class="d-flex">
+                <div class="mr-2">
+                    <a href="skype:live:a2ad12d4eb62443e?chat" target="_blank"><span class="i-mess i-mess-skype"></span></a>
+                    <a href="tg://resolve?domain=matrix_elektronika" target="_blank"><span class="i-mess i-mess-telegram"></span></a>
+                    <a href="javascript:if(confirm('https://wa.me/79994638549  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://wa.me/79994638549'" tppabs="https://wa.me/79994638549" target="_blank"><span class="i-mess i-mess-whatsapp"></span></a>
+                    <a href="viber://pa?chatURI=matrixelektronika" target="_blank"><span class="i-mess i-mess-viber"></span></a>
+                </div>
+                <div class="comment">周一至周五，9点-18点					</div>
+            </div>
+            </div>
+            <div class="cl"></div>
+            <div class="menu">
+                <a href="index.htm" tppabs="http://gcmatrix.com/" class="home"></a>
+                <ul><li>
+                    <a href="index.html" tppabs="http://gcmatrix.com/about-company/"  >首页</a>
+                </li><li>
+                    <a href="index-2.htm" tppabs="http://gcmatrix.com/blog/"  >关于我们</a>
+                </li><li>
+                    <a href="index-3.htm" tppabs="http://gcmatrix.com/contract-assembly/"  >PCB组装</a>
+                </li><li>
+                    <a href="index-pcb.htm" tppabs="http://gcmatrix.com/contract-assembly/"  >PCB</a>
+                </li><li>
+                    <a href="index-4.htm" tppabs="http://gcmatrix.com/components/"  >电子元器件</a>
+                </li></ul>
+                <div class="cl"></div>
+            </div>        </div>
+    </div>
+    <div class="content"><div class="news blog_page">
+    <div class="layout"><div class="left text_page">
+    <h1>Образование пустот в паяных соединениях</h1>
+    <span class="date">6 февраля</span>
+    <div class="cl"></div><div class="quote">Образование пустот в паяных соединениях — одно из явлений, присущих пайке оплавлением. Пустоты отрицательно влияют на механические свойства паяных соединений, представляют собой препятствие для отвода тепла и могут снизить надежность соединений, если располагаются на границе с контактной площадкой. Статья посвящена механизму образования пустот в паяных соединениях и мерам борьбы с их возникновением.</div><p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Откуда могут возникнуть пустоты в паяном соединении? Причинами их возникновения бывают:<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol;">&middot;<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">усадка припоя при кристаллизации с образованием пустот между кристаллитами с последующим выделением в эти пустоты газов, растворенных в припое;<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">газовыделения из платы и компонентов;<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">газовыделения, являющиеся следствием взаимодействия флюса с окислами;<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">газовыделения из флюса, являющиеся следствием испарения растворителя и реологических добавок.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Первую причину следует признать малозначимой из-за малого объема припоя в паяном соединении.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Газовыделения из платы и компонентов могут иметь место, однако в общем случае их вклад не является доминирующим. Доминирующими газовыделения из платы могут стать в том случае, если контактные площадки для BGA выполнены по типу SMD (solder mask defined &mdash; ограниченные паяльной маской).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Интересны результаты рентгеновского контроля печатных узлов, проведенного в технологическом центре ЗАО Предприятие Остек. В паяных соединениях керамических конденсаторов после пайки первой стороны ПУ пустот не наблюдалось (рис. 1а). После этого платы были отмыты, а затем пропаяна вторая сторона ПУ. При рентгеновском контроле в паяных соединениях тех же керамических конденсаторов на первой стороне платы были обнаружены пустоты (рис. 1б). Единственным объяснением этого эффекта могут быть газовыделения из платы во время пайки второй стороны.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><img src="a84a6c26739115815f511f46499feb8c.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/a84/a84a6c26739115815f511f46499feb8c.jpg" title="22_1.jpg" border="0" alt="22_1.jpg" width="500" height="218"  /></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Рис. 1. Результаты рентгеновского контроля паяных соединений керамического конденсатора: а) после пайки первой стороны; б) после пайки второй стороны<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Основная масса пустот образуется в результате газовыделений из флюса. Причем для формирования пустоты необходимо, чтобы флюс находился внутри объема расплавленного припоя. Газовыделения из флюса, находящегося на поверхности припоя, не оказывают влияния на формирование пустот. Каким образом флюс на стадии оплавления может остаться в объеме припоя? На первый взгляд, это сложно себе представить, так как из-за разности плотностей припоя и флюса последний обязан всплыть на поверхность. Для того чтобы флюс остался в объеме припоя, должны существовать какие-то силы, удерживающие его там и препятствующие его выходу.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Попытаемся проанализировать, что это за силы и каковы причины их возникновения.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">1.<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">     </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">При нахождении платы в зоне стабилизации из пасты интенсивно испаряется растворитель. Казалось бы, чем дольше плата находится в зоне стабилизации и чем ниже температура кипения растворителя, тем больше испарится растворителя и тем меньше источников газовыделений останется к моменту оплавления, и, следовательно, в спае будет меньше пустот. Однако это не всегда так. Напротив, существует множество свидетельств того, что количество пустот уменьшается при сокращении времени пребывания платы в печи. Проведенные исследования показывают, что при использовании паст с повышенной температурой кипения растворителя во флюсе количество пустот также уменьшается. Парадоксальному, на первый взгляд, результату можно найти объяснение. Очевидно, что с уменьшением количества растворителя в пасте вязкость флюса увеличивается. И это обстоятельство является препятствием для выхода флюса из расплавленного припоя. Ситуация еще более осложняется в том случае, если флюс оказался в зазоре между выводом компонента и контактной площадкой. Оказавшись внутри объема припоя, флюс подвергается термодеструкции, и образуется пустота.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">2.<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">     </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Флюс внутри паяного соединения может остаться и по причине плохого смачивания припоем контактных площадок или выводов компонентов. При наличии окислов на контактных площадках и выводах компонентов или частиц пасты флюс адсорбируется на них, после чего происходит восстановление металла из окисла. Если до начала оплавления реакция восстановления не закончилась, этот участок будет покрыт окислом и флюсом и не может быть смочен расплавленным припоем. Таким образом, флюс остается под слоем расплавленного припоя, удерживаясь на поверхности участка силами адгезии. Реакция восстановления, сопровождающаяся газовыделениями, продолжается, флюс, оказавшись под слоем припоя, выгорает, и образуется пустота. Таким образом, плохое смачивание приводит к увеличению количества пустот в паяном соединении.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">3.<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">     </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Наличие полостей, не заполненных паяльной пастой, например, из-за микропереходных отверстий в контактных площадках BGA. При оплавлении воздух, заключенный в полости, не может преодолеть сил поверхностного натяжения припоя и остается внутри паяного соединения.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">При борьбе с порами необходимо учесть одно важное обстоятельство. Многочисленные исследования показывают, что, образовавшись, пустота не может преодолеть силы поверхностного натяжения припоя и выйти на поверхность. Пустота (пора) может только расти за счет объединения с другими пустотами. А при наличии пустот из-за микропереходных отверстий в контактных площадках даже приложение вакуума не позволяет полностью от них избавиться. То есть для борьбы с пустотами необходимо не допускать их возникновения.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Анализируя приведенные причины возникновения пустот, мы приходим к взаимоисключающим рекомендациям. С одной стороны, для получения менее вязкого остатка флюса и облегчения его удаления из объема паяного соединения время пребывания платы в зоне предварительного нагрева нужно уменьшить, с другой, для улучшения смачивания — увеличить. Тем не менее многочисленные исследования показывают, что минимум пористости обеспечивается либо &laquo;коротким&raquo; и «холодным» профилем (участок 1 на рис. 2), либо «длинным» и «горячим» (участок 2 на рис. 2).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><img src="f3413ff606b4c900c4c76a07387159c1.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/f34/f3413ff606b4c900c4c76a07387159c1.jpg" title="22_2.jpg" border="0" alt="22_2.jpg" width="500" height="337"  /></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Рис. 2. Зависимость пористости от подвода тепла<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">При пайке современных многослойных плат с компонентами BGA использовать «короткий» и «холодный» профиль невозможно. Поэтому остается только удлинять профиль, причем за счет увеличения зоны стабилизации. Увеличение зоны пайки приводит к укрупнению пустот как за счет объединения нескольких малых пустот в одну большую, так и за счет увеличения газовыделений из платы.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Необходимо также иметь в виду, что, с точки зрения минимизации пустот, профиль, оптимизированный для одной пасты, нельзя механически переносить на другую пасту. Это связано с использованием в пастах флюсов с разными добавками. При использовании одного и того же профиля внешний вид паяных соединений может не различаться, однако количество пустот при этом может оказаться слишком большим (рис. 3).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><img src="57b37de526ad1594aaeee488d3c07ec1.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/57b/57b37de526ad1594aaeee488d3c07ec1.jpg" title="22_3.jpg" border="0" alt="22_3.jpg" width="500" height="345"  /></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Рис. 3. Результаты пайки при переходе на другой тип пасты без оптимизации профиля<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">На рис. 4 схематично представлен случай, когда минимуму газовыделений из пасты 1 соответствует максимум газовыделений из пасты 2.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><img src="624dcb3b2bf177a03169cb4961dc43ca.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/624/624dcb3b2bf177a03169cb4961dc43ca.jpg" title="22_4.jpg" border="0" alt="22_4.jpg" width="500" height="295"  /></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Рис. 4. Зависимость порообразования от подвода тепла для двух разных паст<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Выводы<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Для уменьшения пористости необходимо максимально удлинять зону стабилизации.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Удлинение зоны пайки приводит к укрупнению пустот за счет слияния нескольких мелких пор и увеличению пористости за счет газовыделений из материала платы.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Пайка окисленных компонентов и плат приводит к увеличению порообразования из-за ухудшения смачивания и увеличения газовыделений от реакции восстановления.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Не существует одного оптимального профиля для всех паст, обеспечивающего минимальную пористость. При смене пасты необходима оптимизация профиля.<o:p></o:p></span></p>
+<div class="cl"></div>
+    <div class="hr"></div>
+</div><div class="right_block"><h4>Темы блога</h4><a href="index-12.htm" tppabs="http://gcmatrix.com/blog/industry_news/">Отраслевые новости</a><a href="index-13.htm" tppabs="http://gcmatrix.com/blog/spec_xp/">Контрактная сборка</a><a href="index-5.htm" tppabs="http://gcmatrix.com/blog/quality/" class="selected">Вопросы качества</a><a href="index-14.htm" tppabs="http://gcmatrix.com/blog/purchase_xp/">Компоненты</a><a href="index-15.htm" tppabs="http://gcmatrix.com/blog/%D1%81ircuitry_talks/">Печатные платы</a><a href="index-16.htm" tppabs="http://gcmatrix.com/blog/the-company-matrix/">Компания Матрикс</a><a href="index-2.htm" tppabs="http://gcmatrix.com/blog/">Все темы блога</a></div><div class="cl"></div>
+    </div>
+</div>
+            </div>
+            <div class="footer">
+                <div class="layout">
+                    <div class="logo">
+	<a href="index.htm" tppabs="http://gcmatrix.com/">
+		<img src="/images/logo.jpg" tppabs="http://gcmatrix.com/img//images/logo.jpg" alt="Матрикс">
+	</a>
+</div><div class="menu">
+    <ul><li>
+                <a href="index-1.htm" tppabs="http://gcmatrix.com/about-company/">О компании</a>
+            </li><li class="act">
+                <a href="index-2.htm" tppabs="http://gcmatrix.com/blog/">Наш блог</a>
+            </li></ul><ul><li>
+                <a href="index-3.htm" tppabs="http://gcmatrix.com/contract-assembly/">Контрактная сборка</a>
+            </li><li>
+                <a href="javascript:if(confirm('https://pcb.gcmatrix.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://pcb.gcmatrix.com/'" tppabs="https://pcb.gcmatrix.com/">Печатные платы</a>
+            </li></ul><ul><li>
+                <a href="index-4.htm" tppabs="http://gcmatrix.com/components/">Компоненты</a>
+            </li></ul>
+    <div class="cl"></div>
+</div>                    <div class="phone">
+                        <b>+7 (383) 383-08-05</b><span>周一至周五，9点-18点</span>
+                    </div>
+                    <div class="cl"></div>
+                    <div class="copyright_site">©2012-2020 BOMIC ELECTRON LLC
+<p align="center">
+ <br>
+</p>
+<p align="center">
+</p>
+<p>
+</p>
+ <br></div>
+                    <div class="cl"></div>
+                    <div class="bx-composite-bt">
+                        <div id="bx-composite-banner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'SVoXb2A8Sx';var d=document;var w=window;function l(){
+  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+  s.src = '//code.jivosite.com/script/widget/'+widget_id
+    ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+  if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
+  else{w.addEventListener('load',l,false);}}})();
+</script>
+<!-- {/literal} END JIVOSITE CODE -->
+    </body>
+</html><!--0bf1eb6fc45189b4b60bbd8a6f20cdc4-->

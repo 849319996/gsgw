@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<style type="text/css">.bx-composite-btn {background: url("sprite-1x.png")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-1x.png*/ no-repeat right 0 #e94524;border-radius: 15px;color: #ffffff !important;display: inline-block;line-height: 30px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-size: 12px !important;font-weight: bold !important;height: 31px !important;padding: 0 42px 0 17px !important;vertical-align: middle !important;text-decoration: none !important;}@media screen   and (min-device-width: 1200px)   and (max-device-width: 1600px)   and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi) {.bx-composite-btn {background-image: url("sprite-2x.png")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-2x.png*/;background-size: 42px 124px;}}  .bx-composite-btn-fixed {position: absolute;top: -45px;right: 15px;z-index: 10;}  .bx-btn-white {background-position: right 0;color: #fff !important;}  .bx-btn-black {background-position: right -31px;color: #000 !important;}  .bx-btn-red {background-position: right -62px;color: #555 !important;}  .bx-btn-grey {background-position: right -93px;color: #657b89 !important;}  .bx-btn-border {border: 1px solid #d4d4d4;height: 29px !important;line-height: 29px !important;}  .bx-composite-loading {display: block;width: 40px;height: 40px;background: url("loading.gif")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/loading.gif*/;}</style>
+<script type="text/javascript" data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','banner':{'url':'http://www.1c-bitrix.ru/composite/','text':'','bgcolor':'#ff045f','style':'white'},'storageBlocks':[],'dynamicBlocks':[],'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}else{w.frameRequestFail = f;}return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();})(window, document);</script>
+
+
+<link href="core.min.css-14451916572854.css" tppabs="http://gcmatrix.com/bitrix/js/main/core/css/core.min.css?14451916572854" type="text/css" rel="stylesheet" />
+<link href="jquery.fancybox.css-14175171805160.css" tppabs="http://gcmatrix.com/css/jquery.fancybox.css?14175171805160" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="jquery.bxslider.css-14175171804040.css" tppabs="http://gcmatrix.com/css/jquery.bxslider.css?14175171804040" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="style.css-156947828531018.css" tppabs="http://gcmatrix.com/css/style.css?156947828531018" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="style.css-1417517180236.css" tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/style.css?1417517180236" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="styles.css-1554948055583.css" tppabs="http://gcmatrix.com/local/templates/main/styles.css?1554948055583" type="text/css" data-template-style="true" rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'http://gcmatrix.com/blog/%D1%81ircuitry_talks/deploy-production-of-smd-resistors/DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'mx','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/'});</script>
+
+
+<script type="text/javascript" src="core.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core.min.js?147851119173480"></script>
+<script type="text/javascript" src="core_db.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_db.min.js?14646669905048"></script>
+<script type="text/javascript" src="core_ajax.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ajax.min.js?147851119221031"></script>
+<script type="text/javascript" src="json2.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/json/json2.min.js?14175171793467"></script>
+<script type="text/javascript" src="core_ls.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ls.min.js?14451916607365"></script>
+<script type="text/javascript" src="core_fx.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_fx.min.js?14451916579592"></script>
+<script type="text/javascript" src="core_frame_cache.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_frame_cache.min.js?147851118811191"></script>
+<script type="text/javascript">var bxDate = new Date(); document.cookie="mx_TIME_ZONE="+bxDate.getTimezoneOffset()+"; path=/; expires=Fri, 01-Jan-2038 00:00:00 GMT"</script>
+
+
+
+<script type="text/javascript" src="jquery-3.4.1.min.js" tppabs="http://gcmatrix.com/js/jquery-3.4.1.min.js?142112976595790"></script>
+<script type="text/javascript" src="jquery.carouFredSel.js" tppabs="http://gcmatrix.com/js/jquery.carouFredSel.js?141751718036181"></script>
+<script type="text/javascript" src="jquery.bxslider.min.js" tppabs="http://gcmatrix.com/js/jquery.bxslider.min.js?141751718019368"></script>
+<script type="text/javascript" src="jquery-ui.js" tppabs="http://gcmatrix.com/js/jquery-ui.js?1417517180485937"></script>
+<script type="text/javascript" src="jquery.mask.min.js" tppabs="http://gcmatrix.com/js/jquery.mask.min.js?14175171804741"></script>
+<script type="text/javascript" src="jquery.formstyler.min.js" tppabs="http://gcmatrix.com/js/jquery.formstyler.min.js?141751718015758"></script>
+<script type="text/javascript" src="jquery.fancybox.js" tppabs="http://gcmatrix.com/js/jquery.fancybox.js?141751718050725"></script>
+<script type="text/javascript" src="script2.js" tppabs="http://gcmatrix.com/js/script.js?14175171807558"></script>
+<script type="text/javascript" src="script6.js" tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/script.js?1417517180990"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "72e5454bdb8b62a08488572b66bc822a"]); _ba.push(["host", "http://gcmatrix.com/blog/%D1%81ircuitry_talks/deploy-production-of-smd-resistors/gcmatrix.com"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+<title>Материалы для производства гибких печатных плат - Матрикс</title><!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(52706338, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="1.gif" tppabs="https://mc.yandex.ru/watch/52706338" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+<div id="panel">
+    </div>
+<div class="wrapper">
+    <div class="header">
+        <div class="layout">
+            <div class="logo">
+	<a href="index.htm" tppabs="http://gcmatrix.com/">
+		<img src="/images/logo.jpg" tppabs="http://gcmatrix.com/img//images/logo.jpg" alt="Матрикс">
+	</a>
+</div>            <div class="text">
+                Ведущий российский OEM производитель печатных плат            </div>
+            <div class="phone">
+				<b class="h2">+7 (383) 383-08-05</b><div class="d-flex">
+					<div class="mr-2">
+						<a href="skype:live:a2ad12d4eb62443e?chat" target="_blank"><span class="i-mess i-mess-skype"></span></a>
+						<a href="tg://resolve?domain=matrix_elektronika" target="_blank"><span class="i-mess i-mess-telegram"></span></a>
+						<a href="javascript:if(confirm('https://wa.me/79994638549  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://wa.me/79994638549'" tppabs="https://wa.me/79994638549" target="_blank"><span class="i-mess i-mess-whatsapp"></span></a>
+						<a href="viber://pa?chatURI=matrixelektronika" target="_blank"><span class="i-mess i-mess-viber"></span></a>
+					</div>
+					<div class="comment">周一至周五，9点-18点					</div>
+				</div>
+            </div>
+            <div class="cl"></div>
+            <div class="menu">
+    <a href="index.htm" tppabs="http://gcmatrix.com/" class="home"></a>
+    <ul><li>
+                <a href="index-1.htm" tppabs="http://gcmatrix.com/about-company/"  >О компании</a>
+            </li><li class="act">
+                <a href="index-2.htm" tppabs="http://gcmatrix.com/blog/"  >Наш блог</a>
+            </li><li>
+                <a href="index-3.htm" tppabs="http://gcmatrix.com/contract-assembly/"  >Контрактная сборка</a>
+            </li><li>
+                <a href="javascript:if(confirm('https://pcb.gcmatrix.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://pcb.gcmatrix.com/'" tppabs="https://pcb.gcmatrix.com/"   target="_blank">Печатные платы</a>
+            </li><li>
+                <a href="index-4.htm" tppabs="http://gcmatrix.com/components/"  >Компоненты</a>
+            </li></ul>
+    <div class="cl"></div>
+</div>        </div>
+    </div>
+    <div class="content"><div class="news blog_page">
+    <div class="layout"><div class="left text_page">
+    <h1>Материалы для производства гибких печатных плат</h1>
+    <span class="date">7 ноября</span>
+    <div class="cl"></div><div class="quote">Последние тенденции развития мировой электроники ставят перед разработчиками всё более сложные и нетривиальные задачи. Одной из таких задач является возможность печатной платы переживать достаточно сильную деформацию, ниже мы опишем возможные материалы применяемые для изготовления нестандартных печатных плат.</div><p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Введение<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Сегодня выпущен новый стандарт ГОСТ РВ 5998-002 &laquo;Платы печатные военного применения&raquo;, разрешающий использование только отечественных материалов для изготовления печатных плат (п. 5.9). При этом возникает противоречие между разрешением использования импортных компонентов и запретом на использование импортных материалов для печатных плат. Если подчиниться требованиям ГОСТ РВ 5998-002, придется вернуться к конструкциям электронных изделий на 40 лет назад, поскольку отечественные материалы застыли на этой метке давности, и современные изделия из них на основе современных компонентов сделать невозможно. В этой публикации читатель увидит, как весь мир двигался к совершенству, а мы стояли под запретом их использования. По существу, введение в обращение стандарта ГОСТ РВ 5998-002 провоцирует дальнейший застой в развитии материальной базы отечественной электроники.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Востребованные характеристики фольгированных диэлектриков для гибких печатных плат<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">К сожалению, пока не существует идеального фольгированного диэлектрика для гибких плат, наиболее полно отвечающего требуемым характеристикам. Эти характеристики охватывают широкий спектр свойств материала, которые могут быть необходимы в производстве гибких плат. Несмотря на то, что ни один из известных материалов не способен отвечать всем требованиям, которые могут возникать у производителей и потребителей, и эти требования часто противоречат друг другу, все же имеет смысл представить себе, как выглядит идеальный материал, чтобы правильно ориентироваться при выборе реальных предложений.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Стабильность размеров<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Идеальный гибкий фольгированный диэлектрик должен обладать исключительной стабильностью размеров. Усадка или расширение базового материала гибкой платы в процессе обработки вызывает проблемы и у производителя, и у потребителя, поскольку влияет как на изготовление печатной платы, так и на сборку. Особенно неприятно, если изменение размеров нельзя предсказать заранее.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Можно предпринять ряд мер для компенсации нестабильности размеров подложек, но если в этих мерах нет необходимости, это определенно является преимуществом при выборе материалов.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Термостойкость<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Так как на большинстве сборочных производств электронной аппаратуры для монтажа компонентов применяются высокотемпературные групповые процессы нагрева, такие как пайка оплавлением, крайне важно, чтобы выбранный для изготовления изделия материал был в состоянии, не деформируясь, устойчиво выдерживать температуру пайки. В условиях неразумного и неоправданного с научной точки зрения перехода на бессвинцовую пайку, которая стала в Европе обязательной по закону, требования к теплостойкости ужесточатся.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Сопротивление разрыву<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Многие конструкции гибких плат являются тонкими и неармированными, поэтому они склонны к краевым разрывам. А значит, базовый материал для изготовления гибких плат должен иметь высокое сопротивление надрывам и разрывам.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Электрические характеристики<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">С увеличением скорости передачи сигналов растут и будут продолжать расти требования к диэлектрическим свойствам. При высоких скоростях передачи сигналов (более 100 МГц) материал должен иметь малую диэлектрическую проницаемость и низкий тангенс угла потерь. Кроме того, для различных высокоэнергетических задач желательно иметь высокое сопротивление изоляции.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Гибкость<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Очевидное требование к материалам гибких плат &mdash; гибкость. В зависимости от области применения гибкие платы могут подвергаться воздействию экстремальных температур: от горячей кухонной плиты до холода в криогенных системах. Поэтому крайне важна гибкость в широком диапазоне температур. Особое значение имеет гибкость при низких температурах, когда большинство материалов склонно к повышению хрупкости.</span><span style="font-family: Verdana, sans-serif; font-size: 8.5pt; line-height: 11.25pt; text-indent: 11.25pt;"> </span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Влагопоглощение<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Влагопоглощение нежелательно для любого гибкого основания. Влага может негативно сказаться как на производственном процессе, вызывая расслоение при обработке или сборке, так и на характеристиках готового изделия, изменяя значение диэлектрической проницаемости и увеличивая потери сигнала.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Стойкость к химическим воздействиям<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Материал гибкой платы должен противостоять воздействию ряда химических реагентов, сопровождающих его в процессе изготовления и эксплуатации. Материал должен быть совместим с различными химическими реагентами и типичными растворителями, которые используют в процессах сборки и отмывки.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Повторяемость характеристик от партии к партии<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Изменчивость параметров материала — бич производства, поэтому повторяемость характеристик важна для хорошего управления процессом. Хотя требования к показателям качества могут быть никогда не достигнуты в реальном производстве, высокая повторяемость всех характеристик материала, включая физические, механические и электрические, является ключевым фактором. Повторяемость характеристик гарантирует, что изделие будет хорошо себя вести как в процессе изготовления, так и при эксплуатации.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Несколько поставщиков<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Важная проблема для любого производителя — ситуация, в которой материал доступен только из одного источника. К сожалению, и производитель, и заказчик оказываются не защищены от возможного прекращения поставок материала, если используется только один поставщик, хотя данный материал во всем остальном может обладать отличными характеристиками. В большинстве случаев необходимым условием при выборе материала является наличие второго поставщика, способного производить эквивалентный материал.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Стоимость<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Стремление к недорогим решениям — повсеместная практика в области электроники. Как правило, в расчетах себестоимости изделия цена базового материала стоит в первой строчке. Бесконечный поиск более дешевого материала, чтобы немного увеличить прибыль и производителя, и потребителя, неизбежен. Однако нужно помнить, что реальная ценность материала определяется тем, как он влияет на общую стоимость процесса изготовления и готового изделия, а не тем, сколько будет стоить его покупка и доставка.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Основные элементы структуры гибких материалов<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Основных элементов структуры гибких материалов для гибких плат не так много, и ни один из них не может считаться маловажным. Каждый элемент должен в течение всего срока службы изделия отвечать предъявляемым к нему требованиям. Кроме того, чтобы обеспечивать простоту производства и надежность изделия, материал должен хорошо сочетаться с другими структурными элементами гибкой платы. Ниже приведены краткие описания основных элементов структуры материалов для гибких печатных плат и их функций.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Базовый материал — материалы оснований<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Базовый материал представляет собой гибкую полимерную пленку, играющую роль основы фольгированного диэлектрика. Обычно базовый материал гибкой платы обеспечивает большинство основных ее физических и электрических характеристик. Когда речь идет о безадгезивных конструкциях печатных плат, базовый материал определяет все их характерные свойства.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Хотя толщина пленки может варьироваться в широких пределах, большинство предлагаемых гибких материалов имеют сравнительно малую толщину: от 12 до 125 мкм. Очевидно, что более тонкие материалы обладают большей гибкостью, однако не следует забывать жесткое инженерное правило: для большинства материалов жесткость пропорциональна кубу толщины. Это означает, что если толщина материала удваивается, он становится в 8 раз жестче и при той же нагрузке прогнется в 8 раз слабее.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Клеящие пленки<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Клеящие пленки (адгезивы) используются в фольгированных диэлектриках для скрепления слоев. Когда речь заходит о термостойкости, адгезив обычно ухудшает характеристики фольгированного диэлектрика, особенно когда базовым материалом является полиимид, обладающий исключительно большой нагревостойкостью. Из-за сложностей использования полиимидных адгезивов в настоящее время во многих полиимидных гибких платах применяются системы адгезивов из других групп полимеров. Тем не менее предпочтительны некоторые новые термопластичные полиимидные адгезивы, получающие достаточно широкое распространение.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Как и пленочные базовые материалы, адгезивные пленки поставляются с различной толщиной. Выбор толщины, как правило, зависит от задачи. Например, адгезивы различной толщины широко применяются при выполнении покровных слоев для удовлетворения требований по заполнению пазух в рисунке проводников в связи с использованием медной фольги разной толщины.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Металлическая фольга<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">В качестве проводящего элемента структуры гибкого материала чаще всего используется металлическая фольга: это материал, из которого обычно вытравливаются проводники платы. Хотя в типовых фольгированных диэлектриках для гибких плат применяется катаная и отожженная медь, на рынке присутствует большое разнообразие типов металлической фольги разной толщины, позволяющих сделать выбор для изготовления гибких плат.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Виды материалов гибких плат<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Рассмотрев основные элементы структуры гибких печатных плат, можно перейти к обсуждению их сочетания и соответствия друг другу для создания различных материалов, которые могут потребоваться в производстве гибких плат.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Ниже приведены описания основных видов материалов, используемых в производстве гибких плат.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Фольгированные диэлектрики<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Фольгированные диэлектрики — основной вид материала, применяемого в большинстве конструкций гибких плат. Медная фольга преобладает, конечно, но возможно применение фольги и других типов.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Обычно фольгированный материал выполняется соединением нескольких слоев, включающих материал основания, адгезив и металлическую фольгу. Затем пакет нагревают и прессуют, получая в результате неразборную структуру из металлических и полимерных слоев.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">В случае применения безадгезивных фольгированных диэлектриков адгезив в конструкции отсутствует. В некоторых «безадгезивных» диэлектриках используется тонкий слой сверхвысокотемпературного адгезива, позволяющего создавать структуры, по сути, такие же, как и безадгезивные. Существуют также способы создания безадгезивных многослойных материалов без процесса прессования.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Покровные слои<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Обычно покровный слой представляет собой двуслойный материал, состоящий из базового материала и подходящего термореактивного адгезива. Однако в покровных слоях также могут применяться термопластичные пленки из одного материала. Покровный слой служит для защиты проводников готовой гибкой платы и помогает увеличить гибкость.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Материалы покровных слоев часто применяются для создания гибких фольгированных диэлектриков путем присоединения к ним металлической фольги. Это обычно делается, когда производитель гибких плат изготавливает свой собственный материал.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Фотопроявляемые покровные слои<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Еще один тип покровных слоев, применяющийся для изготовления гибких печатных плат,—это фотопроявляемые покровные слои. Этот материал, который мы не упоминали при рассмотрении основных элементов структуры, подобен сухой пленочной паяльной маске. Как и паяльную маску, его наносят вакуумным способом, чтобы достичь хорошего прилегания в местах вокруг проводников. Затем, как и светочувствительная паяльная маска, материал экспонируется и проявляется, обеспечивая доступ к элементам рисунка платы, предназначенным для монтажа компонентов.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Защитные покрытия<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Эти материалы также не упоминались при описании составляющих конструкций гибких печатных плат, но, тем не менее, защитные покрытия являются очень важными элементами структур гибких плат определенных типов.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Термином «защитное покрытие» обозначаются различные тонкие покрытия, которые наносятся на поверхность проводников вместо покровного слоя. Хотя поставщики заявляют хорошие характеристики по циклическому изгибу защитных покрытий, обычно такие покрытия применяются, когда динамический изгиб отсутствует или минимален.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">В процессе изготовления плат защитные покрытия обычно наносятся в жидком виде методом трафаретной печати и затем отвердевают под воздействием тепла либо УФ-излучения.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">В настоящее время для увеличения разрешающей способности элементов рисунка плат некоторые технологии применения защитных покрытий позволяют получить доступ к элементам, предназначенным для монтажа компонентов, с помощью фотолитографических методов, подобных уже описанным.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Соединительные слои<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Эти слои представляют собой элементы структуры гибких печатных плат, состоящие из пленочного базового материала с адгезивной пленкой, нанесенной на обе стороны методом полива (рис. 1). В качестве адгезива обычно применяется термопластичный материал.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><img width="500" height="120" src="892f4758e2789b98cc795bdd2d1724a8.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/892/892f4758e2789b98cc795bdd2d1724a8.jpg" alt="FP1.jpg" title="FP1.jpg"  /><o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Рис. 1. Основные материалы, используемые при производстве гибких плат<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Хотя соединительные слои могут применяться для создания фольгированных диэлектриков с двумя металлическими слоями, чаще всего они используются как конструкционные элементы при изготовлении некоторых более сложных структур, таких как многослойные гибкие и жестко-гибкие платы.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Литьевые адгезивные пленки<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Литьевые адгезивные пленки представляют собой отдельный класс адгезивных материалов. Эти пленки чаще всего являются термопластичными и наносятся методом полива на одноразовую подложку или съемную пленку.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Литьевые адгезивные пленки, как правило, необходимы для присоединения к гибкой плате усилений из жестких материалов. А в некоторых случаях их использовали в качестве замены соединительных слоев.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Липкие пленки<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Липкие пленки — семейство адгезивных пленок для полупостоянных или неразборных соединений на отслаиваемых подложках, которые могут переноситься непосредственно на поверхность гибкой платы или другого материала для последующего его присоединения к другой поверхности. После нанесения такого адгезива на плату можно выполнить соединение практически с любой поверхностью, однако липкие пленки в изготовлении гибких плат преимущественно применяются для скрепления с жестким элементом.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Также в семействе липких пленок существует особая подгруппа пленок, которые можно наносить трафаретной печатью непосредственно на обратную сторону гибкой платы. Затем они отвердевают УФ-излучением для создания клейкого финишного покрытия, когда такое покрытие необходимо. Этот метод можно использовать для повышения эффективности при очень больших объемах производства или когда нужно поддерживать низкую стоимость изделия.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Материалы усилений<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Хотя усиления не являются непосредственно частью гибкой печатной платы, они — важный элемент ее конструкции. Материалы-усиления применяются для упрочнения гибкой платы там и тогда, где это необходимо. Чаще всего усиления располагаются под областями, на которые будут устанавливаться электронные компоненты. Там они служат для поддержки веса компонентов, как при сборке, так и при эксплуатации.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Усиления можно изготавливать практически из любого материала, включая металл, пластик, фольгированные стеклопластики и даже дополнительные слои материала покровного слоя. Использование материала защитной маски для упрочнения отдельных областей сейчас является весьма распространенной практикой.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Специальные безадгезивные конструкции<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Как было отмечено ранее при описании фольгированных диэлектриков, существует их особая категория, называемая безадгезивными фольгированными диэлектриками. Для изготовления этих базовых материалов применяется несколько способов. Один из них состоит в нанесении на пленку основания тонкого слоя-затравки и формирования медной или другой металлической фольги непосредственно на основании путем металлизации. Для очистки поверхности перед металлизацией полимер предварительно обрабатывается в насыщенной кислородом плазме. Затем производится напыление очень тонкого (порядка 200 А) промежуточного металлического слоя, такого как никель-хром, предшествующего напылению более толстого слоя-затравки на основе меди толщиной около 2000 А (0,2 мкм). Затем с помощью гальванического осаждения медь наращивается до требуемой толщины (например, до 2-5 мкм).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Можно создать безадгезивные фольгированные диэлектрики и с помощью альтернативного подхода: нанесения полимера методом полива непосредственно на фольгу-носитель.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Безадгезивные многослойные материалы имеют особые преимущества, когда возможно воздействие высоких температур, а также там, где важна толщина изделия. Другим преимуществом является то, что эти материалы позволяют создавать очень мелкие элементы рисунка платы.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Эти материалы также обладают особыми преимуществами при производстве сверхнадежных многослойных и гибко-жестких структур. Эти преимущества обусловлены тем, что такие пленочные базовые материалы, как полиимид, обладают значительно меньшим ТКР по оси Z, чем большинство других диэлектриков. Для достаточно сложных структур печатных плат это важный фактор для обеспечения долговременной надежности металлизированных сквозных отверстий.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Хотя в настоящее время эти материалы дороже традиционных фольгированных диэлектриков, для решения вышеперечисленных задач их выбор обуславливается значительными преимуществами.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Обзор характеристик материалов<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Рассмотрев основные элементы материалов гибких печатных плат, можно проанализировать их более глубоко, чтобы обосновать имеющийся выбор материалов и их характеристики. Этот анализ позволит конструктору сделать осознанный выбор благодаря пониманию, какое влияние оказывает каждое его решение на готовое изделие.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Гибкие пленочные базовые материалы<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Для производства гибких печатных плат применяется большое разнообразие материалов. Среди них:<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol;">&middot;<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">фторополимерные пленки, такие как Teflon;<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">нетканый материал на основе арамидного волокна и ткани, такой как Nomex;<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">формуемые композитные материалы, такие как Bend/Flex;<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">различные гибкие композитные материалы на основе эпоксидов;<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">термопластичные пленки, такие как полиэтилен, поливинилхлорид, поливинилфторид и полиэфиримид.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Все эти пленки и тонкие композитные материалы использовались для изготовления гибких плат, и многие из них продолжают применять в определенных задачах. Стоимость этих материалов может варьироваться в широких пределах (рис. 2).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><img width="500" height="275" src="c8aae8accffbee36b1797253c02b69a1.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/c8a/c8aae8accffbee36b1797253c02b69a1.jpg" alt="FP2.jpg" title="FP2.jpg"  /><o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Рис. 2. Ориентировочное сравнение относительной стоимости фольгированных диэлектриков гибких плат<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">В настоящее время среди базовых материалов гибких плат наибольшей популярностью пользуются и чаще всего закладываются в конструкции полиэфирные пленки (PET) и полиимид (PI). Какие пленки следует применять, можно определить, если учитывать сочетание экономических требований, требования к готовому изделию, температуру групповой пайки, а также требования законодательства ЕС в области бессвинцовых технологий, распространяющиеся на массовую бытовую аппаратуру для рынка Европы.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">В современных решениях могут преобладать полиимид и полиэфир, но существуют и альтернативные пленочные технологии, применение которых по ряду веских причин может расти. Например, полиэтиленнафталат (PEN) выглядит привлекательным промежуточным решением между полиэфиром и полиимидом с точки зрения стоимости и функциональных характеристик.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Еще один материал, интерес к которому растет по мере перехода промышленности на выпуск более высокоскоростной цифровой электроники, — жидкокристаллический полимер (LCP). Этот материал обладает рядом привлекательных физических и электрических<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">характеристик. Например, жидкокристаллические полимеры по своей природе отличаются низким влагопоглощением (0,02-0,1%), что делает необязательной сушку, которая обычно является частью производственного процесса при использовании обладающего большей гигроскопичностью полиимида. Низкое влагопоглощение также имеет большую важность при обеспечении низких потерь сигнала. Обладая значением тангенса угла потерь, равным 0,003, а диэлектрической проницаемостью около 2,9, жидкокристаллические полимеры очень привлекательны для высокой частоты. Другой особенностью этих материалов является то, что они могут подвергаться химическому травлению — особенность, которая роднит их с полиимидом. Эта возможность создает им преимущество при использовании как в экзотических, так и в достаточно традиционных конструкциях.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Удовлетворить потребности будущего в применении гибких печатных плат потенциально могут материалы еще одного типа — тонкие фторполимерные фольгированные диэлектрики. Хотя материалы на основе политетрафторэтилена (ПТФЭ, или PTFE) не всегда хорошо подходят для динамических конструкций, они могут найти применение там, где требуются малые потери и низкое значение диэлектрической проницаемости. Типичные значения тангенса угла потерь для политетрафторэтилена существенно ниже 0,001, а диэлектрическая проницаемость обычно находится в диапазоне 2-2,4 (чистый ПТФЭ имеет уникально низкую проницаемость, близкую к 1,8). Производная политетрафторэтилена — фторэтилен-пропилен (ФЭП, или FEP) — имеет намного меньшую температуру размягчения: 288 &deg;C против 338 °C у политетрафторэтилена.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">В таблице 1 приведено сравнение основных свойств полиимидных и полиэфирных оснований с точки зрения их применения в конструкциях гибких плат.</span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Таблица. 1. Общая сравнительная характеристика полиэфирных и полиимидных пленок<o:p></o:p></span></p>
+ 
+<div align="center"> 
+  <table class="MsoNormalTable" border="1" cellpadding="0"> 
+    <tbody> 
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Полиимид<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Полиэфир<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Полиимидные пленки выпускаются несколькими производителями. 
+              <br />
+             Они поставляются из США, Европы и Азии. Полиимидные пленки наиболее популярны для задач, связанных с высокой надежностью (военных, медицинских и пр.) и динамическим изгибом. Наиболее известные торговые марки: Kapton, Apical и Upilex<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Предлагаются несколько различных типов полиэфира. 
+              <br />
+             Полимер термопластичен и поэтому может при необходимости быть отформован при воздействии нагрева. Это достоинство часто остается незамеченным. Среди распространенных торговых марок полиэфира: Mylar, Melinex и Celanar<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td colspan="2" style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Достоинства<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Отличная гибкость при любой температуре 
+              <br />
+             Хорошие электрические характеристики 
+              <br />
+             Отличная стойкость к воздействию химических реагентов(за исключением горячих растворов щелочей) 
+              <br />
+             Очень хорошее сопротивление разрыву 
+              <br />
+             Наивысшая прочность при растяжении<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Низкая стоимость 
+              <br />
+             Обладает сопротивлением разрыву 
+              <br />
+             Хорошая гибкость 
+              <br />
+             Низкое влагопоглощение 
+              <br />
+             Хорошие электрические характеристики 
+              <br />
+             Хорошая стойкость к воздействию химических реагентов<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td colspan="2" style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Недостатки<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Поглощает влагу (до 3% по весу в зависимости от состава) 
+              <br />
+             Относительно дорог по сравнению с полиэфиром Высокотемпературные характеристики ограничены используемыми адгезивами<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Применение пайки ограничено 
+              <br />
+             Не подходит для экстремально низких температур (полимер становится хрупким) 
+              <br />
+             Поддерживает горение при содержании кислорода, соответствующего обычному воздуху<o:p></o:p></span></p>
+         </td> </tr>
+     </tbody>
+   </table>
+ </div>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">В таблице 2 дается более подробная информация по некоторым физическим и электрическим характеристикам более широкой группы базовых материалов гибких печатных плат. Список материалов, приведенных в таблице, ограничен, поскольку потенциально можно применять множество других материалов.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Таблица. 2. Сравнение некоторых свойств гибких базовых материалов<o:p></o:p></span></p>
+ 
+<div align="center"> 
+  <table class="MsoNormalTable" border="1" cellpadding="0"> 
+    <tbody> 
+      <tr style="height: 10.35pt;"> <td rowspan="5" style="padding: 0.75pt; height: 10.35pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Базовый материал<o:p></o:p></span></p>
+         </td> <td rowspan="5" style="padding: 0.75pt; height: 10.35pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Диэлектрическая проницаемость<o:p></o:p></span></p>
+         </td> <td rowspan="5" style="padding: 0.75pt; height: 10.35pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Тангенс угла потерь<o:p></o:p></span></p>
+         </td> <td rowspan="5" style="padding: 0.75pt; height: 10.35pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Электрическая прочность, кВ/Мм<o:p></o:p></span></p>
+         </td> <td rowspan="5" style="padding: 0.75pt; height: 10.35pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Влагопоглощение, %<o:p></o:p></span></p>
+         </td> <td rowspan="5" style="padding: 0.75pt; height: 10.35pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Предел прочности при растяжении, кг/мм<sup>2</sup><o:p></o:p></span></p>
+         </td> <td rowspan="5" style="padding: 0.75pt; height: 10.35pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Относительное удлиннение, %<o:p></o:p></span></p>
+         </td> <td style="height: 10.35pt; border: none;" width="0" height="14"></td> </tr>
+     
+      <tr style="height: 10.35pt;"> <td style="height: 10.35pt; border: none;" width="0" height="14"></td> </tr>
+     
+      <tr style="height: 10.35pt;"> <td style="height: 10.35pt; border: none;" width="0" height="14"></td> </tr>
+     
+      <tr style="height: 10.35pt;"> <td style="height: 10.35pt; border: none;" width="0" height="14"></td> </tr>
+     
+      <tr style="height: 10.35pt;"> <td style="height: 10.35pt; border: none;" width="0" height="14"></td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Полиэфир<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">3,2<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">0,005<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">276<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">&lt; 0,08<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">18<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">~120<o:p></o:p></span></p>
+         </td> <td style="border: none;" width="0"> 
+          <p class="MsoNormal"> </p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Полиимид<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">3,5<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">0,003<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">276<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">1,3-3<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">18<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">~60<o:p></o:p></span></p>
+         </td> <td style="border: none;" width="0"> 
+          <p class="MsoNormal"> </p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Полиэтилен нафталат<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">2,9<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">0,004<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">295<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">1<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">22<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">~75<o:p></o:p></span></p>
+         </td> <td style="border: none;" width="0"> 
+          <p class="MsoNormal"> </p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Жидкокристаллический полимер<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">2,9<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">0,003<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">236<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">0,02-0,1<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">16<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">~15<o:p></o:p></span></p>
+         </td> <td style="border: none;" width="0"> 
+          <p class="MsoNormal"> </p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Фторэтиленпропилен<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">2<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">0,0002<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">197<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">&lt; 0,01<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">2<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">~300<o:p></o:p></span></p>
+         </td> <td style="border: none;" width="0"> 
+          <p class="MsoNormal"> </p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Политетрафторэтилен<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">2,5<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">0,0002<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">197<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">&lt; 0,01<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">15<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">-<o:p></o:p></span></p>
+         </td> <td style="border: none;" width="0"> 
+          <p class="MsoNormal"> </p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Поливинилхлорид<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">4,7<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">0,093<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">19,7<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">&lt; 0,5<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">3<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">120-500<o:p></o:p></span></p>
+         </td> <td style="border: none;" width="0"> 
+          <p class="MsoNormal"> </p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Арамидная бумага<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">2<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">0,007<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">15<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">3,0<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">8<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">~10<o:p></o:p></span></p>
+         </td> <td style="border: none;" width="0"> 
+          <p class="MsoNormal"> </p>
+         </td> </tr>
+     </tbody>
+   </table>
+ </div>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Склеивающие пленки для гибких плат<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Склеивающие пленки для гибких плат используются либо для приклеивания металлической фольги к базовому материалу при изготовлении фольгированного диэлектрика, либо для прессования фольгированных слоев в многослойные структуры. Обычно склеивающие пленки подбирают тщательно, чтобы обеспечить наилучшее сочетание характеристик фольгированного материала.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Ниже приводится краткое описание основных свойств склеивающих пленок, которые чаще всего применяются для гибких плат. В таблице 3 приведено сравнение их основных свойств.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Таблица. 3. Сравнение некоторых свойств склеивающих пленок<o:p></o:p></span></p>
+ 
+<div align="center"> 
+  <table class="MsoNormalTable" border="1" cellpadding="0"> 
+    <tbody> 
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Тип склеивающих пленок<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Прочность на отрыв после пайки, Н/мм<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Максимальная текучесть, мм/мм<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Максимальное влагопоглощение, %<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Минимальное поверхностное сопротивление, МОм<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Тангенс угла потерь при 1 МГц<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Диэлектрическая проницаемость при 1 МГц<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Полиэфирный<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">_*<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">250<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">2<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">10<sup>4</sup><o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">0,02<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">4 (max)<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Акриловый<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">1,6<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">125<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">6<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">10<sup>7</sup><o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">0,02<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">3,5 (ном.)<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Эпоксидный<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">1,4<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">125<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">4<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">10<sup>4</sup><o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">0,06<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">4 (max)<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Полиимидный<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">1<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">125<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">3<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">10<sup>5</sup><o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">0,01<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">4 (max)<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Бутираль-фенольный<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">1<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">125<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">2<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">10<sup>4</sup><o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">0,025<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">3 (max)<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Политетрафторэтилен<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">&gt; 1<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">125<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">0,01<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">10<sup>12</sup><o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">0,0007<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">2,2 (ном.)<o:p></o:p></span></p>
+         </td> </tr>
+     </tbody>
+   </table>
+ </div>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Примечание. * Полиэфир не пригоден для пайки. Исходное значение прочности на отрыв для полиэфирных пленок составляет 0,9 Н/мм.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Полиэфирные склеивающие пленки<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Полиэфирные пленки обычно используются вместе с полиэфирными фольгированными диэлектриками, однако в некоторых задачах они применяются и с другими материалами. Основные достоинства полиэфирных пленок — их низкая стоимость и низкие температуры процесса соединения. Но существует и недостаток: полиэфирные пленки имеют низкую нагревостойкость, что ограничивает их применение.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Еще один недостаток заключается в том, что текучесть полиэфирных пленок в процессе прессования слоев бывает настолько высокой, а соединение — относительно непрочным, что это создает значительное ограничение для их использования. Несмотря на это, полиэфирные пленки пригодны для многих задач, не связанных с обеспечением высокой нагревостойкости.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Акриловые склеивающие пленки В производстве гибких плат акриловые пленки использовались наиболее широко. Их часто предпочитали для изготовления многих полиимидных фольгированных диэлектриков из-за их отличной адгезии и простоты применения. Акриловые пленки обладают хорошим балансом приемлемых тепловых характеристик (способности выдерживать температуру пайки), простоты применения и природной способности образовывать достаточно прочные соединения со множеством различных материалов.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Обратная сторона медали — склонность акриловых пленок к разбуханию в рабочих растворах горячих щелочей, которые широко используются во многих линиях химической и гальванической металлизации печатных плат. Помимо этого, они имеют высокий ТКР, поэтому в многослойных и гибко-жестких конструкциях они становились основной причиной образования трещин в металлизации сквозных отверстий из-за избыточного расширения по оси Z.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Эпоксидные и модифицированные эпоксидные склеивающие материалы Эпоксидные клеи — одни из самых часто применяемых адгезивов в мире, так что неудивительно, что они нашли свое применение и в гибких платах. Эпоксидные клеи и их модифицированные варианты представляют собой практически универсальные адгезивы, способные создавать соединения со множеством различных материалов, включая металлы, керамику и полимеры.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Эпоксидные клеи обладают хорошими высокотемпературными свойствами и обеспечивают лучшие значения прочности на отрыв после термоудара, имитирующего процессы пайки.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Отрицательный момент их использования — то, что по своей природе эпоксидные клеи более хрупкие, чем некоторые альтернативные варианты. Однако эта проблема успешно устраняется модификацией состава материала за счет введения пластификаторов. Эпоксидные клеи также склонны к поглощению влаги, поэтому при использовании в производстве они требуют несколько большего внимания.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Полиимидные клеи<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Применение полиимидных клеев на полиимидных основаниях ограничено решением узкого круга задач, связанных с высокими температурами процессов. Однако полиимидные клеящие пленки обеспечивают более согласованные и, как следствие, лучшие характеристики фольгированного диэлектрика.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Типичные полиимидные клеящие пленки термопластичны, но при прессовании требуют более высоких температур и давления. В результате платы с применением полиимидных клеев обладают самой высокой термостойкостью среди всех конструкций гибких плат. Кроме того, полиимидные пленки предпочтительны для применения в многослойных и гибко-жестких изделиях, поскольку они обладают меньшим ТКР.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Бутираль-фенольные клеи<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Еще один тип клеев, существующий довольно давно, — бутираль-фенольный, известный с 30-х годов прошлого столетия. Он на самом деле применялся в некоторых первых гибких платах без пленочного базового материала. Бутираль-фенольные клеи в ряде экспериментов продемонстрировали повышенную циклическую долговечность.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Бутираль-фенольные клеи обладают рядом характерных достоинств. Главным из них, с точки зрения производителя гибких плат, является малая текучесть при прессовании, за счет чего уменьшается вытекание клея на кромки межсоединений.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Другие достоинства этого типа клеев — достаточно низкое влагопоглощение и одно из самых низких значений диэлектрической проницаемости среди широко применяемых склеивающих пленок. С другой стороны, платы, выполненные на основе этих пленок, обычно более жесткие по сравнению с некоторыми альтернативными вариантами.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Прочие клеи<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Помимо всех вышеупомянутых клеев, в прошлом для производства гибких плат также использовали ряд других термопластичных материалов. По способам применения эти материалы были во многом схожи с полиимидными клеящими пленками, которые обычно образуют соединения при очень высоких температурах и давлениях.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">В качестве соединительной пленки с малыми потерями в многослойных СВЧ-платах иногда используется фторэтилен-пропилен. Его часто выбирают из-за более низкой температуры процесса соединения. Фторэтилен-пропилен термопластичен и может расплавляться при длительном воздействии температур выше 550 °C, что может, например, вызвать расслоение плат в некоторых процессах бессвинцовой пайки. Проблема высокотемпературной пайки распространяется и на полиэфиримид.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Металлическая фольга и металлические покрытия<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">В подавляющем большинстве случаев в гибких конструкциях используется медная фольга. В последнее время для удовлетворения специальных требований предлагается фольга из других металлов. Практически любой металл, если из него можно получить фольгу, является кандидатом на применение в производстве гибких плат в этом качестве. Хотя имеется выбор из множества альтернатив, только некоторые материалы находят широкое применение на практике. Ниже приведено описание лишь небольшого числа из всего многообразия предлагаемых типов металлической фольги, а также обзор некоторых их практических и потенциальных применений.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Медная фольга<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Медная фольга используется в подавляющем большинстве всех решений на основе гибких плат. Существует много типов медной фольги. Стандарт IPC на металлическую фольгу IPC-4562 (заменивший IPC-MF-150) определяет восемь различных типов медной фольги для печатных плат, объединенных в две более крупные категории — электроосажденную и катаную фольгу, по четыре типа в каждой (табл. 4). Большинство типов медной фольги подвергается неглубокой поверхностной обработке с одной стороны для улучшения адгезии к базовому материалу (рис. 3).</span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Таблица. 4. Сводная таблица современной классификации медной фольги<o:p></o:p></span></p>
+ 
+<div align="center"> 
+  <table class="MsoNormalTable" border="1" cellpadding="0"> 
+    <tbody> 
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Тип медной фольги<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Номер<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Обозначение<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Описание<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td rowspan="4" style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Электроосажденная (E) медная фольга<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">1<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">STD, тип E<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Электроосажденная стандартная<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">2<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">HD, тип E<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Электроосажденная с высокой пластичностью<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">3<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">HTE, тип E<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Электроосажденная горячетянутая<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">4<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">ANN, тип E<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Электроосажденная отожженная<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td rowspan="4" style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Катаная (W) медная фольга<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">5<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">AR, тип W<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Как катаная<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">6<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">LCR, тип W<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Маловязкая холоднокатаная<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">7<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">ANN, тип W<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Катаная отожженная<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">8<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">LTA, тип W<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Катаная, отожженная при низкой температуре<o:p></o:p></span></p>
+         </td> </tr>
+     </tbody>
+   </table>
+ </div>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><img width="366" height="267" src="74885d31cbeac1b8fb57e115011f9a1c.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/748/74885d31cbeac1b8fb57e115011f9a1c.jpg" alt="FP3.jpg" title="FP4.jpg"  /><o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Рис. 3. Поперечное сечение и вид сверху фольги с низким профилем шероховатости<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Электроосажденная медь (стандартная)<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Стандартная электроосажденная медь рекомендуется главным образом для статических применений из-за своей зернистой структуры, как правило, столбикового типа (рис. 3).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Этот тип структуры зерна плохо приспособлен к динамичному изгибу, поскольку вертикальные границы зерна образуют короткий путь для распространения трещины.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Электроосажденная медная фольга для производства гибких плат обычно не применяется, но модификация и обработка такой фольги может сделать ее в будущем более жизнеспособным вариантом. Тем не менее такая фольга недорогая, хорошо подходит для определенных задач, и ее охотно используют в производстве гибких плат во многих странах.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Электроосажденная медь (термообработанная)<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Одним из вариантов стандартной электро-осажденной меди, описанных в стандарте IPC-4562, является термообработанная электроосажденная медная фольга. Этот тип фольги подвергается обработке при высокой температуре для модификации структуры зерна меди после электроосаждения и придания фольге большей пластичности. Такую фольгу можно применять в некоторых динамических конструкциях, так как при обработке происходит рекристаллизация структуры зерна, что приближает ее к структуре катаной и отожженной меди.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Катаная и затем отожженная медь<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Такая медь изготавливается с помощью традиционных методов металлообработки. Процесс заключается в прохождении бруска меди через ряд металлических роликов, пока не получится тонкая фольга. Затем производится термообработка фольги, делающая медь очень мягкой. С помощью этого метода можно изготавливать недорогую фольгу толщиной до 18 мкм (1/2 унции). Применяя специальные ролики, можно получить еще более тонкую фольгу, но такая фольга обычно предлагается по цене выше номинала. Катаная фольга является самым распространенным типом медной фольги для гибких плат и благодаря своей структуре зерна обычно обеспечивает отличную долговременную стойкость к изгибам.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">В конструкциях гибких фольгированных диэлектриков могут применяться ковкие сплавы меди. Фольга из них может обладать более высокой прочностью и ударной вязкостью. Эти сплавы имеют преимущества при применении в гибких конструкциях с малой деформацией и высокой циклической долговечностью.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Гальваническая медь<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Медь может осаждаться непосредственно на некоторые гибкие материалы за счет сочетания методов химической металлизации и гальванического осаждения. Некоторые виды гальванической фольги по своим характеристикам соответствуют катаной меди и при определенных условиях дают превосходные результаты. Это, в частности, обусловлено характером процесса, который благодаря использованию специальных добавок позволяет формировать аморфную или равноосную структуру зерна (рис. 4). Получаемая фольга гораздо менее чувствительна к ориентации зерен, чем фольга катаного типа.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><img width="382" height="269" src="6918969dd1530f512ebb38dced8dd70b.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/691/6918969dd1530f512ebb38dced8dd70b.jpg" alt="FP4.jpg" title="FP4.jpg"  /><o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Рис. 4. Структура зерен медной фольги зависит от процесса ее изготовления: а) вертикально упорядоченные зерна; б) горизонтально упорядоченные зерна; в) аморфная или равноосная структура зерен<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Напыляемые медные пленки<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Еще один подход к нанесению тонкой меди на гибкие диэлектрики — напыление или осаждение из газовой фазы металлов-затравок с последующим гальваническим наращиванием. Этот метод применялся в течение приблизительно двух десятилетий, но только в последние годы привлек к себе внимание из-за необходимости выполнения более плотного рисунка с малыми элементами межсоединений. Одной из давних проблем этого метода было получение фольги с отсутствием пор и достаточно высокой прочностью на отрыв.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Напыляемая медь дает очень тонкую (обычно менее 1 мкм) медную пленку, которую наносят на подслой тонкого, усиливающего адгезию слоя никеля, хрома, нихрома. Тонкая напыляемая медная пленка служит подслоем для последующего гальванического осаждения.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Такие пленки особенно хорошо подходят для производства плат с очень малыми элементами проводящего рисунка и некоторых нестандартных конструкций. Например, тонкая медная пленка — отличное решение для криогенных приложений, где удельная электропроводность тонкой пленки достаточна, а теплопроводность сравнительно невелика.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Помимо таких экзотических приложений при хорошей управляемости процесса металлизации напыляемые медные пленки оказываются вполне пригодными для динамических конструкций с высокой циклической долговечностью, например, для дисководов.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Другие варианты тонкой меди<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Результатом непрекращающегося стремления к уменьшению размеров электронных изделий и систем стала потребность в более тонкой медной фольге для выполнения проводников и элементов рисунка меньших размеров. Производство более тонкой медной фольги, которая могла бы удовлетворять требования к гибким платам, — очень сложная задача. Хотелось бы, чтобы фольга не содержала пор и имела хорошую адгезию, что очень важно для надежного производства и эксплуатации изделий. Для удовлетворения этих требований некоторые поставщики фольги и материалов разработали и применили ряд новых усовершенствованных методов.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Как отмечалось выше, традиционная катаная и затем отожженная фольга получила признание поставщиков и пользователей материалов гибких плат, однако прокатка медной фольги до толщины менее 17 мкм хотя и возможна, но обычно дорога. Чтобы продлить жизнь этому методу, такие поставщики фольги, как Somers, подразделение компании Olin Corporation, разработали технологию, позволяющую присоединять к гибким пленкам медную фольгу толщиной 3 и 5 мкм. «Фокус» заключался в том, что тонкая фольга формируется на носителе из катаной медной фольги обычной толщины (35 мкм). Материал обладает равномерной толщиной и не содержит пор. Обычную для медной фольги обработку, улучшающую адгезию, для гибких плат желательно проводить на небольшую глубину. Это улучшает характеристики травления рисунка, позволяя выполнять элементы меньших размеров при некотором (желательно небольшом) ухудшении прочности на отрыв.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">В новой медной фольге компании Olin применяется запатентованный неорганический разделительный слой между носителем из катаной фольги и тонкой медной фольгой. Сила, необходимая для снятия несущей фольги после нанесения на базовый материал, как утверждается, очень мала (около 1-2 г/см) даже после процесса прессования.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Компании Gould и Oak Mitsui предлагают подобную ультратонкую медную фольгу на носителях из фольги, предназначенную для плат с очень малой шириной проводников и небольшими размерами элементов рисунка.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Последний вариант — безадгезивный гибкий материал с медным фольгированием без промежуточного слоя от компании Fractal. Обойтись без промежуточного слоя удалось благодаря новаторской технологии микромеханических соединений, результирующая прочность на отрыв которых достигает впечатляющих значений: 2-2,5 кг/см.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Как утверждается, в производственном процессе применяется необычная технология, в которой полимерные пленки облучаются тяжелыми высокоэнергетическими ионами, затем материал из облученных участков удаляется химическим способом, подобным «проявлению», после чего производится металлизация. Микрофотографии позволяют сравнить эту технологию подготовки поверхности с традиционной обработкой. В результате предлагаются одно- и двусторонние медно-полиимидные фольгированные диэлектрики для гибких плат с толщиной фольги от 5 до 18 мкм. При такой высокой прочности на отрыв эти материалы могут хорошо переносить жесткие условия электроосаждения золота.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Подводя итог, заметим, что потребность в гибких платах высокой плотности подталкивает зарубежных производителей фольги к разработке новых оригинальных решений. Эти решения позволяют изготавливать современную продукцию и подготавливают почву для новых перспективных поколений изделий. Каждое решение обладает своими достоинствами и предоставляет возможность выбора более чем из одного решения — счастье как для конструктора, так и для производителя.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Бериллиево-медный сплав<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Бериллиево-медный сплав (бериллиевая бронза) — хорошее решение, когда одновременно необходимы хорошая электропроводность, механическая прочность и/или пружинные свойства. Хотя бериллиево-медный сплав не обладает такой электропроводностью, как медь (его электропроводность составляет около 25% от электропроводности меди), этот металл является одним из стандартных в производстве электрических разъемов благодаря своему уникальному сочетанию свойств.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Периодически возникает беспокойство по поводу токсичности бериллия, но поскольку он применяется не в своем природном виде, а чаще в виде сплава, была доказана незначительность этой проблемы. При механической обработке необходимо хорошо контролировать выделение пыли, но это перестает быть проблемой при использовании химического травления.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Алюминиевая фольга<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Алюминиевая фольга использовалась для специальных задач, где требуется снижение веса или стоимости, а конструкция допускает применение алюминия. Этот материал с успехом использовали в простых гибких экранах. Металлизация химическим никелем/золотом позволила выполнять контакты для разъемных и/или паяных соединений.</span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Фольга на основе сплавов железа<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">В приложениях, где требуется низкая теплопроводность, показали свою эффективность различные сплавы железа (нержавеющая сталь, сплав Iconel и пр.). Самым ярким примером служит выполнение межсоединений приборов в криогенных устройствах. Однако, как отмечалось выше, эту функцию также могут выполнять очень тонкие напыляемые пленки металлов с большей проводимостью при условии, что электрические токи не слишком велики. Так как железная фольга обладает значительным сопротивлением, она оказалась весьма полезной при создании гибких нагревателей и малоомных встроенных резисторов.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Для наглядности различия свойств фольги из различных металлов показаны в таблице 5.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Таблица. 5. Сравнение некоторых свойств фольги из различных металлов<o:p></o:p></span></p>
+ 
+<div align="center"> 
+  <table class="MsoNormalTable" border="1" cellpadding="0"> 
+    <tbody> 
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Металлическая фольга<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Удельное сопротивление, Ом/см х10<sup>6</sup><o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Теплопроводность, Вт/м · K<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Предел прочности при растяжении, кг/мм<sup>2</sup><o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Относительное удлинение, % (после отжига)<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Отожженная катаная медь<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">1,67<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">393<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">23<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">20<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Электроосажденная медь<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">1,77<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">393<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">18<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">12<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Алюминий<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">4,33<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">225<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">12<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">30<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Нержавеющая сталь<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">75<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">6<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">65<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">40<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Бериллиево-медный сплав<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">~8<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">83<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">43* 150**<o:p></o:p></span></p>
+         </td> <td style="padding: 0.75pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">35-60* 1<sub>-</sub>4**<o:p></o:p></span></p>
+         </td> </tr>
+     </tbody>
+   </table>
+ </div>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Примечание.* Полный отжиг. ** Термообработка до максимальной твердости.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Прочие проводящие материалы<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Помимо традиционной металлической фольги для образования проводников или резистивных элементов на гибком диэлектрике можно применять и другие решения. Ниже приводится описание некоторых альтернативных проводящих материалов.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Толстопленочные гибкие платы<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Это особая группа гибких плат, где для создания проводящего рисунка на гибкие основания трафаретной печатью наносятся специальные составы проводящих и резистивных красок. Проводящие краски обычно представляют собой полимеры с наполнителем из частиц серебра, а резистивные краски наполнены графитом или смесью серебра и графита.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Толстопленочная технология — чрезвычайно популярный метод производства ряда недорогих изделий: от мембранных переключателей, таких как компьютерные клавиатуры и сенсорные панели, до дешевых калькуляторов и одноразовых медицинских приборов, например газоанализаторов крови. В определенных случаях толстопленочные платы могут соединяться с диэлектриками с медной фольгой для создания новых структур, сочетающих в себе преимущества данной технологии и медной фольги, в особенности при наличии специальных требований к повышенной электропроводности на определенных участках платы.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Технологи, работающие в области толстых пленок, разработали адгезивы для монтажа SMT-компонентов на толстопленочные платы. Это решение обладает хорошим потенциалом для установки чувствительных к температуре компонентов. Кроме того, это экологичная альтернатива свинцовосодержащим припоям.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Оксид индия-олова<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Уникальность оксида индия-олова, хорошо известного под аббревиатурой ITO, среди проводящих материалов заключается в том, что он прозрачен. Кроме того, что это одна из самых важных передовых технологий для жидкокристаллических дисплеев, она обладает и рядом других возможностей. Один из примеров этого — сенсорные дисплеи. Покрытия, осаждаемые в вакууме, очень тонкие, но достаточно жесткие. Обычно оксид индия-олова наносится на стеклянные основания, но он встречается и на прозрачных полимерных пленках, таких как полиэфирные, что позволяет использовать его для решения нестандартных задач.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"> </span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"> </span></p>
+ 
+<p class="MsoNormal" style="margin: 7.5pt 15pt 2.25pt;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Гибкие платы со встроенными резисторами<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">В уникальном методе конструирования гибких плат со встроенными пассивными компонентами, такими как резисторы, применяется особым образом изготовленная фольга, которую поставляет компания Ohmega Industries (Калвер Сити, Калифорния, США). Эта фольга представляет собой комбинацию резистивных и проводящих слоев. С помощью специальных правил конструирования и специализированного трехэтапного процесса травления можно создавать платы с внедренными или встроенными резисторами.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Хотя этот материал и не очень хорошо приспособлен для изделий высокой мощности, его можно эффективно использовать для согласующих резисторов. Это помогает снизить как сложность сборки, так и вес изделия. На рис. 5 показано сечение отдельного резистора, выполненного из этого материала. Также возможно применение и других методов, например, напыления. При этом выполняется последовательное напыление резистивных и проводящих слоев с последующей обработкой, подобной той, которая применяется для фольги. В любом случае, следует избегать использования резистивных материалов в областях сгибания, поскольку это может привести к разрушению резистора при эксплуатации.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><img width="500" height="347" src="6213670a306b74d86a5e436650fd00b7.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/621/6213670a306b74d86a5e436650fd00b7.jpg" alt="FP6.jpg" title="FP6.jpg"  /><o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Рис. 5. Последовательность операций при изготовлении встроенного резистора<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Заключение<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">В производстве гибких плат применяется большое разнообразие материалов, включая полимерные пленки, фольгу и клеи. Хотя в настоящее время на рынке пленочных базовых материалов доминируют полиэфир и полиимид, продолжаются исследования и внедрение новых материалов, таких как полиэтилен нафталат и жидкокристаллические полимеры. Каждый из них может в будущем сыграть важную роль, как компромиссное решение по стоимости (полиэтилен нафталат) или как вариант с улучшенными характеристиками (жидкокристаллические полимеры). Также важную роль могут играть тонкие армированные политетрафторэтиленовые материалы по мере необходимости обеспечения все более высоких скоростей передачи сигналов в радиочастотном диапазоне.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Помимо базовых материалов, в конструкциях на их основе может применяться широкая номенклатура клеящих пленок и множество типов металлической фольги. Выбор материалов в большой степени зависит от того, как и где плату будут собирать и эксплуатировать. Для того чтобы принять правильное решение для конкретной задачи, может потребоваться тщательная сравнительная оценка достоинств различных материалов.<o:p></o:p></span></p>
+ <div class="cl"></div>
+    <div class="hr"></div>
+</div><div class="right_block"><h4>Темы блога</h4><a href="index-12.htm" tppabs="http://gcmatrix.com/blog/industry_news/">Отраслевые новости</a><a href="index-13.htm" tppabs="http://gcmatrix.com/blog/spec_xp/">Контрактная сборка</a><a href="index-5.htm" tppabs="http://gcmatrix.com/blog/quality/">Вопросы качества</a><a href="index-14.htm" tppabs="http://gcmatrix.com/blog/purchase_xp/">Компоненты</a><a href="index-15.htm" tppabs="http://gcmatrix.com/blog/%D1%81ircuitry_talks/" class="selected">Печатные платы</a><a href="index-16.htm" tppabs="http://gcmatrix.com/blog/the-company-matrix/">Компания Матрикс</a><a href="index-2.htm" tppabs="http://gcmatrix.com/blog/">Все темы блога</a></div><div class="cl"></div>
+    </div>
+</div>
+            </div>
+            <div class="footer">
+                <div class="layout">
+                    <div class="logo">
+	<a href="index.htm" tppabs="http://gcmatrix.com/">
+		<img src="/images/logo.jpg" tppabs="http://gcmatrix.com/img//images/logo.jpg" alt="Матрикс">
+	</a>
+</div><div class="menu">
+    <ul><li>
+                <a href="index-1.htm" tppabs="http://gcmatrix.com/about-company/">О компании</a>
+            </li><li class="act">
+                <a href="index-2.htm" tppabs="http://gcmatrix.com/blog/">Наш блог</a>
+            </li></ul><ul><li>
+                <a href="index-3.htm" tppabs="http://gcmatrix.com/contract-assembly/">Контрактная сборка</a>
+            </li><li>
+                <a href="javascript:if(confirm('https://pcb.gcmatrix.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://pcb.gcmatrix.com/'" tppabs="https://pcb.gcmatrix.com/">Печатные платы</a>
+            </li></ul><ul><li>
+                <a href="index-4.htm" tppabs="http://gcmatrix.com/components/">Компоненты</a>
+            </li></ul>
+    <div class="cl"></div>
+</div>                    <div class="phone">
+                        <b>+7 (383) 383-08-05</b><span>周一至周五，9点-18点</span>
+                    </div>
+                    <div class="cl"></div>
+                    <div class="copyright_site">©2012-2020 BOMIC ELECTRON LLC
+<p align="center">
+ <br>
+</p>
+<p align="center">
+</p>
+<p>
+</p>
+ <br></div>
+                    <div class="cl"></div>
+                    <div class="bx-composite-bt">
+                        <div id="bx-composite-banner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'SVoXb2A8Sx';var d=document;var w=window;function l(){
+  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+  s.src = '//code.jivosite.com/script/widget/'+widget_id
+    ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+  if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
+  else{w.addEventListener('load',l,false);}}})();
+</script>
+<!-- {/literal} END JIVOSITE CODE -->
+    </body>
+</html><!--5b4e13e2d9156e74b4e42919bd038033-->

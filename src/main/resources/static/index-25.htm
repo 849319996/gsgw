@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<style type="text/css">.bx-composite-btn {background: url("sprite-1x.png")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-1x.png*/ no-repeat right 0 #e94524;border-radius: 15px;color: #ffffff !important;display: inline-block;line-height: 30px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-size: 12px !important;font-weight: bold !important;height: 31px !important;padding: 0 42px 0 17px !important;vertical-align: middle !important;text-decoration: none !important;}@media screen   and (min-device-width: 1200px)   and (max-device-width: 1600px)   and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi) {.bx-composite-btn {background-image: url("sprite-2x.png")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-2x.png*/;background-size: 42px 124px;}}  .bx-composite-btn-fixed {position: absolute;top: -45px;right: 15px;z-index: 10;}  .bx-btn-white {background-position: right 0;color: #fff !important;}  .bx-btn-black {background-position: right -31px;color: #000 !important;}  .bx-btn-red {background-position: right -62px;color: #555 !important;}  .bx-btn-grey {background-position: right -93px;color: #657b89 !important;}  .bx-btn-border {border: 1px solid #d4d4d4;height: 29px !important;line-height: 29px !important;}  .bx-composite-loading {display: block;width: 40px;height: 40px;background: url("loading.gif")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/loading.gif*/;}</style>
+<script type="text/javascript" data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','banner':{'url':'http://www.1c-bitrix.ru/composite/','text':'','bgcolor':'#ff045f','style':'white'},'storageBlocks':[],'dynamicBlocks':[],'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}else{w.frameRequestFail = f;}return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();})(window, document);</script>
+
+
+<link href="core.min.css-14451916572854.css" tppabs="http://gcmatrix.com/bitrix/js/main/core/css/core.min.css?14451916572854" type="text/css" rel="stylesheet" />
+<link href="jquery.fancybox.css-14175171805160.css" tppabs="http://gcmatrix.com/css/jquery.fancybox.css?14175171805160" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="jquery.bxslider.css-14175171804040.css" tppabs="http://gcmatrix.com/css/jquery.bxslider.css?14175171804040" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="style.css-156947828531018.css" tppabs="http://gcmatrix.com/css/style.css?156947828531018" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="style.css-1417517180236.css" tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/style.css?1417517180236" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="styles.css-1554948055583.css" tppabs="http://gcmatrix.com/local/templates/main/styles.css?1554948055583" type="text/css" data-template-style="true" rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'http://gcmatrix.com/blog/spec_xp/automated-inspection-of-printed-circuit-boards/DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'mx','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/'});</script>
+
+
+<script type="text/javascript" src="core.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core.min.js?147851119173480"></script>
+<script type="text/javascript" src="core_db.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_db.min.js?14646669905048"></script>
+<script type="text/javascript" src="core_ajax.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ajax.min.js?147851119221031"></script>
+<script type="text/javascript" src="json2.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/json/json2.min.js?14175171793467"></script>
+<script type="text/javascript" src="core_ls.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ls.min.js?14451916607365"></script>
+<script type="text/javascript" src="core_fx.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_fx.min.js?14451916579592"></script>
+<script type="text/javascript" src="core_frame_cache.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_frame_cache.min.js?147851118811191"></script>
+<script type="text/javascript">var bxDate = new Date(); document.cookie="mx_TIME_ZONE="+bxDate.getTimezoneOffset()+"; path=/; expires=Fri, 01-Jan-2038 00:00:00 GMT"</script>
+
+
+
+<script type="text/javascript" src="jquery-3.4.1.min.js" tppabs="http://gcmatrix.com/js/jquery-3.4.1.min.js?142112976595790"></script>
+<script type="text/javascript" src="jquery.carouFredSel.js" tppabs="http://gcmatrix.com/js/jquery.carouFredSel.js?141751718036181"></script>
+<script type="text/javascript" src="jquery.bxslider.min.js" tppabs="http://gcmatrix.com/js/jquery.bxslider.min.js?141751718019368"></script>
+<script type="text/javascript" src="jquery-ui.js" tppabs="http://gcmatrix.com/js/jquery-ui.js?1417517180485937"></script>
+<script type="text/javascript" src="jquery.mask.min.js" tppabs="http://gcmatrix.com/js/jquery.mask.min.js?14175171804741"></script>
+<script type="text/javascript" src="jquery.formstyler.min.js" tppabs="http://gcmatrix.com/js/jquery.formstyler.min.js?141751718015758"></script>
+<script type="text/javascript" src="jquery.fancybox.js" tppabs="http://gcmatrix.com/js/jquery.fancybox.js?141751718050725"></script>
+<script type="text/javascript" src="script2.js" tppabs="http://gcmatrix.com/js/script.js?14175171807558"></script>
+<script type="text/javascript" src="script6.js" tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/script.js?1417517180990"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "72e5454bdb8b62a08488572b66bc822a"]); _ba.push(["host", "http://gcmatrix.com/blog/spec_xp/automated-inspection-of-printed-circuit-boards/gcmatrix.com"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+<title>Монтаж и демонтаж BGA, CSP, Flip-Chip, QFP при помощи инфракрасного излучения и конвекционного нагрева - Матрикс</title><!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(52706338, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="1.gif" tppabs="https://mc.yandex.ru/watch/52706338" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+<div id="panel">
+    </div>
+<div class="wrapper">
+    <div class="header">
+        <div class="layout">
+            <div class="logo">
+	<a href="index.htm" tppabs="http://gcmatrix.com/">
+		<img src="/images/logo.jpg" tppabs="http://gcmatrix.com/img//images/logo.jpg" alt="Матрикс">
+	</a>
+</div>            <div class="text">
+                Ведущий российский OEM производитель печатных плат            </div>
+            <div class="phone">
+				<b class="h2">+7 (383) 383-08-05</b><div class="d-flex">
+					<div class="mr-2">
+						<a href="skype:live:a2ad12d4eb62443e?chat" target="_blank"><span class="i-mess i-mess-skype"></span></a>
+						<a href="tg://resolve?domain=matrix_elektronika" target="_blank"><span class="i-mess i-mess-telegram"></span></a>
+						<a href="javascript:if(confirm('https://wa.me/79994638549  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://wa.me/79994638549'" tppabs="https://wa.me/79994638549" target="_blank"><span class="i-mess i-mess-whatsapp"></span></a>
+						<a href="viber://pa?chatURI=matrixelektronika" target="_blank"><span class="i-mess i-mess-viber"></span></a>
+					</div>
+					<div class="comment">周一至周五，9点-18点					</div>
+				</div>
+            </div>
+            <div class="cl"></div>
+            <div class="menu">
+    <a href="index.htm" tppabs="http://gcmatrix.com/" class="home"></a>
+    <ul><li>
+                <a href="index-1.htm" tppabs="http://gcmatrix.com/about-company/"  >О компании</a>
+            </li><li class="act">
+                <a href="index-2.htm" tppabs="http://gcmatrix.com/blog/"  >Наш блог</a>
+            </li><li>
+                <a href="index-3.htm" tppabs="http://gcmatrix.com/contract-assembly/"  >Контрактная сборка</a>
+            </li><li>
+                <a href="javascript:if(confirm('https://pcb.gcmatrix.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://pcb.gcmatrix.com/'" tppabs="https://pcb.gcmatrix.com/"   target="_blank">Печатные платы</a>
+            </li><li>
+                <a href="index-4.htm" tppabs="http://gcmatrix.com/components/"  >Компоненты</a>
+            </li></ul>
+    <div class="cl"></div>
+</div>        </div>
+    </div>
+    <div class="content"><div class="news blog_page">
+    <div class="layout"><div class="left text_page">
+    <h1>Монтаж и демонтаж BGA, CSP, Flip-Chip, QFP при помощи инфракрасного излучения и конвекционного нагрева</h1>
+    <span class="date">6 ноября</span>
+    <div class="cl"></div><div class="quote">В связи с миниатюризацией электронных компонентов всё больше находят распространение такие корпуса BGA, CSP и другие, но это влечёт за собой многочисленные трудности при монтаже или замене такого компонента. Ниже приведены возможные виды оборудования для монтажа/демонтажа корпусов высокой сложности.</div><p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Задачи качественного монтажа многовыводных микросхем на печатную плату всегда были актуальны как для мелкосерийного, так и для крупносерийного производства. В мелкосерийном производстве важна проблема контроля температуры в области пайки с целью приближения его к идеальному термопрофилю для соответствующего корпуса микросхемы. Для крупносерийного производства основная проблема &mdash; это повторяемость параметров пайки. При этом номенклатура устанавливаемых на печатную плату компонентов и плотность монтажа на печатных платах могут быть очень высокими. Бессвинцовые технологии монтажа, в свою очередь, требуют соблюдения при монтаже и демонтаже компонентов условий по температурным режимам, которые гораздо жестче, нежели при работе со свинецсодержащими припоями.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Использование конвективных источников нагрева<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Конвективные источники нагрева используются при серийном, массовом производстве и при ремонте электронных модулей (ребойлинге).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">В конвективных печах создаются зоны нагрева, температура которых соответствует областям профиля пайки. Конвективный источник лишен недостатка возможного перегрева корпуса в отличие от инфракрасного. Однако существует проблема точного поддержания температуры в зонах нагрева, для этого необходимо, чтобы зона пайки была изолирована от внешней среды (теплоизоляционная камера).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">При ремонте электронных модулей используются различного рода термовоздушные паяльные станции (рис. 1). Применяя различные насадки, можно демонтировать корпуса разного типа.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 9pt;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><img width="324" height="150" src="808530fd8820fcc964b433d75763e75d.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/808/808530fd8820fcc964b433d75763e75d.jpg" title="28_pic1.jpg" alt="28_pic1.jpg"  /></span></b><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">  
+      <br />
+     
+      <br />
+     Рис. 1. Термовоздушная паяльная станция AOYUE 852A<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Демонтаж при ремонте электронных модулей с помощью термовоздушных паяльных станций имеет два существенных недостатка: сложность контроля температуры в нагреваемой зоне и неравномерность прогрева контактных площадок безвыводного компонента, что при длительном воздействии высокой температуры приведет к выводу его из строя.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Процесс передачи тепла от термофена к поверхности печатной платы описывается выражением:<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Q = (&lambda;St&Delta;T)/l, (1)<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">где λ — теплопроводность воздуха; S — площадь зоны нагрева; t — время нагрева; ΔT = T<sub>ист</sub>&ndash;T<sub>среды</sub> — разность температур между источником тепла и окружающей средой; l — расстояние от источника тепла до поверхности.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 9pt;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><img width="300" height="435" src="572cd3d0fa9039edb33858a3e5fcb206.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/572/572cd3d0fa9039edb33858a3e5fcb206.jpg" title="28_pic2.jpg" alt="28_pic2.jpg"  /></span></b><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">  
+      <br />
+     
+      <br />
+     Рис. 2. Распространение воздушного потока<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">При расчете количества тепла, выделяемого в рабочей зоне, необходимо учитывать конструктивный фактор, влияющий на рассеивание воздуха (рис. 2) при выходе из сопла насадки термофена (угол рассеивания, который зависит от конструкции сопла):<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">K<sub>r</sub> = r/(l&times;tan&alpha;+r), (2)<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">где r — радиус сопла насадки; α — расстояние, на которое рассеивается воздух при выходе из сопла.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Тогда количество выделяемого тепла в рабочей зоне рассчитывается как:<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Q = K<sub>r</sub>[(λStΔT)/l]. (3)<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Температура нагрева в рабочей зоне зависит от времени, условий теплообмена и теплоемкости материала платы:<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"> </span><span style="font-size: 11pt; line-height: 107%; font-family: Calibri, sans-serif; position: relative; top: 3pt;"><img width="84" height="21" src="ad125f3e1972daea09517f947c8ed856.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/ad1/ad125f3e1972daea09517f947c8ed856.jpg" title="28_form1.jpg" alt="28_form1.jpg"  /></span><span lang="EN-US" style="font-size: 8.5pt; font-family: Verdana, sans-serif;">. (4)<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">где Т<sub>Т</sub> — температура теплоносителя; &tau;<sub>H</sub> — постоянная времени нагрева:<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">τ<sub>H</sub> = C<sub>T</sub>/(α×S), (5)<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">где C<sub>T</sub> — теплоемкость материала печатной платы (для стеклотекстолита — 0,9 Дж/&deg;С); α — коэффициент теплообмена источника тепла с поверхностью печатной платы:<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">α = P/(S×ΔT), (6)<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">где P — мощность конвективного источника нагрева:<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 11pt; line-height: 107%; font-family: Calibri, sans-serif; position: relative; top: 5.5pt;"><img width="94" height="21" src="67c180122aec0e48254a48b0d76fef40.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/67c/67c180122aec0e48254a48b0d76fef40.jpg" title="28_form7.jpg" alt="28_form7.jpg"  /></span><span lang="EN-US" style="font-size: 8.5pt; font-family: Verdana, sans-serif;">  (7)<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Расчет мощности нагрева проведен при разности температур ΔТ = 255 °C, времени нагрева 20 с, средней теплопроводности воздуха в диапазоне температур 80&hellip;300 °C, 14,96 Вт/(м&middot;К) и расстоянии от источника 4, 8 и 12 мм. Результаты расчета мощности конвективного нагрева представлены в виде зависимости, изображенной на рис. 3, а зависимость температуры в зоне нагрева от времени при различных расстояниях от источника можно видеть на рис. 4.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 9pt;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><img width="624" height="252" src="96183f6f275973fad01b6b0e8ba384f4.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/961/96183f6f275973fad01b6b0e8ba384f4.jpg" title="28_pic3.jpg" alt="28_pic3.jpg"  /></span></b><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">  
+      <br />
+     
+      <br />
+     Рис. 3. Зависимость мощности, выделяемой в зоне нагрева, от расстояния до поверхности платы<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 9pt;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><img width="623" height="311" src="dadf4ce54080f9378b83265382cd2148.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/dad/dadf4ce54080f9378b83265382cd2148.jpg" title="28_pic4.jpg" alt="28_pic4.jpg"  /></span></b><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">  
+      <br />
+     
+      <br />
+     Рис. 4. Зависимости температуры в зоне нагрева от времени при различных расстояниях до поверхности<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Температура при пайке и демонтаже конвективным источником нагрева пропорциональна температуре нагретого воздуха, скорости его движения и зависит от расстояния до поверхности нагреваемой зоны. Оптимальное расстояние от зоны нагрева до насадки термофена не должно превышать 4–6 мм.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Использование инфракрасных источников нагрева<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Инфракрасные (ИК) источники нагрева широко применяются при ремонте электронных модулей как в мелкосерийном, так и в серийном производстве. Использование ИК-источников нагрева для монтажа и демонтажа многовыводных поверхностно монтируемых компонентов обусловлено возможностью точного контроля температуры пайки, в то время как для конвективных источников это проблематично.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">В современных источниках ИК-нагрева вместо галогенных ламп все шире применяются мощные керамические нагреватели. Примером такого нагревателя может служить излучатель SHTS фирмы Elstein (рис. 5). В ребра передней черной нагревательной панели встроена электрическая нагревательная спираль. Оптимальная эффективность в зоне высоких температур достигается посредством применения специальной черной эмали, позолоченного покрытия задней части и встроенной теплоизоляции.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 9pt;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><img width="189" height="209" src="17f5eb81a7007d401afccba29e55d808.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/17f/17f5eb81a7007d401afccba29e55d808.jpg" title="28_pic5.jpg" alt="28_pic5.jpg"  /></span></b><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">  
+      <br />
+     
+      <br />
+     Рис. 5. Керамический инфракрасный нагреватель<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Благодаря прочности монтажа нагревательной спирали высокотемпературный излучатель можно эксплуатировать независимо от его положения. На задней стороне находится стандартный патрон для крепления. Для защиты керамики и нагревательной спирали высокотемпературные излучатели покрыты глазурью.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Такой ИК-излучатель способен отдавать до 98% энергии излучения и оптимальным образом сочетает конструктивные и эксплуатационные требования к ИК-нагревателям с требованиями к энергосбережению, что дает пользователю возможность простого решения задач энергоемкого нагрева:<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Максимальная мощность нагрева на квадратный метр — 76,8 кВт/м<sup>2</sup>.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Рабочая температура — 860 °C.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Максимально допустимая температура — 900 °C.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Диапазон длины волн — 2–10 мкм.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Основным недостатком ИК-нагрева является более высокое температурное воздействие на корпус компонента (рис. 6).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 9pt;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><img width="340" height="228" src="30ea50bc4a577f8426255659ddf05e8f.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/30e/30ea50bc4a577f8426255659ddf05e8f.jpg" title="28_pic6.jpg" alt="28_pic6.jpg"  /></span></b><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">  
+      <br />
+     
+      <br />
+     Рис. 6. Распределение температуры в зоне ИК-нагрева<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Расчет температуры в зоне ИК-нагрева осуществляется следующим образом:<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">1.<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">     </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Интенсивность потока излучения:<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; line-height: 11.25pt;"><span style="font-size: 11pt; line-height: 107%; font-family: Calibri, sans-serif; position: relative; top: 6pt;"><img width="58" height="21" src="ff24d368628d700d8cae648d584c58fa.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/ff2/ff24d368628d700d8cae648d584c58fa.jpg" title="28_form8.jpg" alt="28_form8.jpg"  /></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">  (8)<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">где P<sub>И</sub> — мощность источника; h — высота от источника ИК-излучения до поверхности; x — длина зоны нагрева.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">2.<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">     </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Интенсивность прямого излучения:<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; line-height: 11.25pt;"><span style="font-size: 11pt; line-height: 107%; font-family: Calibri, sans-serif; position: relative; top: 6pt;"><img width="86" height="21" src="22f55069a4913ef2feb0a3bbe831f186.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/22f/22f55069a4913ef2feb0a3bbe831f186.jpg" title="28_form9.jpg" alt="28_form9.jpg"  /></span><span lang="EN-US" style="font-size: 8.5pt; font-family: Verdana, sans-serif;">  (9)<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">3.<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">     </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Температура в зоне ИК-нагрева:<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; line-height: 11.25pt;"><span style="font-size: 11pt; line-height: 107%; font-family: Calibri, sans-serif; position: relative; top: 7pt;"><img width="94" height="29" src="ed134fbb8f798d5c5bb8a5def0e534b7.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/ed1/ed134fbb8f798d5c5bb8a5def0e534b7.jpg" title="28_form10.jpg" alt="28_form10.jpg"  /></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">   (10)<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">где K — постоянная Стефана-Больцмана.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">4.<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">     </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Температура в зоне нагрева зависит и от времени воздействия: <o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; line-height: 11.25pt;"><span style="font-size: 11pt; line-height: 107%; font-family: Calibri, sans-serif; position: relative; top: 4pt;"><img width="102" height="22" src="248eccbbf28a278b4ff9de2ac368a70b.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/248/248eccbbf28a278b4ff9de2ac368a70b.jpg" title="28_form11.jpg" alt="28_form11.jpg"  /></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">   (11)<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">где T<sub>нагр.</sub> — температура в зоне нагрева; τ — время воздействия теплового потока; τ<sub>H</sub> — постоянная времени нагрева:<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 30pt 6pt 66pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">τ<sub>H</sub> = C<sub>T</sub>/(α×S<sub>H</sub>), (12)<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">где S<sub>H</sub> — площадь зоны нагрева, ограниченной геометрическими размерами отражателя; C<sub>T</sub> — теплоемкость материала печатной платы; α — коэффициент теплообмена с поверхностью платы:<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 30pt 6pt 66pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">α = P<sub>H</sub>/(S<sub>H</sub>×ΔT), (13)<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">где ΔT — разность температуры нагрева и окружающей среды (°C); P<sub>H</sub> — мощность в зоне нагрева:<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 30pt 6pt 66pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">P<sub>H</sub> = I×S<sub>H</sub>. (14)<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Зависимость мощности, выделяемой в зоне ИК-нагрева, от расстояния представлена на рис. 7, а зависимости температуры в зоне нагрева от времени при различных расстояниях от ИК-источника — на рис. 8.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 9pt;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><img width="624" height="262" src="2480e96d347ee5cf4449739639c58198.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/248/2480e96d347ee5cf4449739639c58198.jpg" title="28_pic7.jpg" alt="28_pic7.jpg"  /></span></b><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">  
+      <br />
+     
+      <br />
+     Рис. 7. Зависимость мощности, выделяемой в зоне нагрева, от расстояния до поверхности<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 9pt;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><img width="623" height="274" src="ee430ea55381b6dbf26f23d861821823.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/ee4/ee430ea55381b6dbf26f23d861821823.jpg" title="28_pic8.jpg" alt="28_pic8.jpg"  /></span></b><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">  
+      <br />
+     
+      <br />
+     Рис. 8. Зависимости температуры в рабочей зоне ИК-нагрева от времени и расстояния от источника<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">С увеличением расстояния от ИК-источника температура меняется значительно, это связано с тем, что площадь локального нагрева растет и количество передаваемого тепла рассеивается на бóльшую площадь. Однако ИК-нагрев не так чувствителен к изменению расстояния от источника, как конвективный, поскольку воздух прозрачен для ИК-излучения, в то время как температура, переносимая воздушным потоком термофена, рассеивается при выходе из сопла вследствие конвективного механизма теплообмена.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Применение конвективных и инфракрасных источников нагрева<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">В процессе пайки и демонтажа электронных компонентов конвективными источниками нагрева, для поддержания температуры печатной платы и в целях предотвращения термоудара ее подогревают источником ИК-излучения (рис. 9).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 9pt;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><img width="425" height="252" src="96f606ca4436f7cabb4840b411c11713.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/96f/96f606ca4436f7cabb4840b411c11713.jpg" title="28_pic9.jpg" alt="28_pic9.jpg"  /></span></b><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">  
+      <br />
+     
+      <br />
+     Рис. 9. Нагрев компонента и платы конвективным и ИК-источниками<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Двусторонняя система нагрева используется в ремонтной станции ERSA IR550A, однако в ней для демонтажа используется ИК-нагреватель, а не термофен (рис. 10).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 9pt;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><img width="302" height="186" src="e02e1c7a311293080e66c2074125fa8b.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/e02/e02e1c7a311293080e66c2074125fa8b.jpg" title="28_pic10.jpg" alt="28_pic10.jpg"  /></span></b><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">  
+      <br />
+     
+      <br />
+     Рис. 10. Паяльная станция ERSA IR550A<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Технические характеристики ERSA IR550A:<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Мощность верхнего ИК-излучателя — 4×200 Вт (размеры 60×60 мм).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Мощность нижнего ИК-излучателя — 2×400 Вт (размеры 135×250 мм).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Время разогрева верхнего излучателя — 90 с.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Скорость нагрева в процессе работы — от 0,3 до 2 °С/с.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Максимальная потребляемая мощность — 1600 Вт.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Длина волны ИК-излучателей — 2–5 мкм.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-right: 15pt; margin-left: 51pt; margin-bottom: 0.0001pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Напряжение — 220 В, 50 Гц.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">При пайке определенного типа корпуса задается термопрофиль, в соответствии с которым поддерживается температура в нагреваемой зоне. В процессе пайки для контроля температуры применяются термопара и ИК-датчик. В зависимости от типа корпуса и чувствительности микросхемы к температуре используют либо термопару, либо ИК-датчик или комбинированный контроль. Реальный термопрофиль пайки BGA приведен на рис. 11.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 9pt;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><img width="452" height="336" src="279682582fb872c882fd3b165ddac73d.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/279/279682582fb872c882fd3b165ddac73d.jpg" title="28_pic11.jpg" alt="28_pic11.jpg"  /></span></b><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">  
+      <br />
+     
+      <br />
+     Рис. 11. Термопрофиль пайки BGA<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Пример опытного образца электронного модуля — монтаж SMD и BGA ПЛИС, который выполнен на паяльной станции ERSA IR550A, — показан на рис. 12. Для выявления дефектных паяных соединений, таких как мостики припоя, неполное оплавление, отсутствие шариков припоя и т. д., применено рентгеновское излучение.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 9pt;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><img width="351" height="264" src="6d2e4e7f4fe879c1dbd6736f43ce1a57.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/6d2/6d2e4e7f4fe879c1dbd6736f43ce1a57.jpg" title="28_pic12.jpg" alt="28_pic12.jpg"  /></span></b><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">  
+      <br />
+     
+      <br />
+     Рис. 12. Электронный модуль<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">На рис. 13 изображена рентгенофотография паяных соединений BGA. Из нее следует, что дефектов в паяных соединениях не обнаружено, перемычки представляют печатные проводники, предусмотренные топологией печатной платы. Благодаря двустороннему прогреву стало возможным поддерживать термопрофиль, близкий к идеальному, в результате чего дефектов пайки удалось избежать.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 9pt;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><img width="225" height="225" src="7f1d8257f456a307a80084be6c568c25.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/7f1/7f1d8257f456a307a80084be6c568c25.jpg" title="28_pic13.jpg" alt="28_pic13.jpg"  /></span></b><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">  
+      <br />
+     
+      <br />
+     Рис. 13. Рентгенофотография паяных соединений BGA<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Наряду с ИК паяльными станциями сегодня в радиоэлектронной промышленности используются парофазные системы (VPS). Эта технология разрабатывалась с целью увеличения качества сборки электронных модулей с поверхностно-монтируемыми компонентами, а также для уменьшения дефектов. Основная задача подобных паяльных станций заключается в сборке модулей, диэлектрическое основание которых приклеено на металлическую подложку (радиатор). Примером таких модулей могут служить мощные высокочастотные усилители с рабочей частотой от 1 ГГц и более, источники питания мощностью до 1 кВт и выше и др.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Данная конструкция модуля обусловлена необходимостью отвода большого количества тепла от печатного модуля либо увеличения его жесткости. Для того чтобы прогреть такую конструкцию и обеспечить заданный термопрофиль, ИК-излучения либо конвективного источника нагрева недостаточно. При монтаже компонентов на такой модуль нагрев ИК-излучением может привести к выводу монтируемых компонентов из строя, короблению самой платы либо отслоению медной фольги в результате перегрева.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Однако производительность парофазной пайки низка, и процесс пайки также не обходится без дефектов, таких, например, как &laquo;вздыбливание&raquo; компонентов. Сравнение параметров парофазной и ИК-пайки приведено в таблице. Очевидно, что производительность у ИК-станций гораздо выше, однако парофазные системы в процессе пайки не используют инертный газ для предотвращения окисления контактов. Стоимость парофазных систем ниже, чем ИК, однако для крупносерийного и массового производства их использование нецелесообразно ввиду низкой производительности и значительных затрат на летучий теплоноситель.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Таблица. Параметры инфракрасной (IR) и парофазной (VPS) пайки</span></b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+ 
+<div align="center"> 
+  <table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0"> 
+    <tbody> 
+      <tr> <td style="padding: 7.5pt; background: rgb(0, 0, 139);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: white;">Параметр</span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+         </td> <td style="padding: 7.5pt; background: rgb(0, 0, 139);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: white;">VPS</span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+         </td> <td style="padding: 7.5pt; background: rgb(0, 0, 139);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: white;">IR</span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 7.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Потребляемая мощность, кВт<o:p></o:p></span></p>
+         </td> <td style="padding: 7.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">2–7<o:p></o:p></span></p>
+         </td> <td style="padding: 7.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">2–20<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 7.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Расход инертного газа, м<sup>3</sup>/ч<o:p></o:p></span></p>
+         </td> <td style="padding: 7.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">0<o:p></o:p></span></p>
+         </td> <td style="padding: 7.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">14<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 7.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Скорость движения по конвейеру, см/мин.<o:p></o:p></span></p>
+         </td> <td style="padding: 7.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">0<o:p></o:p></span></p>
+         </td> <td style="padding: 7.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">80<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 7.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Производительность<o:p></o:p></span></p>
+         </td> <td style="padding: 7.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">144<o:p></o:p></span></p>
+         </td> <td style="padding: 7.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">576<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="padding: 7.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Стоимость, евро<o:p></o:p></span></p>
+         </td> <td style="padding: 7.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">50 000<o:p></o:p></span></p>
+         </td> <td style="padding: 7.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">125 000<o:p></o:p></span></p>
+         </td> </tr>
+     </tbody>
+   </table>
+ </div>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 15pt 2.25pt; text-align: center;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Заключение</span></b><b><span style="font-size: 10pt; font-family: Verdana, sans-serif; color: rgb(7, 118, 71);"><o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Анализ различных типов нагрева для пайки и демонтажа электронных модулей на печатных платах показал, что ИК-нагрев позволяет обеспечить качественное равномерное прогревание компонентов, исключить теневые участки на корпусе и наименее опасен для других компонентов на плате. При использовании ремонтного центра с ИК-нагревом нет необходимости в приобретении специальных дорогостоящих насадок, особенно это касается компонентов нестандартной формы.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 15pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Отличие от идеального термопрофиля при пайке на ремонтных станциях заключается в сложности контроля температуры в рабочей зоне (особенно для конвективных источников), поскольку в промышленных установках создаются стабильные температурные зоны, изолированные от окружающей среды, через которые в течение определенного времени проходят электронные модули, тогда как в ремонтных станциях эти зоны создаются искусственно при заметном влиянии окружающей среды.<o:p></o:p></span></p>
+ <div class="cl"></div>
+    <div class="hr"></div>
+</div><div class="right_block"><h4>Темы блога</h4><a href="index-12.htm" tppabs="http://gcmatrix.com/blog/industry_news/">Отраслевые новости</a><a href="index-13.htm" tppabs="http://gcmatrix.com/blog/spec_xp/" class="selected">Контрактная сборка</a><a href="index-5.htm" tppabs="http://gcmatrix.com/blog/quality/">Вопросы качества</a><a href="index-14.htm" tppabs="http://gcmatrix.com/blog/purchase_xp/">Компоненты</a><a href="index-15.htm" tppabs="http://gcmatrix.com/blog/%D1%81ircuitry_talks/">Печатные платы</a><a href="index-16.htm" tppabs="http://gcmatrix.com/blog/the-company-matrix/">Компания Матрикс</a><a href="index-2.htm" tppabs="http://gcmatrix.com/blog/">Все темы блога</a></div><div class="cl"></div>
+    </div>
+</div>
+            </div>
+            <div class="footer">
+                <div class="layout">
+                    <div class="logo">
+	<a href="index.htm" tppabs="http://gcmatrix.com/">
+		<img src="/images/logo.jpg" tppabs="http://gcmatrix.com/img//images/logo.jpg" alt="Матрикс">
+	</a>
+</div><div class="menu">
+    <ul><li>
+                <a href="index-1.htm" tppabs="http://gcmatrix.com/about-company/">О компании</a>
+            </li><li class="act">
+                <a href="index-2.htm" tppabs="http://gcmatrix.com/blog/">Наш блог</a>
+            </li></ul><ul><li>
+                <a href="index-3.htm" tppabs="http://gcmatrix.com/contract-assembly/">Контрактная сборка</a>
+            </li><li>
+                <a href="javascript:if(confirm('https://pcb.gcmatrix.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://pcb.gcmatrix.com/'" tppabs="https://pcb.gcmatrix.com/">Печатные платы</a>
+            </li></ul><ul><li>
+                <a href="index-4.htm" tppabs="http://gcmatrix.com/components/">Компоненты</a>
+            </li></ul>
+    <div class="cl"></div>
+</div>                    <div class="phone">
+                        <b>+7 (383) 383-08-05</b><span>周一至周五，9点-18点</span>
+                    </div>
+                    <div class="cl"></div>
+                    <div class="copyright_site">©2012-2020 BOMIC ELECTRON LLC
+<p align="center">
+ <br>
+</p>
+<p align="center">
+</p>
+<p>
+</p>
+ <br></div>
+                    <div class="cl"></div>
+                    <div class="bx-composite-bt">
+                        <div id="bx-composite-banner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'SVoXb2A8Sx';var d=document;var w=window;function l(){
+  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+  s.src = '//code.jivosite.com/script/widget/'+widget_id
+    ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+  if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
+  else{w.addEventListener('load',l,false);}}})();
+</script>
+<!-- {/literal} END JIVOSITE CODE -->
+    </body>
+</html><!--e39e1a53f7d3e972657891f4911ac808-->

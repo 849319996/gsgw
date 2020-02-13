@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<style type="text/css">.bx-composite-btn {background: url("sprite-1x.png")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-1x.png*/ no-repeat right 0 #e94524;border-radius: 15px;color: #ffffff !important;display: inline-block;line-height: 30px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-size: 12px !important;font-weight: bold !important;height: 31px !important;padding: 0 42px 0 17px !important;vertical-align: middle !important;text-decoration: none !important;}@media screen   and (min-device-width: 1200px)   and (max-device-width: 1600px)   and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi) {.bx-composite-btn {background-image: url("sprite-2x.png")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-2x.png*/;background-size: 42px 124px;}}  .bx-composite-btn-fixed {position: absolute;top: -45px;right: 15px;z-index: 10;}  .bx-btn-white {background-position: right 0;color: #fff !important;}  .bx-btn-black {background-position: right -31px;color: #000 !important;}  .bx-btn-red {background-position: right -62px;color: #555 !important;}  .bx-btn-grey {background-position: right -93px;color: #657b89 !important;}  .bx-btn-border {border: 1px solid #d4d4d4;height: 29px !important;line-height: 29px !important;}  .bx-composite-loading {display: block;width: 40px;height: 40px;background: url("loading.gif")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/loading.gif*/;}</style>
+<script type="text/javascript" data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','banner':{'url':'http://www.1c-bitrix.ru/composite/','text':'','bgcolor':'#ff045f','style':'white'},'storageBlocks':[],'dynamicBlocks':[],'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}else{w.frameRequestFail = f;}return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();})(window, document);</script>
+
+
+<link href="core.min.css-14451916572854.css" tppabs="http://gcmatrix.com/bitrix/js/main/core/css/core.min.css?14451916572854" type="text/css" rel="stylesheet" />
+<link href="jquery.fancybox.css-14175171805160.css" tppabs="http://gcmatrix.com/css/jquery.fancybox.css?14175171805160" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="jquery.bxslider.css-14175171804040.css" tppabs="http://gcmatrix.com/css/jquery.bxslider.css?14175171804040" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="style.css-156947828531018.css" tppabs="http://gcmatrix.com/css/style.css?156947828531018" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="style.css-1417517180236.css" tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/style.css?1417517180236" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="styles.css-1554948055583.css" tppabs="http://gcmatrix.com/local/templates/main/styles.css?1554948055583" type="text/css" data-template-style="true" rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'http://gcmatrix.com/blog/industry_news/information-on-elektroliticheskim-capacitors/DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'mx','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/'});</script>
+
+
+<script type="text/javascript" src="core.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core.min.js?147851119173480"></script>
+<script type="text/javascript" src="core_db.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_db.min.js?14646669905048"></script>
+<script type="text/javascript" src="core_ajax.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ajax.min.js?147851119221031"></script>
+<script type="text/javascript" src="json2.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/json/json2.min.js?14175171793467"></script>
+<script type="text/javascript" src="core_ls.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ls.min.js?14451916607365"></script>
+<script type="text/javascript" src="core_fx.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_fx.min.js?14451916579592"></script>
+<script type="text/javascript" src="core_frame_cache.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_frame_cache.min.js?147851118811191"></script>
+<script type="text/javascript">var bxDate = new Date(); document.cookie="mx_TIME_ZONE="+bxDate.getTimezoneOffset()+"; path=/; expires=Fri, 01-Jan-2038 00:00:00 GMT"</script>
+
+
+
+<script type="text/javascript" src="jquery-3.4.1.min.js" tppabs="http://gcmatrix.com/js/jquery-3.4.1.min.js?142112976595790"></script>
+<script type="text/javascript" src="jquery.carouFredSel.js" tppabs="http://gcmatrix.com/js/jquery.carouFredSel.js?141751718036181"></script>
+<script type="text/javascript" src="jquery.bxslider.min.js" tppabs="http://gcmatrix.com/js/jquery.bxslider.min.js?141751718019368"></script>
+<script type="text/javascript" src="jquery-ui.js" tppabs="http://gcmatrix.com/js/jquery-ui.js?1417517180485937"></script>
+<script type="text/javascript" src="jquery.mask.min.js" tppabs="http://gcmatrix.com/js/jquery.mask.min.js?14175171804741"></script>
+<script type="text/javascript" src="jquery.formstyler.min.js" tppabs="http://gcmatrix.com/js/jquery.formstyler.min.js?141751718015758"></script>
+<script type="text/javascript" src="jquery.fancybox.js" tppabs="http://gcmatrix.com/js/jquery.fancybox.js?141751718050725"></script>
+<script type="text/javascript" src="script2.js" tppabs="http://gcmatrix.com/js/script.js?14175171807558"></script>
+<script type="text/javascript" src="script6.js" tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/script.js?1417517180990"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "72e5454bdb8b62a08488572b66bc822a"]); _ba.push(["host", "http://gcmatrix.com/blog/industry_news/information-on-elektroliticheskim-capacitors/gcmatrix.com"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+<title>Прецизионные MEMS-датчики в современных навигационных устройствах - Матрикс</title><!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(52706338, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="1.gif" tppabs="https://mc.yandex.ru/watch/52706338" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+<div id="panel">
+    </div>
+<div class="wrapper">
+    <div class="header">
+        <div class="layout">
+            <div class="logo">
+                <a>
+                    <img src="/images/logo.jpg" tppabs="http://gcmatrix.com/img//images/logo.jpg" alt="Матрикс">
+                </a>
+            </div>            <div class="text">
+            中国领先的印刷电路板OEM制造商                       </div>
+            <div class="phone">
+                <b class="h2">+7 (383) 383-08-05</b><div class="d-flex">
+                <div class="mr-2">
+                    <a href="skype:live:a2ad12d4eb62443e?chat" target="_blank"><span class="i-mess i-mess-skype"></span></a>
+                    <a href="tg://resolve?domain=matrix_elektronika" target="_blank"><span class="i-mess i-mess-telegram"></span></a>
+                    <a href="javascript:if(confirm('https://wa.me/79994638549  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://wa.me/79994638549'" tppabs="https://wa.me/79994638549" target="_blank"><span class="i-mess i-mess-whatsapp"></span></a>
+                    <a href="viber://pa?chatURI=matrixelektronika" target="_blank"><span class="i-mess i-mess-viber"></span></a>
+                </div>
+                <div class="comment">周一至周五，9点-18点					</div>
+            </div>
+            </div>
+            <div class="cl"></div>
+            <div class="menu">
+                <a href="index.htm" tppabs="http://gcmatrix.com/" class="home"></a>
+                <ul><li>
+                    <a href="index.html" tppabs="http://gcmatrix.com/about-company/"  >首页</a>
+                </li><li>
+                    <a href="index-2.htm" tppabs="http://gcmatrix.com/blog/"  >关于我们</a>
+                </li><li>
+                    <a href="index-3.htm" tppabs="http://gcmatrix.com/contract-assembly/"  >PCB组装</a>
+                </li><li>
+                    <a href="javascript:if(confirm('https://pcb.gcmatrix.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://pcb.gcmatrix.com/'" tppabs="https://pcb.gcmatrix.com/"   target="_blank">PCB</a>
+                </li><li>
+                    <a href="index-4.htm" tppabs="http://gcmatrix.com/components/"  >电子元器件</a>
+                </li></ul>
+                <div class="cl"></div>
+            </div>        </div>
+    </div>
+    <div class="content"><div class="news blog_page">
+    <div class="layout"><div class="left text_page">
+    <h1>Прецизионные MEMS-датчики в современных навигационных устройствах</h1>
+    <span class="date">21 ноября</span>
+    <div class="cl"></div><div class="quote">Сегодня во многих приложениях стало стандартным применение сигналов глобальной системы позиционирования &#40;GPS&#41;. Однако для навигации внутри помещения и решения навигационных задач в сложной обстановке с меняющимися окружающими условиями одной лишь системы GPS недостаточно.</div><p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">В таких ситуациях для оптимизации возможностей системы по определению реального положения при аномальном характере движения можно использовать комбинацию различных типов датчиков. Возможность отдельно взятого датчика решать отдельно взятую навигационную проблему зависит не только от характеристик самого датчика, но и от уникальных параметров динамики системы. Как и в любой сложной проблеме проектирования, процесс разработки необходимо начинать с исследования целей и ограничений конечного приложения. Это позволит расставить критические показатели системы в порядке приоритета и получить примерное представление о необходимых датчиках. И наконец, последний этап проектирования заключается в реальной оптимизации путем аккуратной интеграции датчика в систему, точного аналогового преобразования сигнала и его обработки.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 15pt 0cm 2.25pt; background: white;"><b><span style="font-size: 9pt; font-family: Verdana, sans-serif;">Понимание проблемы навигации<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Давайте начнем рассмотрение проблемы с аналогии: допустим, вы находитесь на работе и хотите выпить чашку кофе, для чего вам необходимо пройти путь до кофейного автомата. Если вы там уже были, то в вашем мозгу есть маршрут, но чтобы добраться до места назначения, вы по ходу движения полагаетесь на различные чувства, включая зрение, слух, чувство равновесия и даже, вероятно, осязание. Ваш собственный персональный процессор объединяет информацию от этих разнородных источников, а также осуществляет некоторое подобие встраиваемого распознавания образов. Если это рабочий день, то вы можете сделать остановку и запросить данные (направление) от внешнего источника. В ходе этого процесса необходимо, чтобы ваши личные датчики были не только точны по отдельности, но и хорошо работали совместно, отбрасывали информацию, способную вводить в заблуждение (то есть запах кофе, доносящийся со стола соседа), и дополняли друг друга. Таким образом, для достижения конечного пункта назначения вы используете те же методы, которые применяются разработчиками навигационных систем для транспортных средств, хирургических инструментов и робототехники.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">В промышленности аналогами ваших чувств являются различные методы измерения, ни один из которых не способен в одиночку решать подавляющее большинство реальных задач. Так, система GPS подвержена ошибкам, которые возникают из-за блокирования приема сигнала от спутников препятствиями и приводят либо к снижению точности, либо к уменьшению частоты обновления данных. Еще один стандартный источник информации навигационных систем, магнетометр, требует беспрепятственного доступа к магнитному полю Земли. В общем случае это требование выполняется, однако в промышленных условиях существует множество мешающих полей, воздействие которых, в лучшем случае, приводит к периодическому снижению надежности показаний магнетометра. Оптические датчики подвержены влиянию препятствий, находящихся на линии прямой видимости. В свою очередь, инерциальные датчики свободны от влияния всех перечисленных типов помех, однако имеют собственные ограничения, например, отсутствие абсолютной точки отсчета (информация о направлении на север). Сравнение достоинств и недостатков основных типов навигационных датчиков дано в таблице.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Таблица. Достоинства и ограничения датчиков</span></b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);"><o:p></o:p></span></p>
+ 
+<div align="center"> 
+  <table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: none;"> 
+    <tbody> 
+      <tr> <td style="border: 1pt solid rgb(136, 140, 135); padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Тип датчика</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> <td style="border-style: solid solid solid none; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Основное достоинство</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> <td style="border-style: solid solid solid none; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Потенциальные ограничения</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">GPS<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Долговременная абсолютная точка отсчета<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Возможные блокирующие препятствия<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Магнитный<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Не требует инфраструктуры (за исключением Земли)<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Подвержен воздействию помех<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Оптический<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Интуитивно понятный принцип действия<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Требует прямой видимости<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Инерциальный<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Самодостаточный<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Относительная (не абсолютная) точка отсчета<o:p></o:p></span></p>
+         </td> </tr>
+     </tbody>
+   </table>
+ </div>
+ 
+<p class="MsoNormal" style="margin: 15pt 0cm 2.25pt; background: white;"><b><span style="font-size: 9pt; font-family: Verdana, sans-serif;">Выбор датчика и обработка его сигналов<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">За исключением самых простых проблем, в большинстве случаев для обеспечения требуемых точности и показателей системы в любых условиях используется информация сразу от нескольких типов датчиков. Инерциальные датчики, такие как акселерометры и гироскопы, выполненные в виде микроминиатюрных электромеханических систем (Micro-Electro Mechanical System, MEMS), потенциально могут полностью компенсировать недостатки датчиков любых иных типов, поскольку они не подвержены влиянию многих видов помех и не требуют внешней инфраструктуры (спутников, магнитного поля, камеры&hellip;). Все, что им необходимо, &mdash; это просто инерция движения.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Инерциальные MEMS-датчики очень надежны (подтверждено 20-летним опытом их применения в автомобильной промышленности) и коммерчески привлекательны благодаря низкому энергопотреблению, малым габаритам и стоимости, что демонстрируется их успешной эксплуатацией в мобильных телефонах и электронных играх. В то же время характеристики выпускаемых компонентов сильно различаются, и, например, компоненты, подходящие для электронных игр, не способны решать задачи там, где требуется повышенное качество. Так, в промышленных и медицинских навигационных задачах, как правило, необходим уровень показателей на порядок выше, чем тот, что обеспечивают MEMS-датчики, которые применяются в бытовых устройствах.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">В большинстве случаев движение устройства имеет относительно сложный характер (более чем по одной оси), что обуславливает потребность в полнофункциональных инерциальных измерительных модулях (Inertial Measurement Unit, IMU). В подобных модулях может быть интегрировано измерение инерциального движения с шестью степенями свободы: три степени свободы линейного движения и три степени свободы вращательного движения.<b><o:p></o:p></b></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Примером такого модуля может служить модуль IMU iSensor ADIS16334 компании Analog Devices, он обладает степенью интеграции и уровнем характеристик, которые необходимы для большинства задач промышленной навигации. При этом он имеет компактный форм-фактор, что желательно для многих промышленных инструментов и средств передвижения (рис. 1). Во многих случаях в модуле может быть также интегрировано четыре или более дополнительных степеней свободы, включая три оси измерения магнитного поля и одну ось измерения давления (высоты).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 9pt; background: white;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);"><img width="624" height="293" src="5d653d5cc0ffbc715640fda5a0a1b860.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/5d6/5d653d5cc0ffbc715640fda5a0a1b860.jpg" title="50_pic2.jpg" alt="50_pic2.jpg"  /></span></b><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">  
+      <br />
+     
+      <br />
+     Рис. 1. Устройство измерения параметров движения с шестью степенями свободы в виде модуля с габаритами корпуса 11&times;22×33 мм<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Как уже отмечалось ранее, любой тип датчика имеет свои ограничения. Если эти ограничения препятствуют достижению требуемого уровня характеристик в системе, то помимо использования в системе нескольких разнородных датчиков может также понадобиться применение методов компенсации. Модуль инерциального измерения выдает высокий уровень стабильности показаний датчиков линейного и вращательного движения, которые компенсированы с учетом влияния таких факторов, как:<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 0cm 0cm 0.0001pt 22.5pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol; color: rgb(28, 27, 28);">&middot;<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">температурный дрейф и дрейф напряжения;<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 0cm 0cm 0.0001pt 22.5pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol; color: rgb(28, 27, 28);">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">смещение, чувствительность и нелинейность;<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 0cm 0cm 0.0001pt 22.5pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol; color: rgb(28, 27, 28);">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">вибрация;<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 0cm 0cm 0.0001pt 22.5pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol; color: rgb(28, 27, 28);">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">рассогласование взаимного положения осей X, Y и Z.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Инерциальные датчики могут обладать различной степенью дрейфа в зависимости от их качества, и для коррекции этого дрейфа в некоторые моменты времени также может использоваться приемник GPS или магнетометр. Основной проблемой в задаче навигации, помимо грамотного проектирования датчика, является определение, показания какого из датчиков использовать и когда. Опыт успешного применения инерциальных гироскопов и MEMS-акселерометров доказал, что они могут служить хорошим дополнением при проектировании полнофункциональной измерительной системы.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 15pt 0cm 2.25pt; background: white;"><b><span style="font-size: 9pt; font-family: Verdana, sans-serif;">Проектирование с использованием инерциальных MEMS-датчиков<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">В промышленных и медицинских условиях при нахождении внутри помещения, где прием сигналов GPS невозможен, а механические и электронные приборы порождают магнитные помехи, разработчики должны использовать менее традиционные подходы к задаче управления механизмами. Много новых приложений, например, при решении задачи по навигации хирургических приборов, также требуют значительно большей точности, чем, к примеру, автомобильная навигация. Во всех этих случаях одним из решений может быть инерциальная навигация, которая способна обеспечить сопровождение на основании расчета траектории, которое необходимо для поддержания точности при блокировании прямой видимости или проявлении других помех, негативно сказывающихся на неинерциальных датчиках.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">На рис. 2 изображена обобщенная структурная схема инерциальной навигационной системы (Inertial Navigation System, INS), которую можно применять для навигации чего угодно — от автомобиля или самолета до хирургических инструментов. Модель INS включает в себя фильтр Калмана, который впервые был использован в миссиях космического корабля &laquo;Аполлон&raquo; на Луне, а сегодня широко распространен в петлях фазовой автоподстройки систем мобильной связи. Он обеспечивает механизм совмещения показаний от нескольких хороших, но неидеальных датчиков, и дает наилучшие оценки положения, направления и общей динамики движения.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 9pt; background: white;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);"><img width="624" height="298" src="71863235b5879d965d118ae8d25c2cac.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/718/71863235b5879d965d118ae8d25c2cac.jpg" title="50_pic3.jpg" alt="50_pic3.jpg"  /></span></b><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">  
+      <br />
+     
+      <br />
+     Рис. 2. Инерциальная навигационная система с совмещением показаний от разнородных датчиков при помощи фильтра Калмана<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">В хирургии инерциальная навигационная система может быть использована в качестве вспомогательного средства навигации при совмещении искусственных суставов в области колена или бедра, с учетом индивидуальных особенностей пациента.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Помимо более точного совмещения, дающего наиболее комфортные ощущения и сокращающего длительность операции и степень хирургического вмешательства, правильно подобранные датчики могут также помочь компенсировать эффекты от усталости и тремора рук. В последние годы в дополнение к чисто механическому совмещению применяется оптическое выравнивание, однако, как и в случае с блокировкой сигналов GPS в автомобильной навигации, в операционной комнате существуют потенциальные преграды на линии прямой видимости, которые ограничивают точность оптического датчика. Хирургический инструмент со вспомогательной функцией инерциальной навигации может дополнять или даже заменять оптическое наведение, поскольку он может работать не только в условиях прямой видимости. Такой инструмент также может обладать преимуществами с точки зрения габаритов, стоимости и возможностей автоматизации.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Несмотря на то, что базовые принципы решения навигационной проблемы в различных приложениях в значительной степени пересекаются, необходимо хорошо понимать специфику проектируемой системы. Специфические условия работы в конечном счете определяют выбор подходящих типов датчиков, а также общее качество системы.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Одновременно с устойчивой потребностью рынка в миниатюрных, малопотребляющих, многоосевых инерциальных датчиках для бытовой техники многие производители датчиков уделяют особое внимание обеспечению повышенной точности своих продуктов при любых условиях. Подобные прецизионные, устойчивые к условиям окружающей среды датчики создают предпосылки к возможности применения инерциальных MEMS-датчиков в промышленных, измерительных и медицинских системах.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal"><o:p> </o:p></p>
+ <div class="cl"></div>
+    <div class="hr"></div>
+</div><div class="right_block"><h4>Темы блога</h4><a href="index-12.htm" tppabs="http://gcmatrix.com/blog/industry_news/" class="selected">Отраслевые новости</a><a href="index-13.htm" tppabs="http://gcmatrix.com/blog/spec_xp/">Контрактная сборка</a><a href="index-5.htm" tppabs="http://gcmatrix.com/blog/quality/">Вопросы качества</a><a href="index-14.htm" tppabs="http://gcmatrix.com/blog/purchase_xp/">Компоненты</a><a href="index-15.htm" tppabs="http://gcmatrix.com/blog/%D1%81ircuitry_talks/">Печатные платы</a><a href="index-16.htm" tppabs="http://gcmatrix.com/blog/the-company-matrix/">Компания Матрикс</a><a href="index-2.htm" tppabs="http://gcmatrix.com/blog/">Все темы блога</a></div><div class="cl"></div>
+    </div>
+</div>
+            </div>
+            <div class="footer">
+                <div class="layout">
+                    <div class="logo">
+	<a href="index.htm" tppabs="http://gcmatrix.com/">
+		<img src="/images/logo.jpg" tppabs="http://gcmatrix.com/img//images/logo.jpg" alt="Матрикс">
+	</a>
+</div><div class="menu">
+    <ul><li>
+                <a href="index-1.htm" tppabs="http://gcmatrix.com/about-company/">О компании</a>
+            </li><li class="act">
+                <a href="index-2.htm" tppabs="http://gcmatrix.com/blog/">Наш блог</a>
+            </li></ul><ul><li>
+                <a href="index-3.htm" tppabs="http://gcmatrix.com/contract-assembly/">Контрактная сборка</a>
+            </li><li>
+                <a href="javascript:if(confirm('https://pcb.gcmatrix.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://pcb.gcmatrix.com/'" tppabs="https://pcb.gcmatrix.com/">Печатные платы</a>
+            </li></ul><ul><li>
+                <a href="index-4.htm" tppabs="http://gcmatrix.com/components/">Компоненты</a>
+            </li></ul>
+    <div class="cl"></div>
+</div>                    <div class="phone">
+                        <b>+7 (383) 383-08-05</b><span>周一至周五，9点-18点</span>
+                    </div>
+                    <div class="cl"></div>
+                    <div class="copyright_site">©2012-2020 BOMIC ELECTRON LLC
+<p align="center">
+ <br>
+</p>
+<p align="center">
+</p>
+<p>
+</p>
+ <br></div>
+                    <div class="cl"></div>
+                    <div class="bx-composite-bt">
+                        <div id="bx-composite-banner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'SVoXb2A8Sx';var d=document;var w=window;function l(){
+  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+  s.src = '//code.jivosite.com/script/widget/'+widget_id
+    ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+  if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
+  else{w.addEventListener('load',l,false);}}})();
+</script>
+<!-- {/literal} END JIVOSITE CODE -->
+    </body>
+</html><!--91e06f9f7714d11f8c14bf49b5876811-->

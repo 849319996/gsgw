@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<style type="text/css">.bx-composite-btn {background: url("sprite-1x.png")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-1x.png*/ no-repeat right 0 #e94524;border-radius: 15px;color: #ffffff !important;display: inline-block;line-height: 30px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-size: 12px !important;font-weight: bold !important;height: 31px !important;padding: 0 42px 0 17px !important;vertical-align: middle !important;text-decoration: none !important;}@media screen   and (min-device-width: 1200px)   and (max-device-width: 1600px)   and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi) {.bx-composite-btn {background-image: url("sprite-2x.png")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-2x.png*/;background-size: 42px 124px;}}  .bx-composite-btn-fixed {position: absolute;top: -45px;right: 15px;z-index: 10;}  .bx-btn-white {background-position: right 0;color: #fff !important;}  .bx-btn-black {background-position: right -31px;color: #000 !important;}  .bx-btn-red {background-position: right -62px;color: #555 !important;}  .bx-btn-grey {background-position: right -93px;color: #657b89 !important;}  .bx-btn-border {border: 1px solid #d4d4d4;height: 29px !important;line-height: 29px !important;}  .bx-composite-loading {display: block;width: 40px;height: 40px;background: url("loading.gif")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/loading.gif*/;}</style>
+<script type="text/javascript" data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','banner':{'url':'http://www.1c-bitrix.ru/composite/','text':'','bgcolor':'#ff045f','style':'white'},'storageBlocks':[],'dynamicBlocks':[],'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}else{w.frameRequestFail = f;}return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();})(window, document);</script>
+
+
+<link href="core.min.css-14451916572854.css" tppabs="http://gcmatrix.com/bitrix/js/main/core/css/core.min.css?14451916572854" type="text/css" rel="stylesheet" />
+<link href="jquery.fancybox.css-14175171805160.css" tppabs="http://gcmatrix.com/css/jquery.fancybox.css?14175171805160" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="jquery.bxslider.css-14175171804040.css" tppabs="http://gcmatrix.com/css/jquery.bxslider.css?14175171804040" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="style.css-156947828531018.css" tppabs="http://gcmatrix.com/css/style.css?156947828531018" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="style.css-1417517180236.css" tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/style.css?1417517180236" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="styles.css-1554948055583.css" tppabs="http://gcmatrix.com/local/templates/main/styles.css?1554948055583" type="text/css" data-template-style="true" rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'http://gcmatrix.com/blog/industry_news/nanotechnology/DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'mx','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/'});</script>
+
+
+<script type="text/javascript" src="core.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core.min.js?147851119173480"></script>
+<script type="text/javascript" src="core_db.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_db.min.js?14646669905048"></script>
+<script type="text/javascript" src="core_ajax.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ajax.min.js?147851119221031"></script>
+<script type="text/javascript" src="json2.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/json/json2.min.js?14175171793467"></script>
+<script type="text/javascript" src="core_ls.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ls.min.js?14451916607365"></script>
+<script type="text/javascript" src="core_fx.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_fx.min.js?14451916579592"></script>
+<script type="text/javascript" src="core_frame_cache.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_frame_cache.min.js?147851118811191"></script>
+<script type="text/javascript">var bxDate = new Date(); document.cookie="mx_TIME_ZONE="+bxDate.getTimezoneOffset()+"; path=/; expires=Fri, 01-Jan-2038 00:00:00 GMT"</script>
+
+
+
+<script type="text/javascript" src="jquery-3.4.1.min.js" tppabs="http://gcmatrix.com/js/jquery-3.4.1.min.js?142112976595790"></script>
+<script type="text/javascript" src="jquery.carouFredSel.js" tppabs="http://gcmatrix.com/js/jquery.carouFredSel.js?141751718036181"></script>
+<script type="text/javascript" src="jquery.bxslider.min.js" tppabs="http://gcmatrix.com/js/jquery.bxslider.min.js?141751718019368"></script>
+<script type="text/javascript" src="jquery-ui.js" tppabs="http://gcmatrix.com/js/jquery-ui.js?1417517180485937"></script>
+<script type="text/javascript" src="jquery.mask.min.js" tppabs="http://gcmatrix.com/js/jquery.mask.min.js?14175171804741"></script>
+<script type="text/javascript" src="jquery.formstyler.min.js" tppabs="http://gcmatrix.com/js/jquery.formstyler.min.js?141751718015758"></script>
+<script type="text/javascript" src="jquery.fancybox.js" tppabs="http://gcmatrix.com/js/jquery.fancybox.js?141751718050725"></script>
+<script type="text/javascript" src="script2.js" tppabs="http://gcmatrix.com/js/script.js?14175171807558"></script>
+<script type="text/javascript" src="script6.js" tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/script.js?1417517180990"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "72e5454bdb8b62a08488572b66bc822a"]); _ba.push(["host", "http://gcmatrix.com/blog/industry_news/nanotechnology/gcmatrix.com"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+<title>Новые технологии в изготовлении силовых модулей - Матрикс</title><!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(52706338, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="1.gif" tppabs="https://mc.yandex.ru/watch/52706338" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+<div id="panel">
+    </div>
+<div class="wrapper">
+    <div class="header">
+        <div class="layout">
+            <div class="logo">
+                <a>
+                    <img src="/images/logo.jpg" tppabs="http://gcmatrix.com/img//images/logo.jpg" alt="Матрикс">
+                </a>
+            </div>            <div class="text">
+            中国领先的印刷电路板OEM制造商                       </div>
+            <div class="phone">
+                <b class="h2">+7 (383) 383-08-05</b><div class="d-flex">
+                <div class="mr-2">
+                    <a href="skype:live:a2ad12d4eb62443e?chat" target="_blank"><span class="i-mess i-mess-skype"></span></a>
+                    <a href="tg://resolve?domain=matrix_elektronika" target="_blank"><span class="i-mess i-mess-telegram"></span></a>
+                    <a href="javascript:if(confirm('https://wa.me/79994638549  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://wa.me/79994638549'" tppabs="https://wa.me/79994638549" target="_blank"><span class="i-mess i-mess-whatsapp"></span></a>
+                    <a href="viber://pa?chatURI=matrixelektronika" target="_blank"><span class="i-mess i-mess-viber"></span></a>
+                </div>
+                <div class="comment">周一至周五，9点-18点					</div>
+            </div>
+            </div>
+            <div class="cl"></div>
+            <div class="menu">
+                <a href="index.htm" tppabs="http://gcmatrix.com/" class="home"></a>
+                <ul><li>
+                    <a href="index.html" tppabs="http://gcmatrix.com/about-company/"  >首页</a>
+                </li><li>
+                    <a href="index-2.htm" tppabs="http://gcmatrix.com/blog/"  >关于我们</a>
+                </li><li>
+                    <a href="index-3.htm" tppabs="http://gcmatrix.com/contract-assembly/"  >PCB组装</a>
+                </li><li>
+                    <a href="javascript:if(confirm('https://pcb.gcmatrix.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://pcb.gcmatrix.com/'" tppabs="https://pcb.gcmatrix.com/"   target="_blank">PCB</a>
+                </li><li>
+                    <a href="index-4.htm" tppabs="http://gcmatrix.com/components/"  >电子元器件</a>
+                </li></ul>
+                <div class="cl"></div>
+            </div>        </div>
+    </div>
+    <div class="content"><div class="news blog_page">
+    <div class="layout"><div class="left text_page">
+    <h1>Новые технологии в изготовлении силовых модулей</h1>
+    <span class="date">5 февраля</span>
+    <div class="cl"></div><div class="quote">Необходимость совершенствования технологий корпусирования силовых модулей вызвана постоянно растущими требованиями увеличения плотности мощности, повышения надежности и снижения стоимости. Технологические возможности традиционных методов пайки и ультра звуковой сварки достигли своих пределов, их применение не позволяет полностью реализовать возможности новейших кристаллов с расширенным температурным диапазоном.</div>
+<p class="MsoNormal" align="center" style="margin: 15pt 0cm 2.25pt; text-align: center; background: white;"><b><span style="font-size: 9pt; font-family: Verdana, sans-serif;">Технология низкотемпературного спекания и SKiN-концепция<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Технология низкотемпературного спекания серебряного нанопорошка (Sinter-технология) была внедрена для замены пайки при установке чипов IGBT и диодов на изолирующую DBC-подложку. С 2009 года она используется компанией SEMIKRON в серийном производстве модулей SKAI, SKiM и SKiiP 4, предназначенных для эксплуатации на транспорте и отличающихся высокой стойкостью к термоциклированию. Очевидно, что серебро может быть хорошим материалом припоя, однако оно имеет очень высокую температуру плавления (более 900 &deg;С). Отметим, что одной из задач внедрения новой технологии было сохранение действующего паяльного оборудования. Применение наночастиц серебра в органическом растворителе и повышенного давления спекания позволило решить эту задачу.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Благодаря существенному увеличению показателей надежности и улучшению тепловых характеристик силовых модулей, изготовленных с применением Sinter-технологии, они могут быть использованы в устройствах с предельно жесткими режимами эксплуатации, к которым относятся транспортные приводы и преобразователи ветроэнергетических установок.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Тем не менее ряд проблем оставался нерешенным. К ним следует отнести сварное подключение алюминиевых выводов чипов, паяное соединение DBC-подложки и базовой платы, а также необходимость применения теплопроводящей пасты при установке модуля на теплоотвод. Ответом на все эти вопросы стала SKiN-технология, в основе которой лежит упомянутый выше процесс низкотемпературного спекания серебра.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Концепция SKiN-модулей (рис. 1) состоит в следующем. Контактные площадки на поверхности чипов спекаются с токонесущими шинами гибкой SKiN-пленки, а основания кристаллов &mdash; с DBC-подложкой, которая таким же способом соединяется с базовой платой или теплостоком. Толщина металлизации несущей полиамидной пленки соизмерима с диаметром проводников, используемых для подключения выводов кристаллов в модулях традиционного типа. Тонкий слой меди на ее верхней стороне предназначен для подключения затворов IGBT и контактов сенсоров, его соединение с шинами нижнего слоя осуществляется посредством переходных отверстий. Поверхность SKiN-пленки может быть использована для размещения smd-компонентов, например, резисторов затвора, элементов схемы управления или термодатчиков.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 9pt; background: white;"><img src="a4e0896563f47915e70f3434d5c9243c.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/a4e/a4e0896563f47915e70f3434d5c9243c.jpg" title="78_pic1.jpg" border="0" alt="78_pic1.jpg" width="617" height="287"  /><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">  
+      <br />
+     
+      <br />
+     Рис. 1. Упрощенная конструкция SKiN-модуля<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Как видно на рисунке, еще один спеченный слой служит для монтажа чипов IGBT/FWD на изолирующую DBC-подложку. Этот процесс пригоден для всех выпускаемых в настоящее время видов кристаллов — перед спеканием требуется только дополнительная обработка поверхности благородными металлами.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Технология Sinter пригодна и для соединения керамической подложки с алюминиевым теплостоком: этот контактный слой имеет наибольшую площадь, и он больше других подвержен действию термомеханических стрессов. Пористая серебряная структура, в отличие от всех используемых промышленных припоев, обладает высокой эластичностью, ей не присущ эффект накопления усталости.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Установка силовых терминалов на DBC-подложку также производится путем спекания, обеспечивающего им высокую токонесущую способность и стойкость к механическим воздействиям.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Применение SKiN-технологии дает возможность кардинально улучшить следующие параметры силовых ключей:<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 0cm 0cm 0.0001pt 22.5pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol; color: rgb(28, 27, 28);">&middot;<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Плотность мощности. Замена теплопроводящей пасты на спекаемый слой Ag позволяет увеличить плотность тока модуля за счет снижения теплового сопротивления &laquo;корпус &ndash; радиатор&raquo;. Б&oacute;льшая площадь металлизации поверхности чипов обеспечивает лучшую и более равномерную теплоотдачу.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 0cm 0cm 0.0001pt 22.5pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol; color: rgb(28, 27, 28);">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Надежность. Замена тонких алюминиевых проводников и их сварных соединений тонкой пленкой со спекаемой металлизацией увеличивает стойкость к термоциклированию благодаря лучшему сочетанию коэффициентов теплового расширения (КТР) сопрягаемых материалов, высокой эластичности серебряного слоя и большей площади контактной поверхности кристаллов.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 0cm 0cm 0.0001pt 22.5pt; text-indent: -18pt; line-height: 11.25pt;"><span style="font-size: 10pt; font-family: Symbol; color: rgb(28, 27, 28);">·<span style="font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">         </span></span><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Электрические характеристики. Замена тонких алюминиевых проводников и их сварных соединений гибкой пленкой со спекаемой металлизацией улучшает нагрузочные свойства чипов за счет повышения площади электрического контакта и его сечения. Кроме того, это позволяет снизить значение паразитной индуктивности за счет улучшения геометрии трассировки и уменьшения площади токовых петель.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 0cm 2.25pt; text-align: center; background: white;"><b><span style="font-size: 9pt; font-family: Verdana, sans-serif;">Дизайн SKiN-модулей<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Эффективность решений, заложенных в SKiN-технологии, проверялась путем сравнения характеристик опытного полумостового модуля (600 В, 400 А) и «референтного» силового ключа с аналогичными характеристиками. В обоих случаях для охлаждения использовался алюминиевый игольчатый радиатор.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">В каждом плече SKiN-модуля установлено параллельно два 200-амперных чипа IGBT и один CAL-диод с номинальным током 275 А. Силовые АС- и DC-терминалы размещены на коротких краях корпуса, сигнальные подключения затворов выполнены с помощью гибкой SKiN-пленки, расположенной поперек DBC-платы (рис. 2).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 9pt; background: white;"><img src="c99bb9a1e7720d20c20f9379bd22440a.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/c99/c99bb9a1e7720d20c20f9379bd22440a.jpg" title="78_pic2.jpg" border="0" alt="78_pic2.jpg" width="258" height="256"  /><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">  
+      <br />
+     
+      <br />
+     Рис. 2. Опытный SKiN-модуль (полумост, 600 В, 400 А)<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Для получения максимально достоверных результатов сравнения был создан «референтный» силовой ключ со сварным соединением алюминиевых выводов чипов, полностью идентичный по всем остальным элементам конструкции (рис. 3). Подключение каждого кристалла в нем осуществляется с помощью 12 проводников, что обеспечивает оптимальные нагрузочные характеристики. На контактной поверхности диода делается четыре точки сварки на проводник, у IGBT — три точки сварки.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 9pt; background: white;"><img src="308854b1c5221927e34158e3000764e9.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/308/308854b1c5221927e34158e3000764e9.jpg" title="78_pic3.jpg" border="0" alt="78_pic3.jpg" width="306" height="256"  /><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">  
+      <br />
+     
+      <br />
+     Рис. 3. «Референтный» модуль со сварными алюминиевыми проводниками<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Основная разница указанных способов соединения кристаллов (гибкий SKiN-слой и проводники) состоит в размере контактной поверхности. В то время как общая зона сварки проводников составляет около 21% от активной площади чипа, пленка обеспечивает контакт с 50–85% поверхности кристаллов в зависимости от их типа.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 15pt 0cm 2.25pt; background: white;"><b><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: rgb(152, 31, 35);">Тепловые характеристики<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Максимальное значение мощности <i>P<sub>V</sub></i>, рассеиваемой полупроводниковым элементом, ограничено предельно допустимым перегревом чипов <i>T<sub>j</sub></i>, температурой охлаждающей среды<i>T<sub>a</sub></i> и тепловым сопротивлением кристаллов <i>R<sub>th(j–a)</sub></i> в соответствии со следующим выражением:<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 9pt; background: white;"><img src="e6e20de9c5ae04b500e07e0347e58db4.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/e6e/e6e20de9c5ae04b500e07e0347e58db4.jpg" title="78_form1.jpg" border="0" alt="78_form1.jpg" width="185" height="35"  /></p>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Наиболее сложные тепловые режимы наблюдаются у современных транспортных приводов, работающих при нагреве охлаждающей жидкости до 85 °С и выше. В этом случае допустимая разница температур кристалла и тосола (<i>T<sub>j</sub></i> – <i>T<sub>a</sub></i>) оказывается слишком маленькой, и для надежной эксплуатации силовых ключей в таких условиях они должны обладать очень низким термосопротивлением.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Использование SKiN-модулей с высокоэффективным игольчатым радиатором, спеченным с DBC-подложкой, позволяет успешно решить эту задачу. Существенное снижение величины <i>R<sub>th(j–a)</sub></i> при этом достигается благодаря отсутствию слоя термопасты, вносящего значительный вклад в общее значение теплового импеданса.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Измерения режимов проводились на макете 3-фазного инвертора (рис. 4) с жидкостным охлаждением (50%-ный раствор гликоля) при температуре тосола 70 °С. Штуцеры для подключения системы охлаждения расположены на левой стороне радиатора, содержащего три параллельных канала циркуляции жидкости для равномерного распределения тепла. Все модули IGBT в тестовой схеме соединены последовательно, их нагрев осуществляется за счет пропускания стабилизированного регулируемого постоянного тока. Подобный испытательный режим позволяет очень точно измерять потери мощности и температуру кристаллов, работающих в одинаковых условиях.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 9pt; background: white;"><img src="50980e32ee75e66082be6d2792db4505.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/509/50980e32ee75e66082be6d2792db4505.jpg" title="78_pic4.jpg" border="0" alt="78_pic4.jpg" width="342" height="256"  /><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">  
+      <br />
+     
+      <br />
+     Рис. 4. Тестовый инвертор, используемый для измерения тепловых характеристик модулей SKiN<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Разница значений тепловых сопротивлений <i>R<sub>th(j–a)</sub></i> между верхним (Тор) и нижним (Вот) IGBT-транзистором, так же как и колебания температуры между модулями, не превышает 10% (рис. 5). Нижний ключ полумоста имеет несколько меньшую величину <i>R<sub>th(j–a)</sub></i>, что объясняется большей площадью DBC-подложки под кристаллами IGBT и, соответственно, лучшим распределением тепла. Этот эффект, свойственный всем силовым модулям, связан с особенностями их топологии.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 9pt; background: white;"><img src="cf917c26eeeb483c28e23a767d483c15.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/cf9/cf917c26eeeb483c28e23a767d483c15.jpg" title="78_pic5.jpg" border="0" alt="78_pic5.jpg" width="554" height="251"  /><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">  
+      <br />
+     
+      <br />
+     Рис. 5. Тепловое сопротивление R<sub>th(j–a)</sub> «кристалл – охлаждающая жидкость» для шести ключей тестового инвертора<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Результаты измерения тепловых характеристик приведены в таблице 1. Суммарное значение <i>R<sub>th(j–a)</sub></i> оказалось рекордно низким для данных условий при малом перепаде давления. Произведение теплового сопротивления на площадь кристаллов <i>R<sub>th(j–a)</sub></i>&times;<i>A</i> можно рассматривать как интегральный показатель качества силового ключа и использовать для сравнения с лучшими рыночными образцами.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Таблица 1. Тепловое сопротивление «кристалл – окружающая среда» SKiN-модуля для различных условий охлаждения</span></b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);"><o:p></o:p></span></p>
+ 
+<div align="center"> 
+  <table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: none;"> 
+    <tbody> 
+      <tr> <td style="border: 1pt solid rgb(136, 140, 135); padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Скорость потока жидкости, л/мин.</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> <td style="border-style: solid solid solid none; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">R<sub>th(j–a)</sub>, К/Вт</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> <td style="border-style: solid solid solid none; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span lang="EN-US" style="font-size: 12pt; font-family: 'Times New Roman', serif;">R<sub>th(j–a)</sub>×A, </span></b><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">К</span></b><b><span lang="EN-US" style="font-size: 12pt; font-family: 'Times New Roman', serif;">&bull;</span></b><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">мм</span></b><b><sup><span lang="EN-US" style="font-size: 12pt; font-family: 'Times New Roman', serif;">2</span></sup></b><b><span lang="EN-US" style="font-size: 12pt; font-family: 'Times New Roman', serif;">/</span></b><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Вт</span></b><span lang="EN-US" style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> <td style="border-style: solid solid solid none; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Перепад давления, мбар</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">5<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">0,225<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">45<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">30<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">10<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">0,194<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">39<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">90<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">15<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">0,182<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">36<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">185<o:p></o:p></span></p>
+         </td> </tr>
+     </tbody>
+   </table>
+ </div>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">При температуре охлаждающей жидкости 70 °С и скорости потока 10 л/мин максимальный перегрев кристалла 150 °С достигается при удельной плотности мощности (относительно площади кристаллов) 205 Вт/см<sup>2</sup>. У традиционных инверторов, построенных на базе стандартных модулей, устанавливаемых на радиатор через слой термопасты, этот показатель не превышает 100–150 Вт/см<sup>2</sup>. Необходимо отметить, что значения скорости потока жидкости в таблице 1 даны для трех параллельных каналов охлаждения радиатора. С учетом установки трех модулей IGBT на каждый из них приходится только 1/3 этой величины. Очевидно, что можно организовать и один канал, соединив последовательно трубки в теплостоке, но при этом плотность мощности окажется еще выше.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Для корректного сравнения необходимо изучить поведение модулей традиционной конструкции с таким же высокоэффективным радиатором, как и в исследуемом случае. С этой целью проводилось моделирование тепловых режимов, при котором спеченный серебряный слой между DBC-подложкой и радиатором был заменен на слой теплопроводящей пасты толщиной 20 мкм. Отметим, что на практике столь тонкий зазор между подложкой и теплостоком применяется только в модулях «безбазового» типа (MiniSKiiP, SKiiP, SKiM), выпускаемых компанией SEMIKRON. Для обычных компонентов с базовой платой номинальная толщина слоя пасты составляет 80–150 мкм. Результаты моделирования подтвердили, что даже при зазоре в 20 мкм тепловое сопротивление стандартных силовых ключей в зависимости от интенсивности охлаждения оказывается выше на 23–30%.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 0cm 2.25pt; text-align: center; background: white;"><b><span style="font-size: 9pt; font-family: Verdana, sans-serif;">Стойкость к токовой перегрузке<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Предельное значение тока диодов измерялось в режиме воздействия стандартного полусинусоидального импульса длительностью 10 мс при температуре 25 °С. Пиковая величина <i>I<sub>FSM</sub></i>, достигнутая перед разрушением кристаллов в разных плечах полумоста, приведена в таблице 2. Испытания показали, что использование SKiN-технологии позволяет повысить нагрузочные характеристики диодов примерно на 27% по сравнению со стандартным способом подключения.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Таблица 2. Предельное значение тока диода I<sub>FSM</sub></span></b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);"><o:p></o:p></span></p>
+ 
+<div align="center"> 
+  <table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: none;"> 
+    <tbody> 
+      <tr> <td colspan="2" style="border: 1pt solid rgb(136, 140, 135); padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">SKiN-модуль</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> <td colspan="2" style="border-style: solid solid solid none; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">«Референтный» модуль</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">IGBT</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">I<sub>FSM</sub>, А</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">IGBT</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt; background: rgb(255, 204, 78);"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">I<sub>FSM</sub>, А</span></b><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Тор<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">2666<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Top<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">2096<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Bot<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">2690<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Bot<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">2108<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Тор<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">2691<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Top<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">2105<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Bot<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">2662<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Bot<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">2096<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Тор<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">2696<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> <o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> <o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Bot<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">2662<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> <o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> <o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Тор<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">2691<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> <o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> <o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Bot<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">2656<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> <o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> <o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Min<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">2656<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Min<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">2092<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Max<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">2696<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Max<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">2108<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Ср.<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">2677<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Ср.<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">2100<o:p></o:p></span></p>
+         </td> </tr>
+     
+      <tr> <td style="border-style: none solid solid; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> <o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">127%<o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> <o:p></o:p></span></p>
+         </td> <td style="border-style: none solid solid none; border-bottom-width: 1pt; border-right-width: 1pt; padding: 1.5pt;"> 
+          <p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">100%<o:p></o:p></span></p>
+         </td> </tr>
+     </tbody>
+   </table>
+ </div>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Благодаря большей площади поперечного сечения и меньшей длине токопроводящих шин на SKiN-пленке, перегрев контактных зон оказывается гораздо ниже, чем у сварных алюминиевых проводников. Это свойство особенно важно для таких применений, как активные выпрямители и преобразователи мощных энергетических установок, поскольку оно позволяет компенсировать повышенный нагрев кристаллов. Отметим, что тенденцией развития технологий IGBT является уменьшение размеров чипов, что сопровождается ростом их теплового сопротивления <i>R<sub>th(j–a)</sub></i>.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 0cm 2.25pt; text-align: center; background: white;"><b><span style="font-size: 9pt; font-family: Verdana, sans-serif;">Стойкость к термоциклированию<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Проверка стойкости к термоциклированию — важнейший этап квалификационных испытаний, по результатам которого можно оценить срок службы модуля в реальных условиях эксплуатации. Термомеханические стрессы, вызванные изменением условий нагрузки, активно сокращают ресурс силовых ключей в таких устройствах, как транспортные приводы и преобразователи ветроэнергетических установок.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Типичным результатом длительного воздействия термоциклов является отрыв проводниковых выводов чипов, а также накопление усталости в паяных соединениях кристаллов и DBC-платы и их разрушение. Любой из этих механизмов может стать доминирующим, что зависит от ряда факторов: длительности цикла, градиента температуры, размера кристалла. Использование технологии спекания чипов, реализованной в ряде серийных модулей SEMIKRON, уже позволило устранить одну из описанных причин отказа, сделав последним «слабым» местом сварное соединение выводов.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Испытания силовых ключей SKiN показали дальнейшее увеличение стойкости к термоциклированию. Тесты на воздействие импульсов мощности проводились на обоих типах модулей при градиенте температуры &Delta;<i>T<sub>j</sub></i> = 110 K (40&hellip;150 °C) и длительности цикла 14 с. Цель исследований состояла в поиске режима термоциклирования, оказывающего наиболее разрушительное действие на конструкцию модуля и не провоцирующего возникновение эффектов деградации.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Предварительные результаты тестов приведены на рис. 6: для «референтного» модуля они укладываются в ожидаемые рамки (голубая линия), что соответствует 60 000 циклов при Δ<i>T<sub>j</sub></i> = 100 K. Отметим, что стандартные компоненты при тех же условиях выдерживают не более 10 000 циклов (зеленая линия).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 9pt; background: white;"><img src="59f4488ad7cad45adfae2491a5a475af.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/59f/59f4488ad7cad45adfae2491a5a475af.jpg" title="78_pic6.jpg" border="0" alt="78_pic6.jpg" width="562" height="443"  /><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">  
+      <br />
+     
+      <br />
+     Рис. 6. Результаты испытаний на стойкость к термоциклированию (End Of Life, EOL — тест до отказа)<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Результаты, полученные при испытаниях модулей SKiN, намного превысили расчетные (целевые) значения, показанные на рисунке в виде красной кривой. Параметр <i>N<sub>f</sub></i> у новых силовых ключей составляет 700 000, что во много раз лучше, чем у компонентов классической конструкции. Кроме того, модули SKiN были подвергнуты воздействию малых градиентов температуры Δ<i>T<sub>j</sub></i> = 70 K (80…150 °C), приближенному к рабочим условиям. На момент написания статьи ключи прошли без повреждения 3 млн циклов, испытания будут продолжаться до выхода изделий из строя.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Предварительные тесты показали, что реализация SKiN-концепции в силовых модулях позволяет кардинально улучшить их надежность. В частности, стойкость к термоциклированию превысила показатели лучших промышленных образцов в 70 раз, а по сравнению с новейшими модулями со спеченным соединением кристаллов улучшение оказалось 10-кратным.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">При проведении испытаний были использованы 600-вольтовые кристаллы IGBT толщиной 80 мкм с алюминиевой металлизацией поверхности. Для подключения SKiN-пленки на контактные зоны чипов был дополнительно нанесен тонких слой благородного металла, никаких других доработок не потребовалось.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="margin: 15pt 0cm 2.25pt; text-align: center; background: white;"><b><span style="font-size: 9pt; font-family: Verdana, sans-serif;">Заключение<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Реализация SKiN-концепции позволяет полностью пересмотреть стандартные подходы к конструированию силовых модулей и отказаться от широко применяемых в промышленности технологий пайки, сварки и нанесения теплопроводящей пасты (рис. 7). Все связи в SKiN-модулях, включая соединение DBC-подложки с базой или радиатором, а также кристаллов и подложки, осуществляются путем низкотемпературного спекания серебряного нанопорошка. Вместо алюминиевых выводов чипов, подключаемых методом ультразвуковой сварки, используется гибкая металлизированная пленка, интерфейс которой с контактными зонами кристаллов также достигается методом спекания. Это позволяет в четыре раза увеличить активную площадь контакта и, соответственно, улучшить нагрузочные возможности чипов.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 9pt; background: white;"><img src="a8f99316253e054cb5556333e6357f80.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/a8f/a8f99316253e054cb5556333e6357f80.jpg" title="78_pic7.jpg" border="0" alt="78_pic7.jpg" width="510" height="385"  /><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">  
+      <br />
+     
+      <br />
+     Рис. 7. Концепция SKiN: модули без пайки, сварки и теплопроводящей пасты<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Для демонстрации возможностей новой технологии были проведены сравнительные тесты SKiN-модулей и стандартных силовых ключей в инверторном включении. В ходе испытаний в первую очередь исследовались изменения характеристик, связанные с заменой сварных проводниковых выводов чипов на гибкую пленку с токонесущими шинами.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Благодаря улучшению теплового интерфейса силовых кристаллов и использованию высокоэффективного игольчатого радиатора удалось в два раза снизить величину рассеиваемой инвертором мощности. При этом 30% снижения общего значения теплового сопротивления <i>R<sub>th(j–a)</sub></i> у модулей SKiN достигнуто за счет замены слоя теплопроводящей пасты на спекаемое соединение.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Модификация геометрии соединений и увеличение контактной поверхности чипов позволило на 27% повысить предельное значение тока оппозитных диодов. Применение SKiN-концепции дало возможность резко повысить стойкость силовых ключей к термоциклированию относительно стандартных модулей.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Дальнейшие перспективы развития SKiN-технологии связаны с использованием двусторонних гибких пленок. Их применение позволит улучшить отвод тепла от чипов за счет двустороннего охлаждения и обеспечит возможность установки пассивных и активных компонентов схемы управления затворами, а также датчиков тока и температуры.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal"><o:p> </o:p></p>
+ <div class="cl"></div>
+    <div class="hr"></div>
+</div><div class="right_block"><h4>Темы блога</h4><a href="index-12.htm" tppabs="http://gcmatrix.com/blog/industry_news/" class="selected">Отраслевые новости</a><a href="index-13.htm" tppabs="http://gcmatrix.com/blog/spec_xp/">Контрактная сборка</a><a href="index-5.htm" tppabs="http://gcmatrix.com/blog/quality/">Вопросы качества</a><a href="index-14.htm" tppabs="http://gcmatrix.com/blog/purchase_xp/">Компоненты</a><a href="index-15.htm" tppabs="http://gcmatrix.com/blog/%D1%81ircuitry_talks/">Печатные платы</a><a href="index-16.htm" tppabs="http://gcmatrix.com/blog/the-company-matrix/">Компания Матрикс</a><a href="index-2.htm" tppabs="http://gcmatrix.com/blog/">Все темы блога</a></div><div class="cl"></div>
+    </div>
+</div>
+            </div>
+            <div class="footer">
+                <div class="layout">
+                    <div class="logo">
+	<a href="index.htm" tppabs="http://gcmatrix.com/">
+		<img src="/images/logo.jpg" tppabs="http://gcmatrix.com/img//images/logo.jpg" alt="Матрикс">
+	</a>
+</div><div class="menu">
+    <ul><li>
+                <a href="index-1.htm" tppabs="http://gcmatrix.com/about-company/">О компании</a>
+            </li><li class="act">
+                <a href="index-2.htm" tppabs="http://gcmatrix.com/blog/">Наш блог</a>
+            </li></ul><ul><li>
+                <a href="index-3.htm" tppabs="http://gcmatrix.com/contract-assembly/">Контрактная сборка</a>
+            </li><li>
+                <a href="javascript:if(confirm('https://pcb.gcmatrix.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://pcb.gcmatrix.com/'" tppabs="https://pcb.gcmatrix.com/">Печатные платы</a>
+            </li></ul><ul><li>
+                <a href="index-4.htm" tppabs="http://gcmatrix.com/components/">Компоненты</a>
+            </li></ul>
+    <div class="cl"></div>
+</div>                    <div class="phone">
+                        <b>+7 (383) 383-08-05</b><span>周一至周五，9点-18点</span>
+                    </div>
+                    <div class="cl"></div>
+                    <div class="copyright_site">©2012-2020 BOMIC ELECTRON LLC
+<p align="center">
+ <br>
+</p>
+<p align="center">
+</p>
+<p>
+</p>
+ <br></div>
+                    <div class="cl"></div>
+                    <div class="bx-composite-bt">
+                        <div id="bx-composite-banner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'SVoXb2A8Sx';var d=document;var w=window;function l(){
+  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+  s.src = '//code.jivosite.com/script/widget/'+widget_id
+    ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+  if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
+  else{w.addEventListener('load',l,false);}}})();
+</script>
+<!-- {/literal} END JIVOSITE CODE -->
+    </body>
+</html><!--caa72db954137981b4a529112c483597-->

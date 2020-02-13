@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<style type="text/css">.bx-composite-btn {background: url("sprite-1x.png")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-1x.png*/ no-repeat right 0 #e94524;border-radius: 15px;color: #ffffff !important;display: inline-block;line-height: 30px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-size: 12px !important;font-weight: bold !important;height: 31px !important;padding: 0 42px 0 17px !important;vertical-align: middle !important;text-decoration: none !important;}@media screen   and (min-device-width: 1200px)   and (max-device-width: 1600px)   and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi) {.bx-composite-btn {background-image: url("sprite-2x.png")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/sprite-2x.png*/;background-size: 42px 124px;}}  .bx-composite-btn-fixed {position: absolute;top: -45px;right: 15px;z-index: 10;}  .bx-btn-white {background-position: right 0;color: #fff !important;}  .bx-btn-black {background-position: right -31px;color: #000 !important;}  .bx-btn-red {background-position: right -62px;color: #555 !important;}  .bx-btn-grey {background-position: right -93px;color: #657b89 !important;}  .bx-btn-border {border: 1px solid #d4d4d4;height: 29px !important;line-height: 29px !important;}  .bx-composite-loading {display: block;width: 40px;height: 40px;background: url("loading.gif")/*tpa=http://gcmatrix.com/bitrix/images/main/composite/loading.gif*/;}</style>
+<script type="text/javascript" data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','banner':{'url':'http://www.1c-bitrix.ru/composite/','text':'','bgcolor':'#ff045f','style':'white'},'storageBlocks':[],'dynamicBlocks':[],'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}else{w.frameRequestFail = f;}return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();})(window, document);</script>
+
+
+<link href="core.min.css-14451916572854.css" tppabs="http://gcmatrix.com/bitrix/js/main/core/css/core.min.css?14451916572854" type="text/css" rel="stylesheet" />
+<link href="jquery.fancybox.css-14175171805160.css" tppabs="http://gcmatrix.com/css/jquery.fancybox.css?14175171805160" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="jquery.bxslider.css-14175171804040.css" tppabs="http://gcmatrix.com/css/jquery.bxslider.css?14175171804040" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="style.css-156947828531018.css" tppabs="http://gcmatrix.com/css/style.css?156947828531018" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="style.css-1417517180236.css" tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/style.css?1417517180236" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="styles.css-1554948055583.css" tppabs="http://gcmatrix.com/local/templates/main/styles.css?1554948055583" type="text/css" data-template-style="true" rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'http://gcmatrix.com/blog/industry_news/the-items-arrive/DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'mx','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/'});</script>
+
+
+<script type="text/javascript" src="core.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core.min.js?147851119173480"></script>
+<script type="text/javascript" src="core_db.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_db.min.js?14646669905048"></script>
+<script type="text/javascript" src="core_ajax.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ajax.min.js?147851119221031"></script>
+<script type="text/javascript" src="json2.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/json/json2.min.js?14175171793467"></script>
+<script type="text/javascript" src="core_ls.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_ls.min.js?14451916607365"></script>
+<script type="text/javascript" src="core_fx.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_fx.min.js?14451916579592"></script>
+<script type="text/javascript" src="core_frame_cache.min.js" tppabs="http://gcmatrix.com/bitrix/js/main/core/core_frame_cache.min.js?147851118811191"></script>
+<script type="text/javascript">var bxDate = new Date(); document.cookie="mx_TIME_ZONE="+bxDate.getTimezoneOffset()+"; path=/; expires=Fri, 01-Jan-2038 00:00:00 GMT"</script>
+
+
+
+<script type="text/javascript" src="jquery-3.4.1.min.js" tppabs="http://gcmatrix.com/js/jquery-3.4.1.min.js?142112976595790"></script>
+<script type="text/javascript" src="jquery.carouFredSel.js" tppabs="http://gcmatrix.com/js/jquery.carouFredSel.js?141751718036181"></script>
+<script type="text/javascript" src="jquery.bxslider.min.js" tppabs="http://gcmatrix.com/js/jquery.bxslider.min.js?141751718019368"></script>
+<script type="text/javascript" src="jquery-ui.js" tppabs="http://gcmatrix.com/js/jquery-ui.js?1417517180485937"></script>
+<script type="text/javascript" src="jquery.mask.min.js" tppabs="http://gcmatrix.com/js/jquery.mask.min.js?14175171804741"></script>
+<script type="text/javascript" src="jquery.formstyler.min.js" tppabs="http://gcmatrix.com/js/jquery.formstyler.min.js?141751718015758"></script>
+<script type="text/javascript" src="jquery.fancybox.js" tppabs="http://gcmatrix.com/js/jquery.fancybox.js?141751718050725"></script>
+<script type="text/javascript" src="script2.js" tppabs="http://gcmatrix.com/js/script.js?14175171807558"></script>
+<script type="text/javascript" src="script6.js" tppabs="http://gcmatrix.com/local/components/awik/ajax.loader/templates/.default/script.js?1417517180990"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "72e5454bdb8b62a08488572b66bc822a"]); _ba.push(["host", "http://gcmatrix.com/blog/industry_news/the-items-arrive/gcmatrix.com"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+<title>Аппаратные методы энергосбережения в сенсорных системах на базе микроконтроллеров - Матрикс</title><!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(52706338, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="1.gif" tppabs="https://mc.yandex.ru/watch/52706338" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+<div id="panel">
+    </div>
+<div class="wrapper">
+    <div class="header">
+        <div class="layout">
+            <div class="logo">
+                <a>
+                    <img src="/images/logo.jpg" tppabs="http://gcmatrix.com/img//images/logo.jpg" alt="Матрикс">
+                </a>
+            </div>            <div class="text">
+            中国领先的印刷电路板OEM制造商                       </div>
+            <div class="phone">
+                <b class="h2">+7 (383) 383-08-05</b><div class="d-flex">
+                <div class="mr-2">
+                    <a href="skype:live:a2ad12d4eb62443e?chat" target="_blank"><span class="i-mess i-mess-skype"></span></a>
+                    <a href="tg://resolve?domain=matrix_elektronika" target="_blank"><span class="i-mess i-mess-telegram"></span></a>
+                    <a href="javascript:if(confirm('https://wa.me/79994638549  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://wa.me/79994638549'" tppabs="https://wa.me/79994638549" target="_blank"><span class="i-mess i-mess-whatsapp"></span></a>
+                    <a href="viber://pa?chatURI=matrixelektronika" target="_blank"><span class="i-mess i-mess-viber"></span></a>
+                </div>
+                <div class="comment">周一至周五，9点-18点					</div>
+            </div>
+            </div>
+            <div class="cl"></div>
+            <div class="menu">
+                <a href="index.htm" tppabs="http://gcmatrix.com/" class="home"></a>
+                <ul><li>
+                    <a href="index.html" tppabs="http://gcmatrix.com/about-company/"  >首页</a>
+                </li><li>
+                    <a href="index-2.htm" tppabs="http://gcmatrix.com/blog/"  >关于我们</a>
+                </li><li>
+                    <a href="index-3.htm" tppabs="http://gcmatrix.com/contract-assembly/"  >PCB组装</a>
+                </li><li>
+                    <a href="javascript:if(confirm('https://pcb.gcmatrix.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://pcb.gcmatrix.com/'" tppabs="https://pcb.gcmatrix.com/"   target="_blank">PCB</a>
+                </li><li>
+                    <a href="index-4.htm" tppabs="http://gcmatrix.com/components/"  >电子元器件</a>
+                </li></ul>
+                <div class="cl"></div>
+            </div>        </div>
+    </div>
+    <div class="content"><div class="news blog_page">
+    <div class="layout"><div class="left text_page">
+    <h1>Аппаратные методы энергосбережения в сенсорных системах на базе микроконтроллеров</h1>
+    <span class="date">29 декабря</span>
+    <div class="cl"></div><div class="quote">Для проектирования встраиваемых систем с низким энергопотреблением требуется грамотное сочетание программного и аппаратного обеспечения, а также знание соответствующей предметной области. Неверно выбранный баланс между гибкой программной обработкой и более ограниченной по функциональности, но зачастую более экономичной аппаратной частью нередко приводит к непроизводительному расходованию электроэнергии. При этом незначительные изменения в аппаратной реализации могут кардинальным образом сказываться на общем энергопотреблении системы.</div><p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Задача проектирования микропроцессорных систем с пониженным энергопотреблением в общем случае сводится к поддержанию короткого рабочего цикла, чтобы большую часть времени процессор проводил в режиме ожидания. Такой подход продемонстрировал высокую эффективность при проектировании счетчиков потребления коммунальных услуг, в которых процессорное ядро может находиться в таком режиме суммарно на протяжении 99% своего жизненного цикла. Ядро активируется только для сбора данных с сенсорных входов (обычно по заданному расписанию) или для обработки редких внеплановых прерываний.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">В важности поддержания короткого рабочего цикла можно убедиться, проанализировав динамику энергопотребления микроконтроллера в активном режиме и в режиме сна. Время &mdash; враг любого устройства с батарейным питанием, от которого требуется длительная автономная работа, так как даже небольшая на первый взгляд потребляемая мощность выливается в значительный расход электроэнергии при длительной работе.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">В промежутках активности энергопотребление любой логической схемы дается формулой: <i>CV</i><sup>2</sup><i>f</i>, где <i>C</i> — суммарная емкость всех путей в цепях устройства, <i>V</i> — напряжение питания, а <i>f</i> — рабочая частота. Эта формула несколько усложняется за счет стробирования тактовых сигналов, распространенного в большинстве современных процессорных ядер, которое ограничивает переключения в неиспользуемых логических схемах путем временной блокировки их тактовых сигналов. Тем не менее эта приблизительная формула позволяет достаточно точно определить величину энергопотребления в активном режиме.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Микроконтроллеры с низким энергопотреблением обычно реализуются с использованием технологических процессов, обеспечивающих малые токи утечки, но суммарно сохраняется определяемая утечкой компонента, значительная для любого логического блока, активного в течение длительного времени. Мощность утечки является константой, хотя она имеет тенденцию к повышению с ростом рабочей температуры за счет более интенсивной тепловой генерации носителей заряда в транзисторах. Единственный способ снизить величину утечки, помимо тщательного проектирования технологического процесса, — это выключать питание логического блока.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Чтобы проектировщики имели возможность гибко регулировать энергопотребление, в рассматриваемых нами микроконтроллерах реализовано несколько видов &laquo;спящего&raquo; режима, которые предусматривают постепенное отключение питания все большего числа составляющих ядер с сохранением их состояния в энергонезависимой памяти или специальных регистрах с малой утечкой, пока устройство не будет выключено почти целиком. К примеру, в полностью активном режиме микроконтроллер Energy Micro EFM32 потребляет 5 мВт при тактовой частоте 10 МГц и напряжении питания 3 В, а в самом экономичном режиме сна — всего 60 нВт, что ниже почти на шесть порядков.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Еще один фактор, определяющий общее энергопотребление, — это затраты на «пробуждение». На стабилизацию цепей фазовой автоподстройки частоты (ФАПЧ), обеспечивающих стабильный тактовый сигнал для ядра, а также на восстановление информации о состоянии может потребоваться некоторое время. На этом временном промежутке потребляемая мощность вырастет, но пробуждающиеся части устройства не могут выполнять полезную работу, пока их питание и состояние полностью не восстановятся. Поскольку период выхода из «глубокого сна» снижает КПД микроконтроллера, им пренебрегать нельзя.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Если рабочий цикл, когда устройство с номинальной тактовой частотой 10 МГц активируется ежесекундно на 10 мс со временем пробуждения 2 мс, составляет 1%, то микроконтроллер с энергопотреблением 200 мкА/МГц, имеющий режим глубокого сна с потребляемым током 2 мкА, сможет проработать 12,7 лет от одной пары элементов типа AA. Если продлить рабочий цикл до 2%, время работы от батарей сократится до 7 лет. Важно, однако, как именно реализован рабочий цикл. Если цель состоит в том, чтобы повысить скорость отклика на события за счет пробуждения ядра микроконтроллера дважды в секунду, слагаемое времени пробуждения вырастет вдвое, сократив время работы от батареи не менее чем на полгода. Уменьшив же время пробуждения до 2 мкс, можно продлить период автономной работы (в предположении, что система пробуждается два раза в секунду) более чем на год (рис. 1).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; background: white;"><img src="836e57d4dc3c5f3479fad68ca6dcafdb.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/836/836e57d4dc3c5f3479fad68ca6dcafdb.jpg" title="85_pic1.jpg" border="0" alt="85_pic1.jpg" width="628" height="439"  /><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);"> 
+      <br />
+     
+      <br />
+     Рис. 1. Сократив период «пробуждения», можно минимизировать затраты энергии на том отрезке времени, когда процессор еще не приступил к выполнению своих задач<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Очевидно, что важно поддерживать короткий рабочий цикл при малом времени пробуждения. Но не всегда можно предсказать, когда именно датчики зафиксируют важное событие. Возьмем для примера емкостные датчики — технологию, которая сегодня получила широкое распространение в различных отраслях. Высококлассные емкостные датчики позволяют с высоким разрешением измерять близость, положение, смещение, влажность, уровень жидкости и ускорение любого проводящего объекта. С выходом смартфона Apple iPhone производители бытовой электроники осознали преимущества встраивания емкостных датчиков в свои устройства для создания более быстродействующих и интуитивных пользовательских интерфейсов. Эти датчики обычно недороги, и их сигналы требуют некоторой обработки со стороны микроконтроллера, что может быть трудно реализовать, если требуется обеспечить сверхнизкое энергопотребление.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Емкость характеризует влияние расстояния между двумя проводниками на напряженность электрического поля между ними. Если приложить напряжение к одной из двух пластин, между которыми имеется зазор, в этом зазоре возникнет электрическое поле как следствие разности электрических зарядов, накопленных на поверхности пластин. Заряд определяет, каким должен быть ток, чтобы изменить напряжение на пластине.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">При использовании емкостного датчика в iPhone роль электризованной пластины играет чувствительная поверхность сенсора, а роль другой пластины — палец или стилус пользователя. Электронная схема драйвера постоянно меняет напряжение на чувствительной поверхности. Это напряжение называется напряжением возбуждения. Цепь измеряет ток, который требуется для изменения напряжения; данный ток служит мерой емкости между сенсором и объектом. Можно поступать и наоборот — пропускать фиксированный ток через сенсор и регистрировать изменение напряжения на нем.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">В типовой реализации сенсорная цепь содержит автоколебательный RC-генератор. Он вырабатывает изменяющееся напряжение возбуждения на номинально постоянной частоте. Когда палец пользователя приближается к датчику, общая частота цепи меняется ввиду возрастания емкости на сенсорном элементе. Микроконтроллер обнаруживает это изменение частоты с помощью счетчика: если значение счетчика по истечении фиксированного промежутка времени оказывается существенно ниже номинального, алгоритм регистрирует прикосновение.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Описанный алгоритм измерения требует наличия двух основных компонентов: таймера и счетчика. Таймер программируется микроконтроллером на обратный отсчет от фиксированного значения. Когда таймер обнуляется, вырабатывается прерывание для микроконтроллера. Пока идет отсчет времени, значение счетчика микроконтроллера увеличивается на единицу с каждым положительным полупериодом напряжения генератора. По прерыванию от таймера микроконтроллер анализирует значение счетчика и определяет, произошло ли прикосновение.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Проблема такой реализации состоит в том, что процессорное ядро должно быть активным в процессе чтения сигнала с датчика, чтобы реагировать на прерывания и работать со счетчиком. На протяжении этого времени микроконтроллер может по большей части не выполнять других операций, кроме холостого цикла в активном режиме. Один из способов снизить энергопотребление — это сделать так, чтобы микроконтроллер пробуждался периодически для регистрации сигнала с сенсорной панели.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Однако в устройстве пользовательского интерфейса сенсорной подсистеме неизвестно, когда пользователь совершит следующее прикосновение. Главный микроконтроллер может периодически входить в режим сна, но длительное пребывание в этом режиме отрицательно скажется на времени отклика. Это, в свою очередь, затруднит пользование системой, так как некоторые прикосновения не будут правильно регистрироваться, пока система полностью не пробудится и не перейдет в состояние, позволяющее выполнять точные измерения. Поскольку большая часть событий происходит асинхронно, встраиваемые системы должны быть способны реагировать на воздействия только при превышении заданных порогов и без непроизводительного расходования энергии на периодический опрос датчиков.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Экономичнее было бы выполнять эти операции аппаратно и пробуждать микроконтроллер только после регистрации прикосновения, так как выделенная аппаратная схема не влечет больших накладных расходов. При таком подходе процессор тратит большую часть электроэнергии на передачу команд и данных исполнительным устройствам, а не на самостоятельные вычисления.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">При сравнении аппаратного и программного методов (рис. 2) в некоторой степени уместна аналогия с рефлективной и высшей нервной (ВН) деятельностью. Рефлективная (аппаратное решение) более быстрая, но менее универсальная. ВН (головной мозг, программное решение) более универсальная, но гораздо менее быстродействующая (<i>прим. ред.</i>).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; background: white;"><img src="34bb2f281af348fb73953ba220191b7c.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/34b/34bb2f281af348fb73953ba220191b7c.jpg" title="85_pic2.jpg" border="0" alt="85_pic2.jpg" width="614" height="316"  /><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);"> 
+      <br />
+     
+      <br />
+     Рис. 2. Преимущества аппаратного решения по сравнению с программным<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Ученые из Стэнфордского университета, работающие над проектом экономичного процессора ELM, пришли к выводу, что только на передачу команд затрачивается 42% электроэнергии, расходуемой процессором. Необходимо также учитывать затраты энергии на перемещение переменного содержимого из памяти данных в регистры, а затем в тракт обработки данных и обратно. Такая миграция данных, которая производится обычно через шинные соединения, характеризующиеся большей емкостью (а следовательно, и большим энергопотреблением), не требуется в аппаратных реализациях.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">В случае емкостной сенсорной подсистемы можно построить цепь, которая будет периодически возбуждать генератор, устанавливать таймер и затем отсчитывать количество импульсов до обнуления таймера. По окончании этого процесса, если значение счетчика меньше заданного минимума, данная цепь будет вырабатывать прерывание, пробуждающее микроконтроллер. В такой реализации исчезает необходимость периодического пробуждения микроконтроллера, если отсутствуют какие-либо другие функции управления. Микроконтроллер будет активироваться только тогда, когда для него есть работа, за счет чего энергопотребление снизится до минимума, определяемого действиями пользователя.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Похожая проблема, связанная с непредсказуемостью времени срабатывания, возникает в индуктивных сенсорных схемах. Существуют электронные датчики приближения, способные обнаруживать присутствие проводящего объекта. В частности, такие датчики распространены в металлодетекторах, светофорах, автомойках и разнообразном оборудовании промышленной автоматизации. Поскольку датчики этого типа не требуют физического контакта, они особенно часто применяются в жестких условиях окружающей среды, в которых работа оптических или инфракрасных сенсоров может нарушаться из-за загрязнения.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Высококлассные индуктивные датчики, известные также под названием вихретоковых, позволяют с высоким разрешением измерять положение и/или изменение положения любого проводящего объекта. Недорогие устройства этого типа используются в качестве бесконтактных выключателей, которые срабатывают просто на замыкание/размыкание в зависимости от присутствия проводящего объекта. Именно эта категория датчиков сильно затрудняет снижение энергопотребления при алгоритмической реализации в микроконтроллере.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Индуктивные датчики приближения регистрируют магнитные потери из-за тока, наведенного внешним магнитным полем на проводящих поверхности или объекте. Когда через катушку пропускается переменный ток, она вырабатывает переменное магнитное поле. Если к датчику приближается проводящий объект, под действием переменного магнитного поля датчика в объекте генерируются так называемые вихревые токи.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Один из способов генерации колебаний на индуктивности — это параллельный резонансный контур, состоящий из катушки индуктивности и конденсатора. Он в общих чертах напоминает RC-цепочку, используемую с емкостными сенсорами, но содержит еще катушку.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">В конденсаторе энергия запасается в форме электрического поля, а в катушке — в форме магнитного поля. Когда ключ находится в первом положении, конденсатор заряжается до постоянного напряжения питания. При полной зарядке конденсатора ключ переводится во второе положение, в котором конденсатор включается параллельно катушке индуктивности и начинает разряжаться через нее. Напряжение на конденсаторе начинает падать, а ток через катушку — возрастать. Рост тока приводит к возникновению магнитного поля вокруг катушки. После того как конденсатор разрядится до конца, энергия, которая была запасена в нем ранее, будет теперь храниться в катушке индуктивности.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Поскольку в цепи отсутствует внешнее напряжение, поддерживающее ток в катушке, ток начинает течь через конденсатор, который при этом заряжается напряжением обратной полярности по сравнению с исходной. Затем весь цикл повторяется с периодическим переносом энергии между двумя этими элементами цепи. Полярность напряжения меняется при передаче энергии между катушкой индуктивности и конденсатором, в результате чего вырабатываются переменные напряжение и ток.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">В каждом акте переноса энергии возникают потери, приводящие к затуханию колебаний. Они обусловлены наличием в цепи резистивных компонентов, на которых со временем рассеивается энергия. Амплитуда колебаний уменьшается с каждым полупериодом, пока вся энергия не будет израсходована. При этом затухание происходит быстрее, если вблизи от катушки находится металлический объект. Регистрируя изменение времени затухания, алгоритм микроконтроллера может обнаружить наличие проводящего объекта в пределах дальности действия датчика. Обычно для этого через равные промежутки времени измеряется изменение напряжения, которое затем сравнивается с опорным значением напряжения. Если входное напряжение оказывается ниже опорного, микроконтроллер может зарегистрировать присутствие объекта.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Как и в случае емкостных сенсоров, программная реализация требует активности микроконтроллера для генерации сигнала возбуждения и обработки входных сигналов аналогового компаратора. При измерении расхода воды или газа бывает затруднительно определить частоту пробуждения микроконтроллера для гарантированной регистрации всех оборотов рабочего колеса. Если потребитель не расходует воду или газ в течение длительного периода времени, микроконтроллер будет пробуждаться напрасно, не обрабатывая полезных данных. Примером удачного решения задачи снижения энергопотребления можно считать аппаратный блок микроконтроллера LESENSE от компании Energy Micro (рис. 3): он осуществляет мониторинг емкостного датчика, и процессор пробуждается только после того, как значение счетчика опустится ниже уровня запуска компаратора. Как следствие, процессор может проводить больше времени в режиме глубокого сна.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; background: white;"><img src="cecee1f6e7ac8e3d29bd69a95e53f162.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/cec/cecee1f6e7ac8e3d29bd69a95e53f162.jpg" title="85_pic3.jpg" border="0" alt="85_pic3.jpg" width="689" height="494"  /><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);"> 
+      <br />
+     
+      <br />
+     Рис. 3. Схема работы аппаратного блока микроконтроллера LESENSE<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Аппаратная реализация сенсорных цепей позволяет значительно снизить энергопотребление системы. Необходимые для этого аппаратные компоненты несколько отличаются от тех, которые используются с емкостными сенсорами. Многие из функциональных элементов остаются теми же — в частности, аналоговый компаратор для мониторинга выходного напряжения датчика, таймер времени измерений и датчик приближения. Но к индуктивному датчику требуется также дополнительный ЦАП, и схема соединений между отдельными компонентами отличается. Если микроконтроллер должен поддерживать работу с датчиками обоих типов, это повысит себестоимость системы.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Сходство между двумя типами сенсорного интерфейса можно использовать. Главное — не забывать во время проектирования аппаратной подсистемы, что большое значение имеют способы соединения аналоговых компараторов, ЦАП, счетчиков, таймеров и т. д. Кроме того, важно учитывать алгоритмы работы микроконтроллера сенсорной системы, которые, главным образом, основываются на состояниях, а переходы между состояниями задаются выполнением определенных логических условий (например, «значение счетчика меньше заданного после обнуления таймера» или «входной сигнал аналогового компаратора ниже заданного порога до обнуления таймера»).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Отслеживать эти состояния и управлять ими может конечный автомат, который (при условии его программируемости) может настраиваться для выполнения широкого спектра функций обработки сигналов с датчиков без пробуждения процессорного ядра. Именно такой подход использовала компания Energy Micro при реализации периферийного блока LESENSE (рис. 4).<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" align="center" style="text-align: center; background: white;"><img src="b5b70fe6e9097f85b4e3bebf0a824150.jpg" tppabs="http://gcmatrix.com/upload/medialibrary/b5b/b5b70fe6e9097f85b4e3bebf0a824150.jpg" title="85_pic4.jpg" border="0" alt="85_pic4.jpg" width="1024" height="722"  /><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);"> 
+      <br />
+     
+      <br />
+     Рис. 4. Сенсорный интерфейс LESENSE может настраиваться для работы практически с любыми типами аналоговых датчиков без вмешательства процессора<o:p></o:p></span></b></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Проблема со многими программируемыми конечными автоматами состоит в том, что они могут срабатывать только по фиксированному набору выходных данных и генерировать только фиксированный набор выходных данных при переходе между состояниями. В LESENSE состояния и условия, по которым они выбираются, программируются с использованием дескрипторов, которые можно соединять в цепочки для выполнения относительно сложных операций, если есть такая необходимость. Так можно реализовывать довольно сложную логику, не требуя вмешательства со стороны процессорного ядра.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Если оснастить периферийный блок настраиваемым дешифратором, можно расширить возможности конечного автомата, наделив его способностью обрабатывать входные сигналы от множества датчиков. Например, квадратурное декодирование распространено в расходомерах и других индуктивных схемах регистрации вращения. При квадратурном декодировании датчики циклически проходят через набор состояний, соответствующих определенным положениям. Дешифратор позволяет выбрать подмножество датчиков для анализа без привлечения процессорного ядра. В итоге оказывается достаточно пробуждать микроконтроллер только после того, как было получено положительное значение в одном из квадратурных положений и зарегистрированы соответствующие данные.<o:p></o:p></span></p>
+ 
+<p class="MsoNormal" style="margin: 6pt 0cm; text-align: justify; text-indent: 11.25pt; line-height: 11.25pt; background: white;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif; color: rgb(28, 27, 28);">Анализируя комбинации аппаратного и программного обеспечения, которые могут быть реализованы в микроконтроллерной системе в целом, и перераспределяя функции между программной и аппаратной частями, можно сделать так, чтобы гибкие возможности программной обработки использовались только при необходимости. Если прибегать к программной обработке входных сигналов от датчиков только при наличии таких сигналов, общее энергопотребление системы будет сведено к минимуму.<o:p></o:p></span></p>
+<div class="cl"></div>
+    <div class="hr"></div>
+</div><div class="right_block"><h4>Темы блога</h4><a href="index-12.htm" tppabs="http://gcmatrix.com/blog/industry_news/" class="selected">Отраслевые новости</a><a href="index-13.htm" tppabs="http://gcmatrix.com/blog/spec_xp/">Контрактная сборка</a><a href="index-5.htm" tppabs="http://gcmatrix.com/blog/quality/">Вопросы качества</a><a href="index-14.htm" tppabs="http://gcmatrix.com/blog/purchase_xp/">Компоненты</a><a href="index-15.htm" tppabs="http://gcmatrix.com/blog/%D1%81ircuitry_talks/">Печатные платы</a><a href="index-16.htm" tppabs="http://gcmatrix.com/blog/the-company-matrix/">Компания Матрикс</a><a href="index-2.htm" tppabs="http://gcmatrix.com/blog/">Все темы блога</a></div><div class="cl"></div>
+    </div>
+</div>
+            </div>
+            <div class="footer">
+                <div class="layout">
+                    <div class="logo">
+	<a href="index.htm" tppabs="http://gcmatrix.com/">
+		<img src="/images/logo.jpg" tppabs="http://gcmatrix.com/img//images/logo.jpg" alt="Матрикс">
+	</a>
+</div><div class="menu">
+    <ul><li>
+                <a href="index-1.htm" tppabs="http://gcmatrix.com/about-company/">О компании</a>
+            </li><li class="act">
+                <a href="index-2.htm" tppabs="http://gcmatrix.com/blog/">Наш блог</a>
+            </li></ul><ul><li>
+                <a href="index-3.htm" tppabs="http://gcmatrix.com/contract-assembly/">Контрактная сборка</a>
+            </li><li>
+                <a href="javascript:if(confirm('https://pcb.gcmatrix.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://pcb.gcmatrix.com/'" tppabs="https://pcb.gcmatrix.com/">Печатные платы</a>
+            </li></ul><ul><li>
+                <a href="index-4.htm" tppabs="http://gcmatrix.com/components/">Компоненты</a>
+            </li></ul>
+    <div class="cl"></div>
+</div>                    <div class="phone">
+                        <b>+7 (383) 383-08-05</b><span>周一至周五，9点-18点</span>
+                    </div>
+                    <div class="cl"></div>
+                    <div class="copyright_site">©2012-2019 Все права защищены ООО «МАТРИКС ЭЛЕКТРОНИКА»
+<p align="center">
+ <br>
+</p>
+<p align="center">
+</p>
+<p>
+</p>
+ <br></div>
+                    <div class="cl"></div>
+                    <div class="bx-composite-bt">
+                        <div id="bx-composite-banner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'SVoXb2A8Sx';var d=document;var w=window;function l(){
+  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+  s.src = '//code.jivosite.com/script/widget/'+widget_id
+    ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+  if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
+  else{w.addEventListener('load',l,false);}}})();
+</script>
+<!-- {/literal} END JIVOSITE CODE -->
+    </body>
+</html><!--e588e11d5aa7d69888f3a0191732a78c-->
